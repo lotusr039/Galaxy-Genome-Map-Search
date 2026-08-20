@@ -1,0 +1,19 @@
+{
+  "1053060629": {
+    "name": "Actox Cp-Ex E21",
+    "starTemperature": 7050,
+    "starSubtype": "F2",
+    "bodies": [
+      { "type": "RockPlanet" },
+      { "type": "HighMetalPlanet" },
+      { "type": "HighMetalPlanet" },
+      { "type": "GasGiantClassII" },
+      { "type": "IcePlanet" },
+      { "type": "IcePlanet" },
+      { "type": "IcePlanet" },
+      { "type": "IcePlanet" },
+      { "type": "Asteroids" },
+      { "type": "GasGiantwithAmmoniaLife" }
+    ]
+  }
+}

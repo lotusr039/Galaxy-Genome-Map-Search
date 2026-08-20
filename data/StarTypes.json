@@ -1,0 +1,1019 @@
+{
+  "starTypes":
+  [
+    {
+       "type": "DX",
+       "temp": 100000,
+       "magnitude": 11,
+       "luminosity": 0.02
+     },
+    {
+      "type": "DA",
+      "temp": 54000,
+      "magnitude": 11,
+      "luminosity": 0.02
+    },
+    {
+      "type": "DAV",
+      "temp": 80000,
+      "magnitude": 11,
+      "luminosity": 0.02
+    },
+    {
+      "type": "DZ",
+      "temp": 87000,
+      "magnitude": 11,
+      "luminosity": 0.02
+    },
+    {
+      "type": "DB",
+      "temp": 95000,
+      "magnitude": 11,
+      "luminosity": 0.02
+    },
+    {
+      "type": "DBV",
+      "temp": 63000,
+      "magnitude": 11,
+      "luminosity": 0.02
+    },
+    {
+      "type": "DC",
+      "temp": 35000,
+      "magnitude": 11,
+      "luminosity": 0.02
+    },
+    {
+      "type": "DCV",
+      "temp": 22000,
+      "magnitude": 11,
+      "luminosity": 0.02
+    },
+    {
+      "type": "DO",
+      "temp": 107000,
+      "magnitude": 11,
+      "luminosity": 0.02
+    },
+    {
+      "type": "DOV",
+      "temp": 110000,
+      "magnitude": 11,
+      "luminosity": 0.02
+    },
+    {
+      "type": "DQ",
+      "temp": 98000,
+      "magnitude": 11,
+      "luminosity": 0.02
+    },
+{
+   "type": "N0",
+   "temp": 50000,
+   "magnitude": -5,
+   "luminosity": 200000
+ },
+    {
+      "type": "N0s",
+      "temp": 50000,
+      "magnitude": -5,
+      "luminosity": 200000
+    },
+    {
+    "type": "N0m",
+    "temp": 50000,
+    "magnitude": -5,
+    "luminosity": 200000
+    },
+    {
+      "type": "N0b",
+      "temp": 50000,
+      "magnitude": -5,
+      "luminosity": 200000
+    },
+    {
+      "type": "Qk",
+      "temp": 50000,
+      "magnitude": -5,
+      "luminosity": 200000
+    },
+    {
+      "type": "Pr",
+      "temp": 200,
+      "magnitude": -5,
+      "luminosity": 0
+    },
+    {
+      "type": "N0x",
+      "temp": 50000,
+      "magnitude": -5,
+      "luminosity": 200000
+    },
+ {
+   "type": "O5",
+   "temp": 54000,
+   "magnitude": -4.5,
+   "luminosity": 200000
+ },
+ {
+   "type": "O6",
+   "temp": 45000,
+   "magnitude": -4,
+   "luminosity": 140000
+ },
+ {
+   "type": "O7",
+   "temp": 43300,
+   "magnitude": -3.9,
+   "luminosity": 120000
+ },
+ {
+   "type": "O8",
+   "temp": 40600,
+   "magnitude": -3.8,
+   "luminosity": 80000
+ },
+ {
+   "type": "O9",
+   "temp": 37800,
+   "magnitude": -3.6,
+   "luminosity": 55000
+ },
+ {
+   "type": "B0",
+   "temp": 29200,
+   "magnitude": -3.3,
+   "luminosity": 24000
+ },
+ {
+   "type": "B1",
+   "temp": 23000,
+   "magnitude": -2.3,
+   "luminosity": 5550
+ },
+ {
+   "type": "B2",
+   "temp": 21000,
+   "magnitude": -1.9,
+   "luminosity": 3190
+ },
+ {
+   "type": "B3",
+   "temp": 17600,
+   "magnitude": -1.1,
+   "luminosity": 1060
+ },
+ {
+   "type": "B5",
+   "temp": 15200,
+   "magnitude": -0.4,
+   "luminosity": 380
+ },
+ {
+   "type": "B6",
+   "temp": 14300,
+   "magnitude": 0,
+   "luminosity": 240
+ },
+ {
+   "type": "B7",
+   "temp": 13500,
+   "magnitude": 0.3,
+   "luminosity": 140
+ },
+ {
+   "type": "B8",
+   "temp": 12300,
+   "magnitude": 0.7,
+   "luminosity": 73
+ },
+ {
+   "type": "B9",
+   "temp": 11400,
+   "magnitude": 1.1,
+   "luminosity": 42
+ },
+ {
+   "type": "A0",
+   "temp": 9600,
+   "magnitude": 1.5,
+   "luminosity": 24
+ },
+ {
+   "type": "A1",
+   "temp": 9330,
+   "magnitude": 1.7,
+   "luminosity": 20
+ },
+ {
+   "type": "A2",
+   "temp": 9040,
+   "magnitude": 1.8,
+   "luminosity": 17
+ },
+ {
+   "type": "A3",
+   "temp": 8750,
+   "magnitude": 2,
+   "luminosity": 14
+ },
+ {
+   "type": "A4",
+   "temp": 8480,
+   "magnitude": 2.1,
+   "luminosity": 12
+ },
+ {
+   "type": "A5",
+   "temp": 8310,
+   "magnitude": 2.2,
+   "luminosity": 11
+ },
+ {
+   "type": "A7",
+   "temp": 7920,
+   "magnitude": 2.4,
+   "luminosity": 8.8
+ },
+ {
+   "type": "F0",
+   "temp": 7350,
+   "magnitude": 3,
+   "luminosity": 5.1
+ },
+ {
+   "type": "F2",
+   "temp": 7050,
+   "magnitude": 3.3,
+   "luminosity": 3.8
+ },
+ {
+   "type": "F3",
+   "temp": 6850,
+   "magnitude": 3.5,
+   "luminosity": 3.2
+ },
+ {
+   "type": "F5",
+   "temp": 6700,
+   "magnitude": 3.7,
+   "luminosity": 2.7
+ },
+ {
+   "type": "F6",
+   "temp": 6550,
+   "magnitude": 4,
+   "luminosity": 2
+ },
+ {
+   "type": "F7",
+   "temp": 6400,
+   "magnitude": 4.3,
+   "luminosity": 1.5
+ },
+ {
+   "type": "F8",
+   "temp": 6300,
+   "magnitude": 4.4,
+   "luminosity": 1.4
+ },
+ {
+   "type": "G0",
+   "temp": 6050,
+   "magnitude": 4.7,
+   "luminosity": 1.2
+ },
+ {
+   "type": "G1",
+   "temp": 5930,
+   "magnitude": 4.9,
+   "luminosity": 1.1
+ },
+ {
+   "type": "G2",
+   "temp": 5800,
+   "magnitude": 5,
+   "luminosity": 1
+ },
+ {
+   "type": "G5",
+   "temp": 5660,
+   "magnitude": 5.2,
+   "luminosity": 0.73
+ },
+ {
+   "type": "G8",
+   "temp": 5440,
+   "magnitude": 5.6,
+   "luminosity": 0.51
+ },
+ {
+   "type": "K0",
+   "temp": 5240,
+   "magnitude": 6,
+   "luminosity": 0.38
+ },
+ {
+   "type": "K1",
+   "temp": 5110,
+   "magnitude": 6.2,
+   "luminosity": 0.32
+ },
+ {
+   "type": "K2",
+   "temp": 4960,
+   "magnitude": 6.4,
+   "luminosity": 0.29
+ },
+ {
+   "type": "K3",
+   "temp": 4800,
+   "magnitude": 6.7,
+   "luminosity": 0.24
+ },
+ {
+   "type": "K4",
+   "temp": 4600,
+   "magnitude": 7.1,
+   "luminosity": 0.18
+ },
+ {
+   "type": "K5",
+   "temp": 4400,
+   "magnitude": 7.4,
+   "luminosity": 0.15
+ },
+ {
+   "type": "K7",
+   "temp": 4000,
+   "magnitude": 8.1,
+   "luminosity": 0.11
+ },
+ {
+   "type": "M0",
+   "temp": 3750,
+   "magnitude": 8.7,
+   "luminosity": 0.08
+ },
+ {
+   "type": "M1",
+   "temp": 3700,
+   "magnitude": 9.4,
+   "luminosity": 0.055
+ },
+ {
+   "type": "M2",
+   "temp": 3600,
+   "magnitude": 10.1,
+   "luminosity": 0.035
+ },
+ {
+   "type": "M3",
+   "temp": 3500,
+   "magnitude": 10.7,
+   "luminosity": 0.027
+ },
+ {
+   "type": "M4",
+   "temp": 3400,
+   "magnitude": 11.2,
+   "luminosity": 0.022
+ },
+ {
+   "type": "M5",
+   "temp": 3200,
+   "magnitude": 12.3,
+   "luminosity": 0.011
+ },
+ {
+   "type": "M6",
+   "temp": 3100,
+   "magnitude": 13.4,
+   "luminosity": 0.0051
+ },
+ {
+   "type": "M7",
+   "temp": 2900,
+   "magnitude": 13.9,
+   "luminosity": 0.0032
+ },
+ {
+   "type": "M8",
+   "temp": 2700,
+   "magnitude": 14.4,
+   "luminosity": 0.002
+ },
+ {
+   "type": "L0",
+   "temp": 2600,
+   "magnitude": 15,
+   "luminosity": 0.00029
+ },
+ {
+   "type": "L3",
+   "temp": 2200,
+   "magnitude": 16,
+   "luminosity": 0.00013
+ },
+ {
+   "type": "L8",
+   "temp": 1500,
+   "magnitude": 18,
+   "luminosity": 0.000032
+ },
+ {
+   "type": "T2",
+   "temp": 1400,
+   "magnitude": 20,
+   "luminosity": 0.000025
+ },
+ {
+   "type": "T6",
+   "temp": 1000,
+   "magnitude": 25,
+   "luminosity": 0.0000056
+ },
+ {
+   "type": "T8",
+   "temp": 800,
+   "magnitude": 30,
+   "luminosity": 0.0000036
+ },
+ {
+   "type": "Y1",
+   "temp": 500,
+   "magnitude": 34,
+   "luminosity": 0.000001
+ },
+ {
+   "type": "Y2",
+   "temp": 300,
+   "magnitude": 38,
+   "luminosity": 0.0000007
+ },
+    {
+      "type": "F2g",
+      "temp": 6800,
+      "magnitude": 1,
+      "luminosity": 180
+    }
+ ,
+ {
+   "type": "G5g",
+   "temp": 5010,
+   "magnitude": 0.7,
+   "luminosity": 127
+ },
+ {
+   "type": "G8g",
+   "temp": 4870,
+   "magnitude": 0.6,
+   "luminosity": 113
+ },
+ {
+   "type": "K0g",
+   "temp": 4720,
+   "magnitude": 0.5,
+   "luminosity": 96
+ },
+ {
+   "type": "K1g",
+   "temp": 4580,
+   "magnitude": 0.4,
+   "luminosity": 82
+ },
+ {
+   "type": "K2g",
+   "temp": 4460,
+   "magnitude": 0.2,
+   "luminosity": 70
+ },
+ {
+   "type": "K3g",
+   "temp": 4210,
+   "magnitude": 0.1,
+   "luminosity": 58
+ },
+ {
+   "type": "K4g",
+   "temp": 4010,
+   "magnitude": 0,
+   "luminosity": 45
+ },
+ {
+   "type": "K5g",
+   "temp": 3780,
+   "magnitude": -0.2,
+   "luminosity": 32
+ },
+ {
+   "type": "M0g",
+   "temp": 3660,
+   "magnitude": -0.4,
+   "luminosity": 15
+ },
+ {
+   "type": "M1g",
+   "temp": 3600,
+   "magnitude": -0.5,
+   "luminosity": 13
+ },
+ {
+   "type": "M2g",
+   "temp": 3500,
+   "magnitude": -0.6,
+   "luminosity": 11
+ },
+ {
+   "type": "M3g",
+   "temp": 3300,
+   "magnitude": -0.7,
+   "luminosity": 9.5
+ },
+ {
+   "type": "M4g",
+   "temp": 3100,
+   "magnitude": -0.75,
+   "luminosity": 7.4
+ },
+ {
+   "type": "M5g",
+   "temp": 2950,
+   "magnitude": -0.8,
+   "luminosity": 5.1
+ },
+ {
+   "type": "M6g",
+   "temp": 2800,
+   "magnitude": -0.9,
+   "luminosity": 3.3
+ },
+    {
+      "type": "O0h",
+      "temp": 32000,
+      "magnitude": -7.2,
+      "luminosity": 480000
+    } ,
+    {
+      "type": "O0s",
+      "temp": 25000,
+      "magnitude": -6.8,
+      "luminosity": 380000
+    }
+  ,
+ {
+   "type": "B0s",
+   "temp": 21000,
+   "magnitude": -6.4,
+   "luminosity": 320000
+ },
+ {
+   "type": "B1s",
+   "temp": 16000,
+   "magnitude": -6.4,
+   "luminosity": 280000
+ },
+ {
+   "type": "B2s",
+   "temp": 14000,
+   "magnitude": -6.4,
+   "luminosity": 220000
+ },
+ {
+   "type": "B3s",
+   "temp": 12800,
+   "magnitude": -6.3,
+   "luminosity": 180000
+ },
+ {
+   "type": "B5s",
+   "temp": 11500,
+   "magnitude": -6.3,
+   "luminosity": 140000
+ },
+ {
+   "type": "B6s",
+   "temp": 11000,
+   "magnitude": -6.3,
+   "luminosity": 98000
+ },
+ {
+   "type": "B7s",
+   "temp": 10500,
+   "magnitude": -6.3,
+   "luminosity": 82000
+ },
+ {
+   "type": "B8s",
+   "temp": 10000,
+   "magnitude": -6.2,
+   "luminosity": 73000
+ },
+ {
+   "type": "B9s",
+   "temp": 9700,
+   "magnitude": -6.2,
+   "luminosity": 61000
+ },
+ {
+   "type": "A0s",
+   "temp": 9400,
+   "magnitude": -6.2,
+   "luminosity": 50600
+ },
+ {
+   "type": "A1s",
+   "temp": 9100,
+   "magnitude": -6.2,
+   "luminosity": 44000
+ },
+ {
+   "type": "A2s",
+   "temp": 8900,
+   "magnitude": -6.2,
+   "luminosity": 40000
+ },
+ {
+   "type": "A5s",
+   "temp": 8300,
+   "magnitude": -6.1,
+   "luminosity": 36000
+ },
+ {
+   "type": "F0s",
+   "temp": 7500,
+   "magnitude": -6,
+   "luminosity": 20000
+ },
+ {
+   "type": "F2s",
+   "temp": 7200,
+   "magnitude": -6,
+   "luminosity": 18000
+ },
+ {
+   "type": "F5s",
+   "temp": 6800,
+   "magnitude": -5.9,
+   "luminosity": 16000
+ },
+ {
+   "type": "F8s",
+   "temp": 6150,
+   "magnitude": -5.9,
+   "luminosity": 12000
+ },
+ {
+   "type": "G0s",
+   "temp": 5800,
+   "magnitude": -5.9,
+   "luminosity": 9600
+ },
+ {
+   "type": "G2s",
+   "temp": 5500,
+   "magnitude": -5.8,
+   "luminosity": 9500
+ },
+ {
+   "type": "G5s",
+   "temp": 5100,
+   "magnitude": -5.8,
+   "luminosity": 9800
+ },
+ {
+   "type": "G8s",
+   "temp": 5050,
+   "magnitude": -5.7,
+   "luminosity": 11000
+ },
+ {
+   "type": "K0s",
+   "temp": 4900,
+   "magnitude": -5.7,
+   "luminosity": 12000
+ },
+ {
+   "type": "K1s",
+   "temp": 4700,
+   "magnitude": -5.6,
+   "luminosity": 13500
+ },
+ {
+   "type": "K2s",
+   "temp": 4500,
+   "magnitude": -5.6,
+   "luminosity": 15200
+ },
+ {
+   "type": "K3s",
+   "temp": 4300,
+   "magnitude": -5.6,
+   "luminosity": 17000
+ },
+ {
+   "type": "K4s",
+   "temp": 4100,
+   "magnitude": -5.5,
+   "luminosity": 18300
+ },
+ {
+   "type": "K5s",
+   "temp": 3750,
+   "magnitude": -5.5,
+   "luminosity": 20000
+ },
+ {
+   "type": "M0s",
+   "temp": 3660,
+   "magnitude": -5.3,
+   "luminosity": 50600
+ },
+ {
+   "type": "M1s",
+   "temp": 3600,
+   "magnitude": -5.3,
+   "luminosity": 52000
+ },
+ {
+   "type": "M2s",
+   "temp": 3500,
+   "magnitude": -5.3,
+   "luminosity": 53000
+ },
+ {
+   "type": "M3s",
+   "temp": 3300,
+   "magnitude": -5.3,
+   "luminosity": 54000
+ },
+ {
+   "type": "M4s",
+   "temp": 3100,
+   "magnitude": -5.2,
+   "luminosity": 56000
+ },
+ {
+   "type": "M5s",
+   "temp": 2950,
+   "magnitude": -5.2,
+   "luminosity": 58000
+ },
+ {
+   "type": "T0t",
+   "temp": 6850,
+   "magnitude": 3.5,
+   "luminosity": 3.2
+ },
+{
+   "type": "T1t",
+   "temp": 6050,
+   "magnitude": 4.7,
+   "luminosity": 1.2
+ },
+{
+   "type": "T2t",
+   "temp": 5240,
+   "magnitude": 6,
+   "luminosity": 0.38
+ },
+ {
+   "type": "T3t",
+   "temp": 3750,
+   "magnitude": 8.7,
+   "luminosity": 0.08
+ },
+    {
+      "type": "WC",
+      "temp": 48000,
+      "magnitude": -5.7,
+      "luminosity": 350000
+    }
+  ,
+    {
+      "type": "WN",
+      "temp": 85000,
+      "magnitude": -3.2,
+      "luminosity": 220000
+    },
+    {
+      "type": "WNC",
+      "temp": 35000,
+      "magnitude": -7.1,
+      "luminosity": 940000
+    },
+    {
+      "type": "WO",
+      "temp": 141000,
+      "magnitude": -2.6,
+      "luminosity": 280000
+    }
+  ,
+{
+   "type": "W2",
+   "temp": 141000,
+   "magnitude": -2.6,
+   "luminosity": 280000
+ }
+,
+{
+   "type": "W3",
+   "temp": 85000,
+   "magnitude": -3.2,
+   "luminosity": 220000
+ }
+,
+{
+   "type": "W4",
+   "temp": 70000,
+   "magnitude": -3.8,
+   "luminosity": 200000
+ }
+,
+{
+   "type": "W5",
+   "temp": 60000,
+   "magnitude": -4.4,
+   "luminosity": 160000
+ }
+,
+{
+   "type": "W6",
+   "temp": 55000,
+   "magnitude": -5.1,
+   "luminosity": 160000
+ }
+,
+{
+   "type": "W7",
+   "temp": 48000,
+   "magnitude": -5.7,
+   "luminosity": 350000
+ }
+,
+{
+   "type": "W8",
+   "temp": 40000,
+   "magnitude": -7.2,
+   "luminosity": 1300000
+ }
+,
+{
+   "type": "W9",
+   "temp": 35000,
+   "magnitude": -7.1,
+   "luminosity": 940000
+ },
+    {
+      "type": "C0j",
+      "temp": 3900,
+      "magnitude": -2.2,
+      "luminosity": 30
+    },
+    {
+      "type": "C5j",
+      "temp": 2800,
+      "magnitude": -2.5,
+      "luminosity": 1
+    },
+    {
+      "type": "C0s",
+      "temp": 3100,
+      "magnitude": -2.2,
+      "luminosity": 5
+    },
+    {
+      "type": "C5s",
+      "temp": 2600,
+      "magnitude": -2.5,
+      "luminosity": 0.7
+    },
+    {
+      "type": "C0m",
+      "temp": 3100,
+      "magnitude": -2.2,
+      "luminosity": 5
+    },
+    {
+      "type": "C5m",
+      "temp": 2600,
+      "magnitude": -2.5,
+      "luminosity": 0.7
+    },
+    {
+      "type": "C0n",
+      "temp": 3100,
+      "magnitude": -2.2,
+      "luminosity": 5
+    },
+    {
+      "type": "C5n",
+      "temp": 2600,
+      "magnitude": -2.5,
+      "luminosity": 0.7
+    },
+    {
+      "type": "C0r",
+      "temp": 5100,
+      "magnitude": 0,
+      "luminosity": 120
+    },
+    {
+      "type": "C5r",
+      "temp": 2800,
+      "magnitude": -1.0,
+      "luminosity": 0.9
+    },
+    {
+      "type": "C0d",
+      "temp": 5000,
+      "magnitude": -1.8,
+      "luminosity": 180
+    },
+    {
+      "type": "C5d",
+      "temp": 4100,
+      "magnitude": -2.0,
+      "luminosity": 90
+    },
+    {
+      "type": "C0h",
+      "temp": 5000,
+      "magnitude": -1.8,
+      "luminosity": 180
+    },
+    {
+      "type": "C5h",
+      "temp": 4100,
+      "magnitude": -2.0,
+      "luminosity": 90
+    },
+    {
+   "type": "C0",
+   "temp": 4500,
+   "magnitude": 0.7,
+   "luminosity": 90
+ },
+{
+   "type": "C1",
+   "temp": 4300,
+   "magnitude": 0.1,
+   "luminosity": 60
+ },
+{
+   "type": "C2",
+   "temp": 4100,
+   "magnitude": 0,
+   "luminosity": 50
+ },
+{
+   "type": "C3",
+   "temp": 3900,
+   "magnitude": -0.1,
+   "luminosity": 43
+ },
+{
+   "type": "C4",
+   "temp": 3600,
+   "magnitude": -0.4,
+   "luminosity": 15
+ },
+{
+   "type": "C5",
+   "temp": 3400,
+   "magnitude": -0.6,
+   "luminosity": 10
+ },
+{
+   "type": "C6",
+   "temp": 3200,
+   "magnitude": -0.7,
+   "luminosity": 8
+ },
+{
+   "type": "C7",
+   "temp": 3000,
+   "magnitude": -0.8,
+   "luminosity": 5.3
+ },
+ {
+   "type": "X1",
+   "temp": 2,
+   "magnitude": -10,
+   "luminosity": 1
+ },
+{
+   "type": "HA",
+   "temp": 3700,
+   "magnitude": 2,
+   "luminosity": 5
+ }
+,
+{
+   "type": "HB",
+   "temp": 3200,
+   "magnitude": 1.2,
+   "luminosity": 3
+ }
+]
+}

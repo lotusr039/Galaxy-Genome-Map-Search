@@ -1,0 +1,690 @@
+{
+  "sec": [
+    {
+      "Name": "Caelia",
+      "gen": 1,
+      "radius": 0,
+      "x": 0,
+      "y": 0
+    },
+	{
+      "Name": "Jos",
+      "gen": 1,
+      "radius": 0,
+      "x": 0,
+      "y": 0
+    },
+	{
+      "Name": "Rua",
+      "gen": 1,
+      "radius": 0,
+      "x": 0,
+      "y": 0
+    },
+	{
+      "Name": "Que",
+      "gen": 1,
+      "radius": 0,
+      "x": 0,
+      "y": 0
+    },
+	{
+      "Name": "Minos",
+      "gen": 1,
+      "radius": 0,
+      "x": 0,
+      "y": 0
+    },
+	{
+      "Name": "Nua",
+      "gen": 1,
+      "radius": 0,
+      "x": 0,
+      "y": 0
+    },
+	{
+      "Name": "Baldur",
+      "gen": 1,
+      "radius": 0,
+      "x": 0,
+      "y": 0
+    },
+	{
+      "Name": "Omega",
+      "gen": 1,
+      "radius": 0,
+      "x": 0,
+      "y": 0
+    },
+	{
+      "Name": "Alpha",
+      "gen": 1,
+      "radius": 0,
+      "x": 0,
+      "y": 0
+    },
+	{
+      "Name": "Beta",
+      "gen": 1,
+      "radius": 0,
+      "x": 0,
+      "y": 0
+    },
+	{
+      "Name": "Zerx",
+      "gen": 1,
+      "radius": 0,
+      "x": 0,
+      "y": 0
+    },
+	{
+      "Name": "Halo",
+      "gen": 1,
+      "radius": 0,
+      "x": 0,
+      "y": 0
+    },
+	{
+      "Name": "Limb",
+      "gen": 1,
+      "radius": 0,
+      "x": 0,
+      "y": 0
+    },
+	{
+      "Name": "Nox",
+      "gen": 1,
+      "radius": 0,
+      "x": 0,
+      "y": 0
+    },
+	{
+      "Name": "SMB",
+      "gen": 1,
+      "radius": 0,
+      "x": 0,
+      "y": 0
+    },
+	{
+      "Name": "Zeus",
+      "gen": 1,
+      "radius": 0,
+      "x": 0,
+      "y": 0
+    },
+	{
+      "Name": "Zeta",
+      "gen": 1,
+      "radius": 0,
+      "x": 0,
+      "y": 0
+    },
+	{
+      "Name": "Ursa",
+      "gen": 1,
+      "radius": 0,
+      "x": 0,
+      "y": 0
+    },
+	{
+      "Name": "Circina",
+      "gen": 1,
+      "radius": 0,
+      "x": 0,
+      "y": 0
+    },
+	{
+      "Name": "Shinea",
+      "gen": 1,
+      "radius": 0,
+      "x": 0,
+      "y": 0
+    },
+	{
+      "Name": "Harada",
+      "gen": 1,
+      "radius": 0,
+      "x": 0,
+      "y": 0
+    },
+	{
+      "Name": "Gatria",
+      "gen": 1,
+      "radius": 0,
+      "x": 0,
+      "y": 0
+    },
+	{
+      "Name": "Arae",
+      "gen": 1,
+      "radius": 0,
+      "x": 0,
+      "y": 0
+    },
+	{
+      "Name": "Wiquae",
+      "gen": 1,
+      "radius": 0,
+      "x": 0,
+      "y": 0
+    },
+	{
+      "Name": "Rho",
+      "gen": 1,
+      "radius": 0,
+      "x": 0,
+      "y": 0
+    },
+	{
+      "Name": "Dytallia",
+      "gen": 1,
+      "radius": 0,
+      "x": 0,
+      "y": 0
+    },
+	{
+      "Name": "Gamma",
+      "gen": 1,
+      "radius": 0,
+      "x": 0,
+      "y": 0
+    },
+	{
+      "Name": "Huju",
+      "gen": 1,
+      "radius": 0,
+      "x": 0,
+      "y": 0
+    },
+	{
+      "Name": "Jed",
+      "gen": 1,
+      "radius": 0,
+      "x": 0,
+      "y": 0
+    },
+	{
+      "Name": "Lyra",
+      "gen": 1,
+      "radius": 0,
+      "x": 0,
+      "y": 0
+    },
+	{
+      "Name": "Torren",
+      "gen": 1,
+      "radius": 0,
+      "x": 0,
+      "y": 0
+    },
+	{
+      "Name": "Vega",
+      "gen": 1,
+      "radius": 0,
+      "x": 0,
+      "y": 0
+    },
+	{
+      "Name": "Mirea",
+      "gen": 1,
+      "radius": 0,
+      "x": 0,
+      "y": 0
+    },
+	{
+      "Name": "Tethys",
+      "gen": 1,
+      "radius": 0,
+      "x": 0,
+      "y": 0
+    },
+	{
+      "Name": "Wei Xiu",
+      "gen": 1,
+      "radius": 0,
+      "x": 0,
+      "y": 0
+    },
+	{
+      "Name": "Coeus",
+      "gen": 1,
+      "radius": 0,
+      "x": 0,
+      "y": 0
+    },
+	{
+      "Name": "Yaw",
+      "gen": 1,
+      "radius": 0,
+      "x": 0,
+      "y": 0
+    },
+	{
+      "Name": "Ru-Shou",
+      "gen": 1,
+      "radius": 0,
+      "x": 0,
+      "y": 0
+    },
+	{
+      "Name": "Supa",
+      "gen": 1,
+      "radius": 0,
+      "x": 0,
+      "y": 0
+    },
+	{
+      "Name": "Dahi",
+      "gen": 1,
+      "radius": 0,
+      "x": 0,
+      "y": 0
+    },
+	{
+      "Name": "Jola",
+      "gen": 1,
+      "radius": 0,
+      "x": 0,
+      "y": 0
+    },
+	{
+      "Name": "Xiao Pi",
+      "gen": 1,
+      "radius": 0,
+      "x": 0,
+      "y": 0
+    },
+	{
+      "Name": "Koshla",
+      "gen": 1,
+      "radius": 0,
+      "x": 0,
+      "y": 0
+    },
+	{
+      "Name": "Njord",
+      "gen": 1,
+      "radius": 0,
+      "x": 0,
+      "y": 0
+    },
+	{
+      "Name": "Enrua",
+      "gen": 1,
+      "radius": 0,
+      "x": 0,
+      "y": 0
+    },
+	{
+      "Name": "Telmua",
+      "gen": 1,
+      "radius": 0,
+      "x": 0,
+      "y": 0
+    },
+	{
+      "Name": "Nuggau",
+      "gen": 1,
+      "radius": 0,
+      "x": 0,
+      "y": 0
+    },
+	{
+      "Name": "Khoshi",
+      "gen": 1,
+      "radius": 0,
+      "x": 0,
+      "y": 0
+    },
+	{
+      "Name": "Algira",
+      "gen": 1,
+      "radius": 0,
+      "x": 0,
+      "y": 0
+    },
+	{
+      "Name": "WHS",
+      "gen": 1,
+      "radius": 0,
+      "x": 0,
+      "y": 0
+    },
+	{
+      "Name": "Tiali",
+      "gen": 1,
+      "radius": 0,
+      "x": 0,
+      "y": 0
+    },
+	{
+      "Name": "Cygni",
+      "gen": 1,
+      "radius": 0,
+      "x": 0,
+      "y": 0
+    },
+	{
+      "Name": "Morz",
+      "gen": 1,
+      "radius": 0,
+      "x": 0,
+      "y": 0
+    },
+	{
+      "Name": "Thrua",
+      "gen": 1,
+      "radius": 0,
+      "x": 0,
+      "y": 0
+    },
+	{
+      "Name": "BlueThea",
+      "gen": 1,
+      "radius": 0,
+      "x": 0,
+      "y": 0
+    },
+	{
+      "Name": "Bao",
+      "gen": 1,
+      "radius": 0,
+      "x": 0,
+      "y": 0
+    },
+	{
+      "Name": "FTL",
+      "gen": 1,
+      "radius": 0,
+      "x": 0,
+      "y": 0
+    },
+	{
+      "Name": "Tossi",
+      "gen": 1,
+      "radius": 0,
+      "x": 0,
+      "y": 0
+    },
+	{
+      "Name": "Rhea",
+      "gen": 1,
+      "radius": 0,
+      "x": 0,
+      "y": 0
+    },
+	{
+      "Name": "Puarus",
+      "gen": 1,
+      "radius": 0,
+      "x": 0,
+      "y": 0
+    },
+	{
+      "Name": "Byeia",
+      "gen": 1,
+      "radius": 0,
+      "x": 0,
+      "y": 0
+    },
+	{
+      "Name": "ZFK",
+      "gen": 1,
+      "radius": 0,
+      "x": 0,
+      "y": 0
+    },
+	{
+      "Name": "Weprea",
+      "gen": 1,
+      "radius": 0,
+      "x": 0,
+      "y": 0
+    },
+	{
+      "Name": "Oliun",
+      "gen": 1,
+      "radius": 0,
+      "x": 0,
+      "y": 0
+    },
+	{
+      "Name": "Prime",
+      "gen": 1,
+      "radius": 0,
+      "x": 0,
+      "y": 0
+    },
+	{
+      "Name": "Actox",
+      "gen": 1,
+      "radius": 0,
+      "x": 0,
+      "y": 0
+    },
+	{
+      "Name": "YaiLu",
+      "gen": 1,
+      "radius": 0,
+      "x": 0,
+      "y": 0
+    },
+	{
+      "Name": "Hanghou",
+      "gen": 1,
+      "radius": 0,
+      "x": 0,
+      "y": 0
+    },
+	{
+      "Name": "ZX",
+      "gen": 1,
+      "radius": 0,
+      "x": 0,
+      "y": 0
+    },
+	{
+      "Name": "Proto Rua",
+      "gen": 1,
+      "radius": 0,
+      "x": 0,
+      "y": 0
+    },
+	{
+      "Name": "Ivvy",
+      "gen": 1,
+      "radius": 0,
+      "x": 0,
+      "y": 0
+    },
+	{
+      "Name": "Loxonn",
+      "gen": 1,
+      "radius": 0,
+      "x": 0,
+      "y": 0
+    },
+	{
+      "Name": "Delta",
+      "gen": 1,
+      "radius": 0,
+      "x": 0,
+      "y": 0
+    },
+	{
+      "Name": "OAK",
+      "gen": 1,
+      "radius": 0,
+      "x": 0,
+      "y": 0
+    },
+	{
+      "Name": "Era",
+      "gen": 1,
+      "radius": 0,
+      "x": 0,
+      "y": 0
+    },
+	{
+      "Name": "Illour",
+      "gen": 1,
+      "radius": 0,
+      "x": 0,
+      "y": 0
+    },
+	{
+      "Name": "Quiza",
+      "gen": 1,
+      "radius": 0,
+      "x": 0,
+      "y": 0
+    },
+	{
+      "Name": "Kollta",
+      "gen": 1,
+      "radius": 0,
+      "x": 0,
+      "y": 0
+    },
+	{
+      "Name": "Vivvy",
+      "gen": 1,
+      "radius": 0,
+      "x": 0,
+      "y": 0
+    },
+	{
+      "Name": "Xeo",
+      "gen": 1,
+      "radius": 0,
+      "x": 0,
+      "y": 0
+    },
+	{
+      "Name": "Assea",
+      "gen": 1,
+      "radius": 0,
+      "x": 0,
+      "y": 0
+    },
+	{
+      "Name": "SQRT",
+      "gen": 1,
+      "radius": 0,
+      "x": 0,
+      "y": 0
+    },
+	{
+      "Name": "Binlua",
+      "gen": 1,
+      "radius": 0,
+      "x": 0,
+      "y": 0
+    },
+	{
+      "Name": "Cappea",
+      "gen": 1,
+      "radius": 0,
+      "x": 0,
+      "y": 0
+    },
+	{
+      "Name": "Sensetis",
+      "gen": 1,
+      "radius": 0,
+      "x": 0,
+      "y": 0
+    },
+	{
+      "Name": "Errisoe",
+      "gen": 1,
+      "radius": 0,
+      "x": 0,
+      "y": 0
+    },
+	{
+      "Name": "Quatta",
+      "gen": 1,
+      "radius": 0,
+      "x": 0,
+      "y": 0
+    },
+	{
+      "Name": "Amua",
+      "gen": 1,
+      "radius": 0,
+      "x": 0,
+      "y": 0
+    },
+	{
+      "Name": "Zullus",
+      "gen": 1,
+      "radius": 0,
+      "x": 0,
+      "y": 0
+    },
+	{
+      "Name": "Sosi",
+      "gen": 1,
+      "radius": 0,
+      "x": 0,
+      "y": 0
+    },
+	{
+      "Name": "Octarrs",
+      "gen": 1,
+      "radius": 0,
+      "x": 0,
+      "y": 0
+    },
+	{
+      "Name": "Flyooe",
+      "gen": 1,
+      "radius": 0,
+      "x": 0,
+      "y": 0
+    },
+	{
+      "Name": "Hovvi",
+      "gen": 1,
+      "radius": 0,
+      "x": 0,
+      "y": 0
+    },
+	{
+      "Name": "Diloaks",
+      "gen": 1,
+      "radius": 0,
+      "x": 0,
+      "y": 0
+    },
+	{
+      "Name": "Vox",
+      "gen": 1,
+      "radius": 0,
+      "x": 0,
+      "y": 0
+    },
+	{
+      "Name": "Rutta",
+      "gen": 1,
+      "radius": 0,
+      "x": 0,
+      "y": 0
+    },
+	{
+      "Name": "HyperVi",
+      "gen": 1,
+      "radius": 0,
+      "x": 0,
+      "y": 0
+    },
+	{
+      "Name": "Gohhla",
+      "gen": 1,
+      "radius": 0,
+      "x": 0,
+      "y": 0
+    }
+]
+}

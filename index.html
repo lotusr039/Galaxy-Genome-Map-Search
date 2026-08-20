@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Galaxy Genome 星系查询</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <h1>Galaxy Genome</h1>
+      <p>最近恒星与行星搜索</p>
+    </div>
+    <div id="dataStatus" class="status">正在载入数据库</div>
+  </header>
+
+  <main>
+    <aside class="search-panel">
+      <form id="searchForm">
+        <div class="section-title">搜索中心点</div>
+        <div class="segmented" id="centerMode" role="group" aria-label="搜索中心点输入方式">
+          <button type="button" class="active" data-mode="name">星系名称</button>
+          <button type="button" data-mode="coords">光年坐标</button>
+        </div>
+
+        <label class="field full mode-panel" id="nameCenterPanel">
+          <span>搜索中心星系名称</span>
+          <input id="centerNameInput" type="search" placeholder="例如 Sol / Actox Cp-Ex E21" autocomplete="off" required>
+        </label>
+        <div id="centerChoices" class="center-choices" hidden></div>
+
+        <div class="coord-grid mode-panel" id="coordCenterPanel" hidden>
+          <label class="field">
+            <span>X（光年）</span>
+            <input id="xInput" type="number" step="any" placeholder="0">
+          </label>
+          <label class="field">
+            <span>Y（光年）</span>
+            <input id="yInput" type="number" step="any" placeholder="0">
+          </label>
+        </div>
+
+        <div class="section-title">搜索目标</div>
+        <div class="segmented" id="targetMode" role="group" aria-label="搜索目标">
+          <button type="button" class="active" data-mode="planet">行星</button>
+          <button type="button" data-mode="star">恒星</button>
+        </div>
+        <label class="field full">
+          <span id="targetTypeLabel">行星类型</span>
+          <select id="targetTypeSelect"></select>
+        </label>
+
+        <label class="field full">
+          <span>搜索半径（光年）</span>
+          <input id="radiusInput" type="number" min="1" max="2000" step="1" value="500" required>
+        </label>
+
+        <label class="check-field"><input id="excludeFixed" type="checkbox" checked><span>排除固定行星系统</span></label>
+        <label class="check-field"><input id="excludeNamed" type="checkbox"><span>排除具名真实星系</span></label>
+
+        <div class="form-actions">
+          <button class="primary" id="searchButton" type="submit" disabled>搜索最近目标</button>
+          <button class="secondary" id="cancelButton" type="button" hidden>取消</button>
+        </div>
+      </form>
+
+      <div class="search-meta">
+        <span id="resultCount">0 个结果</span>
+        <span id="searchProgress">等待搜索</span>
+      </div>
+      <div id="results" class="results"></div>
+    </aside>
+
+    <section class="workspace">
+      <div class="map-wrap">
+        <canvas id="mapCanvas" width="900" height="520"></canvas>
+        <div class="map-tools">
+          <button id="zoomOut" type="button" title="缩小" aria-label="缩小">−</button>
+          <button id="zoomIn" type="button" title="放大" aria-label="放大">+</button>
+          <button id="resetMap" type="button">定位中心</button>
+        </div>
+        <div class="legend"><i></i> 中心点 <i class="star-dot"></i> 搜索结果</div>
+      </div>
+
+      <section id="details" class="details empty">
+        <div class="empty-state">
+          <h2>选择一个星系</h2>
+          <p>设置中心、范围和目标类型后开始搜索。</p>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <template id="resultTemplate">
+    <button class="result-item" type="button">
+      <span class="result-main"><strong></strong><small></small></span>
+      <span class="distance"></span>
+    </button>
+  </template>
+
+  <script src="generator.js"></script>
+  <script src="naming.js"></script>
+  <script src="search-core.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

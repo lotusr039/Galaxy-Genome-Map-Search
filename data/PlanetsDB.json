@@ -1,0 +1,6726 @@
+{
+  "planets": [
+    {
+      "Name": "Mercury",
+      "system": "Sol",
+      "type": "RockPlanet",
+      "dist": 193,
+      "sput": 0,
+      "size": 4800,
+      "rings": 0
+    }
+    ,
+    {
+      "Name": "Venus",
+      "system": "Sol",
+      "type": "HighMetalPlanet",
+      "dist": 361,
+      "sput": 0,
+      "size": 12100,
+      "rings": 0
+    }
+  ,
+    {
+      "Name": "Earth",
+      "system": "Sol",
+      "type": "EarthLikePlanet",
+      "dist": 497,
+      "sput": 1,
+      "size": 12700,
+      "rings": 0
+    }
+  ,
+    {
+      "Name": "Mars",
+      "system": "Sol",
+      "type": "RockPlanet",
+      "dist": 762,
+      "sput": 2,
+      "size": 6800,
+      "rings": 0
+    }
+  ,
+    {
+      "Name": "Asteroid Belt",
+      "system": "Sol",
+      "type": "Asteroids",
+      "dist": 1000,
+      "sput": 0,
+      "size": 800,
+      "rings": 0
+    },
+    {
+      "Name": "Ceres",
+      "system": "Sol",
+      "type": "RockPlanet",
+      "dist": 1400,
+      "sput": 0,
+      "size": 1000,
+      "rings": 0
+    }
+  ,
+    {
+      "Name": "Jupiter",
+      "system": "Sol",
+      "type": "GasGiantClassI",
+      "dist": 2603,
+      "sput": 4,
+      "size": 143000,
+      "rings": 0
+    }
+,
+    {
+      "Name": "Saturn",
+      "system": "Sol",
+      "type": "GasGiantClassI",
+      "dist": 4778,
+      "sput": 8,
+      "size": 120000,
+      "rings": 3
+    }
+  ,
+    {
+      "Name": "Uranus",
+      "system": "Sol",
+      "type": "GasGiantClassI",
+      "dist": 9574,
+      "sput": 5,
+      "size": 51100,
+      "rings": 0
+    }
+  ,
+    {
+      "Name": "Neptune",
+      "system": "Sol",
+      "type": "GasGiantClassI",
+      "dist": 15000,
+      "sput": 1,
+      "size": 49500,
+      "rings": 0
+    }
+    ,
+    {
+      "Name": "Kuiper Belt",
+      "system": "Sol",
+      "type": "Asteroids",
+      "dist": 17000,
+      "sput": 0,
+      "size": 3000,
+      "rings": 0
+    }
+  ,
+    {
+      "Name": "Pluto",
+      "system": "Sol",
+      "type": "RockPlanet",
+      "dist": 17000,
+      "sput": 1,
+      "size": 2400,
+      "rings": 0
+    }
+  ,
+    {
+      "Name": "Haumea",
+      "system": "Sol",
+      "type": "RockPlanet",
+      "dist": 21000,
+      "sput": 2,
+      "size": 1632,
+      "rings": 0
+    }
+  ,
+    {
+      "Name": "Makemake",
+      "system": "Sol",
+      "type": "RockPlanet",
+      "dist": 25800,
+      "sput": 0,
+      "size": 1430,
+      "rings": 0
+    }
+  ,
+    {
+      "Name": "Eris",
+      "system": "Sol",
+      "type": "RockPlanet",
+      "dist": 28000,
+      "sput": 0,
+      "size": 2300,
+      "rings": 0
+    }
+    ,
+    {
+      "Name": "Mars",
+      "system": "Black Sol",
+      "type": "RockPlanet",
+      "dist": 762,
+      "sput": 2,
+      "size": 6800,
+      "rings": 0
+    }
+  ,
+    {
+      "Name": "Asteroid Belt",
+      "system": "Black Sol",
+      "type": "Asteroids",
+      "dist": 1000,
+      "sput": 0,
+      "size": 800,
+      "rings": 0
+    },
+    {
+      "Name": "Ceres",
+      "system": "Black Sol",
+      "type": "RockPlanet",
+      "dist": 1400,
+      "sput": 0,
+      "size": 1000,
+      "rings": 0
+    }
+  ,
+    {
+      "Name": "Jupiter",
+      "system": "Black Sol",
+      "type": "GasGiantClassI",
+      "dist": 2603,
+      "sput": 4,
+      "size": 143000,
+      "rings": 0
+    }
+  ,
+    {
+      "Name": "Saturn",
+      "system": "Black Sol",
+      "type": "GasGiantClassI",
+      "dist": 4778,
+      "sput": 8,
+      "size": 120000,
+      "rings": 3
+    }
+  ,
+    {
+      "Name": "Uranus",
+      "system": "Black Sol",
+      "type": "GasGiantClassI",
+      "dist": 9574,
+      "sput": 5,
+      "size": 51100,
+      "rings": 0
+    }
+  ,
+    {
+      "Name": "Neptune",
+      "system": "Black Sol",
+      "type": "GasGiantClassI",
+      "dist": 15000,
+      "sput": 1,
+      "size": 49500,
+      "rings": 0
+    }
+  ,
+    {
+      "Name": "Kuiper Belt",
+      "system": "Black Sol",
+      "type": "Asteroids",
+      "dist": 17000,
+      "sput": 0,
+      "size": 3000,
+      "rings": 0
+    }
+  ,
+    {
+      "Name": "Pluto",
+      "system": "Black Sol",
+      "type": "RockPlanet",
+      "dist": 17000,
+      "sput": 1,
+      "size": 2400,
+      "rings": 0
+    }
+  ,
+    {
+      "Name": "Haumea",
+      "system": "Black Sol",
+      "type": "RockPlanet",
+      "dist": 21000,
+      "sput": 2,
+      "size": 1632,
+      "rings": 0
+    }
+  ,
+    {
+      "Name": "Makemake",
+      "system": "Black Sol",
+      "type": "RockPlanet",
+      "dist": 25800,
+      "sput": 0,
+      "size": 1430,
+      "rings": 0
+    }
+  ,
+    {
+      "Name": "Eris",
+      "system": "Black Sol",
+      "type": "RockPlanet",
+      "dist": 28000,
+      "sput": 0,
+      "size": 2300,
+      "rings": 0
+    }
+    ,
+    {
+      "Name": "Fuladh",
+      "system": "Barnard's Star",
+      "type": "HighMetalPlanet",
+      "dist": 165,
+      "sput": 1,
+      "size": 7800,
+      "rings": 0
+    }
+  ,
+    {
+      "Name": "Hamma Belt",
+      "system": "Barnard's Star",
+      "type": "Asteroids",
+      "dist": 300,
+      "sput": 0,
+      "size": 300,
+      "rings": 0
+    }
+  ,
+    {
+      "Name": "Shard",
+      "system": "Barnard's Star",
+      "type": "IcePlanet",
+      "dist": 820,
+      "sput": 2,
+      "size": 8700,
+      "rings": 0
+    }
+  ,
+    {
+      "Name": "Sirius B",
+      "system": "Sirius",
+      "type": "DO-WhiteDwarf",
+      "dist": 0,
+      "sput": 0,
+      "size": 1200,
+      "rings": 0
+    }
+  ,
+    {
+      "Name": "Yang Belt",
+      "system": "Sirius",
+      "type": "Asteroids",
+      "dist": 300,
+      "sput": 0,
+      "size": 1200,
+      "rings": 0
+    }
+  ,
+    {
+      "Name": "Chioni",
+      "system": "Sirius",
+      "type": "IcePlanet",
+      "dist": 1520,
+      "sput": 1,
+      "size": 8700,
+      "rings": 0
+    }
+  ,
+    {
+      "Name": "Kalt",
+      "system": "Ross 248",
+      "type": "IcePlanet",
+      "dist": 300,
+      "sput": 0,
+      "size": 5200,
+      "rings": 0
+    }
+  ,
+    {
+      "Name": "Uma Belt",
+      "system": "Ross 248",
+      "type": "Asteroids",
+      "dist": 400,
+      "sput": 0,
+      "size": 1200,
+      "rings": 0
+    }
+  ,
+    {
+      "Name": "Wanderer",
+      "system": "61 Cygni",
+      "type": "RockPlanet",
+      "dist": 200,
+      "sput": 0,
+      "size": 2500,
+      "rings": 0
+    }
+  ,
+    {
+      "Name": "Otto Belt",
+      "system": "61 Cygni",
+      "type": "Asteroids",
+      "dist": 250,
+      "sput": 0,
+      "size": 1300,
+      "rings": 0
+    }
+  ,
+    {
+      "Name": "Riesig",
+      "system": "61 Cygni",
+      "type": "GasGiantClassI",
+      "dist": 1800,
+      "sput": 6,
+      "size": 215000,
+      "rings": 2
+    },
+    {
+      "Name": "Asteroid Belt",
+      "system": "Ross 154",
+      "type": "Asteroids",
+      "dist": 200,
+      "sput": 0,
+      "size": 250,
+      "rings": 0
+    },
+    {
+      "Name": "Hollow",
+      "system": "Ross 154",
+      "type": "GasGiantClassI",
+      "dist": 600,
+      "sput": 1,
+      "size": 232000,
+      "rings": 0
+    },
+    {
+      "Name": "Sorg",
+      "system": "Ross 154",
+      "type": "IcePlanet",
+      "dist": 850,
+      "sput": 0,
+      "size": 5200,
+      "rings": 0
+    }
+  ,
+    {
+      "Name": "Glede",
+      "system": "Ross 154",
+      "type": "IcePlanet",
+      "dist": 950,
+      "sput": 1,
+      "size": 6200,
+      "rings": 0
+    }
+  ,
+    {
+      "Name": "Tron",
+      "system": "Altair",
+      "type": "HighMetalPlanet",
+      "dist": 300,
+      "sput": 0,
+      "size": 4800,
+      "rings": 0
+    }
+  ,
+    {
+      "Name": "Wee",
+      "system": "Altair",
+      "type": "HighMetalPlanet",
+      "dist": 400,
+      "sput": 0,
+      "size": 5100,
+      "rings": 0
+    }
+  ,
+    {
+      "Name": "Yanshi",
+      "system": "Altair",
+      "type": "RockPlanet",
+      "dist": 560,
+      "sput": 0,
+      "size": 3200,
+      "rings": 0
+    }
+  ,
+    {
+      "Name": "Vann",
+      "system": "Altair",
+      "type": "WaterWorld",
+      "dist": 700,
+      "sput": 0,
+      "size": 6500,
+      "rings": 0
+    }
+  ,
+    {
+      "Name": "Jokoma",
+      "system": "Altair",
+      "type": "IcePlanet",
+      "dist": 1500,
+      "sput": 1,
+      "size": 5800,
+      "rings": 0
+    }
+  ,
+    {
+      "Name": "B",
+      "system": "Alpha Centauri",
+      "type": "K-YellowOrange",
+      "dist": 30,
+      "sput": 0,
+      "size": 500000,
+      "rings": 0
+    }
+  ,
+    {
+      "Name": "Halid",
+      "system": "Alpha Centauri",
+      "type": "HighMetalPlanet",
+      "dist": 300,
+      "sput": 1,
+      "size": 4200,
+      "rings": 0
+    }
+  ,
+    {
+      "Name": "Geo",
+      "system": "Alpha Centauri",
+      "type": "RockPlanet",
+      "dist": 1200,
+      "sput": 0,
+      "size": 2500,
+      "rings": 0
+    }
+  ,
+    {
+      "Name": "Roxa",
+      "system": "Alpha Centauri",
+      "type": "IcePlanet",
+      "dist": 4200,
+      "sput": 1,
+      "size": 3500,
+      "rings": 0
+    }
+  ,
+    {
+      "Name": "Yonona Belt",
+      "system": "Alpha Centauri",
+      "type": "Asteroids",
+      "dist": 8000,
+      "sput": 0,
+      "size": 1500,
+      "rings": 0
+    }
+  ,
+    {
+      "Name": "Jako",
+      "system": "Alpha Centauri",
+      "type": "IcePlanet",
+      "dist": 9600,
+      "sput": 3,
+      "size": 2800,
+      "rings": 2
+    }
+  ,
+    {
+      "Name": "Proxima",
+      "system": "Alpha Centauri",
+      "type": "M-RedDwarf",
+      "dist": 6900,
+      "sput": 0,
+      "size": 300000,
+      "rings": 0
+    }
+  ,
+    {
+      "Name": "Khela",
+      "system": "Alpha Centauri",
+      "type": "RockPlanet",
+      "dist": 1000,
+      "sput": 1,
+      "size": 54000,
+      "rings": 0
+    }
+  ,
+    {
+      "Name": "Nio",
+      "system": "Alpha Centauri",
+      "type": "GasGiantClassII",
+      "dist": 2500,
+      "sput": 2,
+      "size": 64000,
+      "rings": 2
+    }
+  ,
+    {
+      "Name": "Asteroid Belt",
+      "system": "Wolf 359",
+      "type": "Asteroids",
+      "dist": 150,
+      "sput": 0,
+      "size": 150,
+      "rings": 0
+    }
+  ,
+    {
+      "Name": "RF-17",
+      "system": "Wolf 359",
+      "type": "RockPlanet",
+      "dist": 400,
+      "sput": 1,
+      "size": 4100,
+      "rings": 0
+    }
+  ,
+    {
+      "Name": "Asteroid Belt",
+      "system": "Wolf 359",
+      "type": "Asteroids",
+      "dist": 500,
+      "sput": 0,
+      "size": 1200,
+      "rings": 0
+    }
+
+  ,
+    {
+      "Name": "Asteroid Belt",
+      "system": "Wolf 1061",
+      "type": "Asteroids",
+      "dist": 100,
+      "sput": 0,
+      "size": 200,
+      "rings": 0
+    }
+  ,
+    {
+      "Name": "Espa",
+      "system": "Wolf 1061",
+      "type": "RockPlanet",
+      "dist": 500,
+      "sput": 0,
+      "size": 5200,
+      "rings": 1
+    }
+  ,
+    {
+      "Name": "Kappa",
+      "system": "Wolf 1061",
+      "type": "IcePlanet",
+      "dist": 1300,
+      "sput": 0,
+      "size": 7200,
+      "rings": 0
+    }
+  ,
+    {
+      "Name": "Geruga",
+      "system": "Wolf 1061",
+      "type": "GasGiantClassI",
+      "dist": 8100,
+      "sput": 3,
+      "size": 68000,
+      "rings": 3
+    }
+  ,
+    {
+      "Name": "Asteroid Belt",
+      "system": "Wolf 1061",
+      "type": "Asteroids",
+      "dist": 8300,
+      "sput": 0,
+      "size": 1200,
+      "rings": 0
+    },
+
+
+
+
+
+
+
+
+
+
+    {
+      "Name": "A1",
+      "system": "36 Ophiuchi",
+      "type": "RockPlanet",
+      "dist": 100,
+      "sput": -1,
+      "size": 188,
+      "rings": -1
+    },
+    {
+      "Name": "A2",
+      "system": "36 Ophiuchi",
+      "type": "IcePlanet",
+      "dist": 1490,
+      "sput": -1,
+      "size": 188,
+      "rings": -1
+    },
+    {
+      "Name": "A3",
+      "system": "36 Ophiuchi",
+      "type": "HighMetalPlanet",
+      "dist": 50,
+      "sput": -1,
+      "size": 188,
+      "rings": -1
+    },
+    {
+      "Name": "A4",
+      "system": "36 Ophiuchi",
+      "type": "HighMetalPlanet",
+      "dist": 130,
+      "sput": -1,
+      "size": 188,
+      "rings": -1
+    },
+    {
+      "Name": "A5",
+      "system": "36 Ophiuchi",
+      "type": "HighMetalPlanet",
+      "dist": 240,
+      "sput": -1,
+      "size": 188,
+      "rings": -1
+    },
+    {
+      "Name": "A6",
+      "system": "36 Ophiuchi",
+      "type": "HighMetalPlanet",
+      "dist": 200,
+      "sput": -1,
+      "size": 188,
+      "rings": -1
+    },
+    {
+      "Name": "A7",
+      "system": "36 Ophiuchi",
+      "type": "IcePlanet",
+      "dist": 4600,
+      "sput": -1,
+      "size": 188,
+      "rings": -1
+    },
+    {
+      "Name": "B0",
+      "system": "36 Ophiuchi",
+      "type": "M-RedDwarf",
+      "dist": 2497,
+      "sput": -1,
+      "size": 188,
+      "rings": -1
+    },
+    {
+      "Name": "B1",
+      "system": "36 Ophiuchi",
+      "type": "M-RedDwarf",
+      "dist": 2503,
+      "sput": -1,
+      "size": 174,
+      "rings": -1
+    },
+    {
+      "Name": "B2",
+      "system": "36 Ophiuchi",
+      "type": "IcePlanet",
+      "dist": 2954,
+      "sput": -1,
+      "size": 188,
+      "rings": -1
+    },
+    {
+      "Name": "B3",
+      "system": "36 Ophiuchi",
+      "type": "IcePlanet",
+      "dist": 807,
+      "sput": -1,
+      "size": 188,
+      "rings": -1
+    },
+    {
+      "Name": "B4",
+      "system": "36 Ophiuchi",
+      "type": "HighMetalPlanet",
+      "dist": 61,
+      "sput": -1,
+      "size": 188,
+      "rings": -1
+    },
+    {
+      "Name": "B5",
+      "system": "36 Ophiuchi",
+      "type": "WaterWorld",
+      "dist": 53,
+      "sput": -1,
+      "size": 188,
+      "rings": -1
+    },
+    {
+      "Name": "B6",
+      "system": "36 Ophiuchi",
+      "type": "IcePlanet",
+      "dist": 3337,
+      "sput": -1,
+      "size": 188,
+      "rings": -1
+    },
+    {
+      "Name": "B7",
+      "system": "36 Ophiuchi",
+      "type": "HighMetalPlanet",
+      "dist": 85,
+      "sput": -1,
+      "size": 188,
+      "rings": -1
+    },
+    {
+      "Name": "B8",
+      "system": "36 Ophiuchi",
+      "type": "RockPlanet",
+      "dist": 164,
+      "sput": -1,
+      "size": 188,
+      "rings": -1
+    },
+    {
+      "Name": "B9",
+      "system": "36 Ophiuchi",
+      "type": "IcePlanet",
+      "dist": 4985,
+      "sput": -1,
+      "size": 188,
+      "rings": -1
+    },
+    {
+      "Name": "C0",
+      "system": "36 Ophiuchi",
+      "type": "L-BrownDwarf",
+      "dist": 2500,
+      "sput": -1,
+      "size": 161,
+      "rings": -1
+    },
+    {
+      "Name": "C1",
+      "system": "36 Ophiuchi",
+      "type": "IcePlanet",
+      "dist": 2160,
+      "sput": -1,
+      "size": 188,
+      "rings": -1
+    },
+    {
+      "Name": "C2",
+      "system": "36 Ophiuchi",
+      "type": "IcePlanet",
+      "dist": 3190,
+      "sput": -1,
+      "size": 188,
+      "rings": -1
+    }
+  ,
+    {
+      "Name": "Procyon B",
+      "system": "Procyon",
+      "type": "DO-WhiteDwarf",
+      "dist": 9820,
+      "sput": 0,
+      "size": 1200,
+      "rings": 0
+    }
+  ,
+    {
+      "Name": "B1",
+      "system": "Procyon",
+      "type": "IcePlanet",
+      "dist": 17090,
+      "sput": -1,
+      "size": 6700,
+      "rings": -1
+    },
+
+    {
+      "Name": "A1",
+      "system": "Luyten's Star",
+      "type": "GasGiantClassI",
+      "dist": 210,
+      "sput": -1,
+      "size": 188,
+      "rings": -1
+    },
+    {
+      "Name": "B0",
+      "system": "Luyten's Star",
+      "type": "L-BrownDwarf",
+      "dist": 1500,
+      "sput": -1,
+      "size": 174,
+      "rings": -1
+    },
+    {
+      "Name": "B1",
+      "system": "Luyten's Star",
+      "type": "IcePlanet",
+      "dist": 510,
+      "sput": -1,
+      "size": 188,
+      "rings": -1
+    },
+    {
+      "Name": "B2",
+      "system": "Luyten's Star",
+      "type": "IcePlanet",
+      "dist": 1439,
+      "sput": -1,
+      "size": 188,
+      "rings": -1
+    }
+  ,
+    {
+      "Name": "Ross 614 b",
+      "system": "Ross 614",
+      "type": "M-RedDwarf",
+      "dist": 50,
+      "sput": -1,
+      "size": 300000,
+      "rings": -1
+    },
+    {
+      "Name": "Xena",
+      "system": "Ross 614",
+      "type": "RockPlanet",
+      "dist":100,
+      "sput": -1,
+      "size": 2300,
+      "rings": -1
+    },
+    {
+      "Name": "Ross 614 Belt",
+      "system": "Ross 614",
+      "type": "Asteroids",
+      "dist": 200,
+      "sput": 0,
+      "size": 300,
+      "rings": 0
+    }
+
+
+    ,
+    {
+      "Name": "A1",
+      "system": "Wolf 1453",
+      "type": "IcePlanet",
+      "dist": 2050,
+      "sput": -1,
+      "size": 23000,
+      "rings": -1
+    },
+    {
+      "Name": "A2",
+      "system": "Wolf 1453",
+      "type": "IcePlanet",
+      "dist": 1130,
+      "sput": -1,
+      "size": 29000,
+      "rings": -1
+    },
+    {
+      "Name": "A3",
+      "system": "Wolf 1453",
+      "type": "IcePlanet",
+      "dist": 2780,
+      "sput": -1,
+      "size": 31000,
+      "rings": -1
+    }
+  ,
+    {
+      "Name": "Belt a",
+      "system": "LP 658-2",
+      "type": "Asteroids",
+      "dist": 300,
+      "sput": -1,
+      "size": 500,
+      "rings": -1
+    }
+  ,
+    {
+      "Name": "CGB-1",
+      "system": "LP 658-2",
+      "type": "RockPlanet",
+      "dist": 950,
+      "sput": 1,
+      "size": 2300,
+      "rings": -1
+    },
+    {
+      "Name": "Belt b",
+      "system": "LP 658-2",
+      "type": "Asteroids",
+      "dist": 1500,
+      "sput": -1,
+      "size": 2600,
+      "rings": -1
+    },
+
+
+
+    {
+      "Name": "Gissel",
+      "system": "Ross 47",
+      "type": "HighMetalPlanet",
+      "dist": 29,
+      "sput": -1,
+      "size": 47600,
+      "rings": -1
+    },
+    {
+      "Name": "Miramid",
+      "system": "Ross 47",
+      "type": "HighMetalPlanet",
+      "dist": 40,
+      "sput": -1,
+      "size": 35000,
+      "rings": -1
+    },
+    {
+      "Name": "Scion",
+      "system": "Ross 47",
+      "type": "WaterWorld",
+      "dist": 50,
+      "sput": 2,
+      "size": 78900,
+      "rings": 1
+    },
+    {
+      "Name": "LHB-3",
+      "system": "Ross 47",
+      "type": "HighMetalPlanet",
+      "dist": 59,
+      "sput": -1,
+      "size": 58000,
+      "rings": -1
+    },
+    {
+      "Name": "LHB-4",
+      "system": "Ross 47",
+      "type": "HighMetalPlanet",
+      "dist": 70,
+      "sput": 1,
+      "size": 37000,
+      "rings": -1
+    },
+    {
+      "Name": "Polus",
+      "system": "Ross 47",
+      "type": "IcePlanet",
+      "dist": 2310,
+      "sput": -1,
+      "size": 51200,
+      "rings": -1
+    },
+    {
+      "Name": "Ikoria",
+      "system": "Ross 47",
+      "type": "IcePlanet",
+      "dist": 3670,
+      "sput": 1,
+      "size": 63000,
+      "rings": -1
+    },
+    {
+      "Name": "Aspine",
+      "system": "Ross 47",
+      "type": "IcePlanet",
+      "dist": 4210,
+      "sput": -1,
+      "size": 45000,
+      "rings": -1
+    }
+  ,
+    {
+      "Name": "Virgo",
+      "system": "Wolf 294",
+      "type": "IcePlanet",
+      "dist": 2590,
+      "sput": 1,
+      "size": 32000,
+      "rings": -1
+    }
+    ,
+    {
+      "Name": "A1",
+      "system": "Stein 2051",
+      "type": "GasGiantClassI",
+      "dist": 180,
+      "sput": 2,
+      "size": 200030,
+      "rings": 2
+    }
+  ,
+    {
+      "Name": "A Belt",
+      "system": "Stein 2051",
+      "type": "Asteroids",
+      "dist": 300,
+      "sput": 0,
+      "size": 500,
+      "rings": 0
+    }
+  ,
+    {
+      "Name": "Stein 2051 b",
+      "system": "Stein 2051",
+      "type": "DO-WhiteDwarf",
+      "dist": 3000,
+      "sput": 0,
+      "size": 1200,
+      "rings": 0
+    },
+
+
+
+    {
+      "Name": "Belt A",
+      "system": "Eta Cassiopeiae",
+      "type": "Asteroids",
+      "dist": 100,
+      "sput": -1,
+      "size": 80,
+      "rings": -1
+    }
+  ,
+    {
+      "Name": "Silca",
+      "system": "Eta Cassiopeiae",
+      "type": "RockPlanet",
+      "dist": 270,
+      "sput": -1,
+      "size": 5200,
+      "rings": -1
+    },
+    {
+      "Name": "Inona",
+      "system": "Eta Cassiopeiae",
+      "type": "MetalRichPlanet",
+      "dist": 449,
+      "sput": -1,
+      "size": 32000,
+      "rings": -1
+    },
+    {
+      "Name": "Yank",
+      "system": "Eta Cassiopeiae",
+      "type": "WaterWorld",
+      "dist": 600,
+      "sput": -1,
+      "size": 80240,
+      "rings": -1
+    },
+    {
+      "Name": "Belt B",
+      "system": "Eta Cassiopeiae",
+      "type": "Asteroids",
+      "dist": 700,
+      "sput": -1,
+      "size": 450,
+      "rings": -1,
+      "mater1": "Rutile"
+    },
+    {
+      "Name": "Tiffa",
+      "system": "Eta Cassiopeiae",
+      "type": "IcePlanet",
+      "dist": 1350,
+      "sput": -1,
+      "size": 59000,
+      "rings": -1
+    }
+  ,{
+      "Name": "Wanda",
+      "system": "Eta Cassiopeiae",
+      "type": "IcePlanet",
+      "dist": 3020,
+      "sput": -1,
+      "size": 41000,
+      "rings": -1
+    }
+  ,
+    {
+      "Name": "Eta B",
+      "system": "Eta Cassiopeiae",
+      "type": "K-YellowOrange",
+      "dist": 3500,
+      "sput": -1,
+      "size": 320000,
+      "rings": -1
+    }
+  ,
+    {
+      "Name": "Lion",
+      "system": "Eta Cassiopeiae",
+      "type": "HighMetalPlanet",
+      "dist": 190,
+      "sput": 1,
+      "size": 42150,
+      "rings": 1
+    },
+    {
+      "Name": "Geopra",
+      "system": "Eta Cassiopeiae",
+      "type": "IcePlanet",
+      "dist": 1939,
+      "sput": -1,
+      "size": 46000,
+      "rings": -1
+    },
+    {
+      "Name": "Nuna",
+      "system": "Eta Cassiopeiae",
+      "type": "IcePlanet",
+      "dist": 2539,
+      "sput": 2,
+      "size": 5500,
+      "rings": -1
+    },
+
+
+
+
+
+    {
+      "Name": "Octa",
+      "system": "LHS 71",
+      "type": "HighMetalPlanet",
+      "dist": 76,
+      "sput": 1,
+      "size": 21000,
+      "rings": -1
+    },
+    {
+      "Name": "Sigul",
+      "system": "LHS 71",
+      "type": "HighMetalPlanet",
+      "dist": 207,
+      "sput": 3,
+      "size": 32000,
+      "rings": -1
+    },
+    {
+      "Name": "Axon",
+      "system": "LHS 71",
+      "type": "RockPlanet",
+      "dist": 329,
+      "sput": -1,
+      "size": 4400,
+      "rings": -1
+    },
+    {
+      "Name": "Kirin",
+      "system": "LHS 71",
+      "type": "GasGiantClassII",
+      "dist": 420,
+      "sput": 4,
+      "size": 130510,
+      "rings": 3
+    },
+    {
+      "Name": "Belt B",
+      "system": "LHS 71",
+      "type": "Asteroids",
+      "dist": 550,
+      "sput": -1,
+      "size": 1200,
+      "rings": -1
+    }
+  ,
+    {
+      "Name": "Henhe",
+      "system": "LHS 71",
+      "type": "IcePlanet",
+      "dist": 2424,
+      "sput": 1,
+      "size": 41000,
+      "rings": 1
+    },
+    {
+      "Name": "Izura",
+      "system": "LHS 71",
+      "type": "IcePlanet",
+      "dist": 2785,
+      "sput": -1,
+      "size": 38000,
+      "rings": -1
+    },
+    {
+      "Name": "Liong",
+      "system": "LHS 71",
+      "type": "IcePlanet",
+      "dist": 4304,
+      "sput": 1,
+      "size": 42000,
+      "rings": -1
+    }
+    ,
+
+
+    {
+      "Name": "LHS 3595 b",
+      "system": "LHS 3595",
+      "type": "L-BrownDwarf",
+      "dist": 1,
+      "sput": -1,
+      "size": 170000,
+      "rings": -1
+    },
+
+    {
+      "Name": "Raiku",
+      "system": "LHS 3595",
+      "type": "RockPlanet",
+      "dist": 150,
+      "sput": -1,
+      "size": 12000,
+      "rings": -1
+    },
+    {
+      "Name": "A2",
+      "system": "LHS 3595",
+      "type": "IcePlanet",
+      "dist": 694,
+      "sput": -1,
+      "size": 35000,
+      "rings": -1
+    },
+    {
+      "Name": "A3",
+      "system": "LHS 3595",
+      "type": "IcePlanet",
+      "dist": 2255,
+      "sput": -1,
+      "size": 38900,
+      "rings": -1
+    },
+    {
+      "Name": "A4",
+      "system": "LHS 3595",
+      "type": "IcePlanet",
+      "dist": 2435,
+      "sput": -1,
+      "size": 25000,
+      "rings": -1
+    },
+    {
+      "Name": "A5",
+      "system": "LHS 3595",
+      "type": "IcePlanet",
+      "dist": 4389,
+      "sput": -1,
+      "size": 27900,
+      "rings": -1
+    },
+    {
+      "Name": "LHS 3595 c",
+      "system": "LHS 3595",
+      "type": "L-BrownDwarf",
+      "dist": 2501,
+      "sput": -1,
+      "size": 190000,
+      "rings": -1
+    },
+    {
+      "Name": "LHS 3595 d",
+      "system": "LHS 3595",
+      "type": "T-BrownDwarf",
+      "dist": 2498,
+      "sput": -1,
+      "size": 180000,
+      "rings": -1
+    },
+    {
+      "Name": "Echo",
+      "system": "LHS 3595",
+      "type": "IcePlanet",
+      "dist": 235,
+      "sput": 1,
+      "size": 37000,
+      "rings": -1
+    },
+    {
+      "Name": "B2",
+      "system": "LHS 3595",
+      "type": "IcePlanet",
+      "dist": 4692,
+      "sput": -1,
+      "size": 42000,
+      "rings": -1
+    }
+    ,
+
+
+
+    {
+      "Name": "A1",
+      "system": "LFT 90",
+      "type": "L-BrownDwarf",
+      "dist": 1,
+      "sput": -1,
+      "size": 161,
+      "rings": -1
+    },
+    {
+      "Name": "A2",
+      "system": "LFT 90",
+      "type": "HighMetalPlanet",
+      "dist": 100,
+      "sput": 1,
+      "size": 188,
+      "rings": -1
+    },
+    {
+      "Name": "A3",
+      "system": "LFT 90",
+      "type": "GasGiantClassII",
+      "dist": 133,
+      "sput": 3,
+      "size": 188,
+      "rings": 2
+    },
+    {
+      "Name": "Belt a",
+      "system": "LFT 90",
+      "type": "Asteroids",
+      "dist": 250,
+      "sput": -1,
+      "size": 500,
+      "rings": -1
+    },
+    {
+      "Name": "A4",
+      "system": "LFT 90",
+      "type": "IcePlanet",
+      "dist": 1088,
+      "sput": -1,
+      "size": 188,
+      "rings": 1
+    },
+    {
+      "Name": "A5",
+      "system": "LFT 90",
+      "type": "IcePlanet",
+      "dist": 1891,
+      "sput": 1,
+      "size": 188,
+      "rings": 2
+    },
+    {
+      "Name": "B0",
+      "system": "LFT 90",
+      "type": "L-BrownDwarf",
+      "dist": 2500,
+      "sput": -1,
+      "size": 161,
+      "rings": -1
+    },
+    {
+      "Name": "B1",
+      "system": "LFT 90",
+      "type": "IcePlanet",
+      "dist": 1200,
+      "sput": -1,
+      "size": 188,
+      "rings": 1
+    },
+
+
+    {
+      "Name": "Belt a",
+      "system": "Theta Persei",
+      "type": "Asteroids",
+      "dist": 120,
+      "sput": -1,
+      "size": 160,
+      "rings": -1
+    },
+    {
+      "Name": "A1",
+      "system": "Theta Persei",
+      "type": "HighMetalPlanet",
+      "dist": 349,
+      "sput": 1,
+      "size": 188,
+      "rings": -1
+    },
+    {
+      "Name": "A2",
+      "system": "Theta Persei",
+      "type": "HighMetalPlanet",
+      "dist": 420,
+      "sput": -1,
+      "size": 188,
+      "rings": 1
+    },
+    {
+      "Name": "A3",
+      "system": "Theta Persei",
+      "type": "HighMetalPlanet",
+      "dist": 870,
+      "sput": -1,
+      "size": 188,
+      "rings": -1
+    },
+    {
+      "Name": "A4",
+      "system": "Theta Persei",
+      "type": "IcePlanet",
+      "dist": 4140,
+      "sput": -1,
+      "size": 188,
+      "rings": -1
+    },
+    {
+      "Name": "A5",
+      "system": "Theta Persei",
+      "type": "IcePlanet",
+      "dist": 4310,
+      "sput": -1,
+      "size": 188,
+      "rings": -1
+    },
+    {
+      "Name": "Theta Persei b",
+      "system": "Theta Persei",
+      "type": "M-RedDwarf",
+      "dist": 2500,
+      "sput": -1,
+      "size": 174,
+      "rings": -1
+    },
+    {
+      "Name": "B1",
+      "system": "Theta Persei",
+      "type": "RockPlanet",
+      "dist": 29,
+      "sput": -1,
+      "size": 188,
+      "rings": -1
+    },
+    {
+      "Name": "B2",
+      "system": "Theta Persei",
+      "type": "RockPlanet",
+      "dist": 40,
+      "sput": -1,
+      "size": 188,
+      "rings": -1
+    },
+    {
+      "Name": "B3",
+      "system": "Theta Persei",
+      "type": "GasGiantwithWaterLife",
+      "dist": 60,
+      "sput": 2,
+      "size": 188,
+      "rings": 3
+    },
+
+
+    {
+      "Name": "Belt a",
+      "system": "Iota Persei",
+      "type": "Asteroids",
+      "dist": 150,
+      "sput": -1,
+      "size": 150,
+      "rings": -1
+    },
+    {
+      "Name": "A1",
+      "system": "Iota Persei",
+      "type": "HighMetalPlanet",
+      "dist": 450,
+      "sput": 1,
+      "size": 188,
+      "rings": 2
+    },
+    {
+      "Name": "A2",
+      "system": "Iota Persei",
+      "type": "GasGiantClassIII",
+      "dist": 780,
+      "sput": 3,
+      "size": 188,
+      "rings": 2
+    },
+    {
+      "Name": "A3",
+      "system": "Iota Persei",
+      "type": "GasGiantClassIII",
+      "dist": 850,
+      "sput": 1,
+      "size": 188,
+      "rings": 1
+    },
+    {
+      "Name": "A4",
+      "system": "Iota Persei",
+      "type": "GasGiantClassIII",
+      "dist": 1300,
+      "sput": 2,
+      "size": 188,
+      "rings": 2
+    },
+    {
+      "Name": "A5",
+      "system": "Iota Persei",
+      "type": "WaterWorld",
+      "dist": 1800,
+      "sput": 1,
+      "size": 188,
+      "rings": 1
+    },
+    {
+      "Name": "A6",
+      "system": "Iota Persei",
+      "type": "GasGiantClassIII",
+      "dist": 2100,
+      "sput": 1,
+      "size": 188,
+      "rings": 2
+    },
+    {
+      "Name": "Belt b",
+      "system": "Iota Persei",
+      "type": "Asteroids",
+      "dist": 2300,
+      "sput": -1,
+      "size": 300,
+      "rings": -1
+    },
+
+
+
+
+    {
+      "Name": "Belt a",
+      "system": "Capella",
+      "type": "Asteroids",
+      "dist": 150,
+      "sput": -1,
+      "size": 50,
+      "rings": -1
+    },
+    {
+      "Name": "A2",
+      "system": "Capella",
+      "type": "HighMetalPlanet",
+      "dist": 300,
+      "sput": -1,
+      "size": 188,
+      "rings": 2
+    },
+    {
+      "Name": "A3",
+      "system": "Capella",
+      "type": "IcePlanet",
+      "dist": 1630,
+      "sput": 2,
+      "size": 188,
+      "rings": -1
+    },
+    {
+      "Name": "A4",
+      "system": "Capella",
+      "type": "IcePlanet",
+      "dist": 3179,
+      "sput": 1,
+      "size": 188,
+      "rings": 1
+    },
+    {
+      "Name": "A5",
+      "system": "Capella",
+      "type": "IcePlanet",
+      "dist": 3719,
+      "sput": -1,
+      "size": 188,
+      "rings": -1
+    },
+
+
+
+    {
+      "Name": "A1",
+      "system": "OU Geminorum",
+      "type": "HighMetalPlanet",
+      "dist": 122,
+      "sput": -1,
+      "size": 188,
+      "rings": -1
+    },
+    {
+      "Name": "A2",
+      "system": "OU Geminorum",
+      "type": "HighMetalPlanet",
+      "dist": 218,
+      "sput": -1,
+      "size": 188,
+      "rings": -1
+    }
+  ,
+    {
+      "Name": "A3",
+      "system": "OU Geminorum",
+      "type": "EarthLikePlanet",
+      "dist": 312,
+      "sput": 0,
+      "size": 188,
+      "rings": -1
+    }
+  ,
+    {
+      "Name": "A4",
+      "system": "OU Geminorum",
+      "type": "WaterWorld",
+      "dist": 400,
+      "sput": 1,
+      "size": 188,
+      "rings": 1
+    }
+  ,
+    {
+      "Name": "A5",
+      "system": "OU Geminorum",
+      "type": "GasGiantClassII",
+      "dist": 1200,
+      "sput": 4,
+      "size": 188,
+      "rings": 2
+    }
+  ,
+    {
+      "Name": "A6",
+      "system": "OU Geminorum",
+      "type": "GasGiantwithWaterLife",
+      "dist": 1620,
+      "sput": 2,
+      "size": 188,
+      "rings": 1
+    }
+  ,
+    {
+      "Name": "A7",
+      "system": "OU Geminorum",
+      "type": "IcePlanet",
+      "dist": 1760,
+      "sput": 0,
+      "size": 188,
+      "rings": 0
+    },
+
+
+    {
+      "Name": "A1",
+      "system": "LHS 1920",
+      "type": "HighMetalPlanet",
+      "dist": 90,
+      "sput": -1,
+      "size": 188,
+      "rings": 1
+    },
+    {
+      "Name": "A2",
+      "system": "LHS 1920",
+      "type": "RockPlanet",
+      "dist": 145,
+      "sput": -1,
+      "size": 188,
+      "rings": -1
+    },
+    {
+      "Name": "Belt a",
+      "system": "LHS 1920",
+      "type": "Asteroids",
+      "dist": 250,
+      "sput": -1,
+      "size": 300,
+      "rings": -1
+    },
+    {
+      "Name": "B0",
+      "system": "LHS 1920",
+      "type": "M-RedDwarf",
+      "dist": 700,
+      "sput": -1,
+      "size": 174,
+      "rings": -1
+    },
+    {
+      "Name": "B1",
+      "system": "LHS 1920",
+      "type": "GasGiantClassI",
+      "dist": 379,
+      "sput": 2,
+      "size": 188,
+      "rings": 1
+    },
+    {
+      "Name": "C0",
+      "system": "LHS 1920",
+      "type": "L-BrownDwarf",
+      "dist": 500,
+      "sput": -1,
+      "size": 161,
+      "rings": -1
+    },
+    {
+      "Name": "C1",
+      "system": "LHS 1920",
+      "type": "RockPlanet",
+      "dist": 102,
+      "sput": -1,
+      "size": 188,
+      "rings": -1
+    },
+
+
+
+
+    {
+      "Name": "A1",
+      "system": "LHS 235",
+      "type": "RockPlanet",
+      "dist": 35,
+      "sput": -1,
+      "size": 188,
+      "rings": -1
+    },
+    {
+      "Name": "A2",
+      "system": "LHS 235",
+      "type": "IcePlanet",
+      "dist": 2221,
+      "sput": -1,
+      "size": 188,
+      "rings": -1
+    },
+    {
+      "Name": "A3",
+      "system": "LHS 235",
+      "type": "IcePlanet",
+      "dist": 3053,
+      "sput": -1,
+      "size": 188,
+      "rings": -1
+    },
+    {
+      "Name": "B0",
+      "system": "LHS 235",
+      "type": "M-RedDwarf",
+      "dist": 2500,
+      "sput": -1,
+      "size": 188,
+      "rings": -1
+    },
+    {
+      "Name": "B1",
+      "system": "LHS 235",
+      "type": "HighMetalPlanet",
+      "dist": 50,
+      "sput": 1,
+      "size": 188,
+      "rings": 1
+    },
+    {
+      "Name": "B2",
+      "system": "LHS 235",
+      "type": "HighMetalPlanet",
+      "dist": 90,
+      "sput": -1,
+      "size": 188,
+      "rings": 2
+    },
+    {
+      "Name": "B3",
+      "system": "LHS 235",
+      "type": "RockPlanet",
+      "dist": 129,
+      "sput": 1,
+      "size": 188,
+      "rings": -1
+    },
+    {
+      "Name": "B4",
+      "system": "LHS 235",
+      "type": "IcePlanet",
+      "dist": 1260,
+      "sput": -1,
+      "size": 188,
+      "rings": -1
+    },
+
+
+    {
+      "Name": "A1",
+      "system": "LHS 2447",
+      "type": "RockPlanet",
+      "dist": 166,
+      "sput": 1,
+      "size": 188,
+      "rings": -1
+    },
+    {
+      "Name": "A2",
+      "system": "LHS 2447",
+      "type": "MetalRichPlanet",
+      "dist": 180,
+      "sput": 2,
+      "size": 188,
+      "rings": -1
+    },
+    {
+      "Name": "Belt a",
+      "system": "LHS 2447",
+      "type": "Asteroids",
+      "dist": 280,
+      "sput": -1,
+      "size": 400,
+      "rings": -1
+    },
+    {
+      "Name": "A3",
+      "system": "LHS 2447",
+      "type": "IcePlanet",
+      "dist": 801,
+      "sput": -1,
+      "size": 188,
+      "rings": -1
+    },
+    {
+      "Name": "A4",
+      "system": "LHS 2447",
+      "type": "GasGiantClassI",
+      "dist": 836,
+      "sput": 3,
+      "size": 188,
+      "rings": 1
+    },
+    {
+      "Name": "A5",
+      "system": "LHS 2447",
+      "type": "IcePlanet",
+      "dist": 1214,
+      "sput": -1,
+      "size": 188,
+      "rings": -1
+    },
+    {
+      "Name": "A6",
+      "system": "LHS 2447",
+      "type": "IcePlanet",
+      "dist": 2368,
+      "sput": -1,
+      "size": 188,
+      "rings": -1
+    },
+    {
+      "Name": "A7",
+      "system": "LHS 2447",
+      "type": "IcePlanet",
+      "dist": 2873,
+      "sput": -1,
+      "size": 188,
+      "rings": -1
+    },
+    {
+      "Name": "B0",
+      "system": "LHS 2447",
+      "type": "M-RedDwarf",
+      "dist": 5000,
+      "sput": -1,
+      "size": 188,
+      "rings": -1
+    },
+    {
+      "Name": "B1",
+      "system": "LHS 2447",
+      "type": "IcePlanet",
+      "dist": 2610,
+      "sput": -1,
+      "size": 188,
+      "rings": -1
+    },
+    {
+      "Name": "B2",
+      "system": "LHS 2447",
+      "type": "IcePlanet",
+      "dist": 4229,
+      "sput": -1,
+      "size": 188,
+      "rings": -1
+    },
+
+    {
+      "Name": "A1",
+      "system": "LP 104-2",
+      "type": "HighMetalPlanet",
+      "dist": 30,
+      "sput": -1,
+      "size": 188,
+      "rings": 1
+    },
+    {
+      "Name": "A2",
+      "system": "LP 104-2",
+      "type": "RockPlanet",
+      "dist": 50,
+      "sput": 1,
+      "size": 188,
+      "rings": -1
+    },
+    {
+      "Name": "A3",
+      "system": "LP 104-2",
+      "type": "RockPlanet",
+      "dist": 100,
+      "sput": -1,
+      "size": 188,
+      "rings": -1
+    },
+    {
+      "Name": "A4",
+      "system": "LP 104-2",
+      "type": "RockPlanet",
+      "dist": 130,
+      "sput": -1,
+      "size": 188,
+      "rings": -1
+    },
+    {
+      "Name": "Belt a",
+      "system": "LHS 2447",
+      "type": "Asteroids",
+      "dist": 250,
+      "sput": -1,
+      "size": 200,
+      "rings": -1
+    },
+    {
+      "Name": "A5",
+      "system": "LP 104-2",
+      "type": "IcePlanet",
+      "dist": 730,
+      "sput": 1,
+      "size": 188,
+      "rings": -1
+    },
+    {
+      "Name": "A6",
+      "system": "LP 104-2",
+      "type": "IcePlanet",
+      "dist": 3570,
+      "sput": -1,
+      "size": 188,
+      "rings": 1
+    },
+    {
+      "Name": "B0",
+      "system": "LP 104-2",
+      "type": "M-RedDwarf",
+      "dist": 5000,
+      "sput": -1,
+      "size": 174,
+      "rings": -1
+    },
+    {
+      "Name": "B1",
+      "system": "LP 104-2",
+      "type": "RockPlanet",
+      "dist": 49,
+      "sput": -1,
+      "size": 188,
+      "rings": -1
+    },
+    {
+      "Name": "B2",
+      "system": "LP 104-2",
+      "type": "HighMetalPlanet",
+      "dist": 75,
+      "sput": -1,
+      "size": 188,
+      "rings": -1
+    },
+    {
+      "Name": "B3",
+      "system": "LP 104-2",
+      "type": "GasGiantClassII",
+      "dist": 120,
+      "sput": 2,
+      "size": 188,
+      "rings": 3
+    },
+    {
+      "Name": "B4",
+      "system": "LP 104-2",
+      "type": "RockPlanet",
+      "dist": 175,
+      "sput": -1,
+      "size": 188,
+      "rings": -1
+    },
+    {
+      "Name": "B5",
+      "system": "LP 104-2",
+      "type": "IcePlanet",
+      "dist": 4885,
+      "sput": -1,
+      "size": 188,
+      "rings": -1
+    },
+
+
+    {
+      "Name": "Belt b",
+      "system": "Beta Trianguli Australis",
+      "type": "Asteroids",
+      "dist": 120,
+      "sput": -1,
+      "size": 210,
+      "rings": -1
+    },
+    {
+      "Name": "A1",
+      "system": "Beta Trianguli Australis",
+      "type": "HighMetalPlanet",
+      "dist": 450,
+      "sput": 1,
+      "size": 188,
+      "rings": 1
+    },
+    {
+      "Name": "A2",
+      "system": "Beta Trianguli Australis",
+      "type": "HighMetalPlanet",
+      "dist": 720,
+      "sput": 1,
+      "size": 188,
+      "rings": 1
+    },
+    {
+      "Name": "A3",
+      "system": "Beta Trianguli Australis",
+      "type": "EarthLikePlanet",
+      "dist": 1300,
+      "sput": 0,
+      "size": 188,
+      "rings": 1
+    },
+    {
+      "Name": "B4",
+      "system": "Beta Trianguli Australis",
+      "type": "GasGiantClassII",
+      "dist": 1400,
+      "sput": 1,
+      "size": 188,
+      "rings": 2
+    },
+    {
+      "Name": "Belt b",
+      "system": "Beta Trianguli Australis",
+      "type": "Asteroids",
+      "dist": 1500,
+      "sput": -1,
+      "size": 900,
+      "rings": -1
+    },
+    {
+      "Name": "B5",
+      "system": "Beta Trianguli Australis",
+      "type": "IcePlanet",
+      "dist": 3500,
+      "sput": -1,
+      "size": 188,
+      "rings": -1
+    },
+
+
+    {
+      "Name": "A1",
+      "system": "LTT 6774",
+      "type": "HighMetalPlanet",
+      "dist": 120,
+      "sput": 2,
+      "size": 188,
+      "rings": -1
+    },
+    {
+      "Name": "A2",
+      "system": "LTT 6774",
+      "type": "RockPlanet",
+      "dist": 130,
+      "sput": -1,
+      "size": 188,
+      "rings": -1
+    },
+    {
+      "Name": "A3",
+      "system": "LTT 6774",
+      "type": "HighMetalPlanet",
+      "dist": 210,
+      "sput": -1,
+      "size": 188,
+      "rings": 1
+    },
+    {
+      "Name": "Belt a",
+      "system": "LTT 6774",
+      "type": "Asteroids",
+      "dist": 300,
+      "sput": -1,
+      "size": 250,
+      "rings": -1
+    },
+
+
+
+
+    {
+      "Name": "Belt a",
+      "system": "LP 920-69",
+      "type": "Asteroids",
+      "dist": 120,
+      "sput": -1,
+      "size": 180,
+      "rings": -1
+    },
+    {
+      "Name": "A2",
+      "system": "LP 920-69",
+      "type": "GasGiantClassII",
+      "dist": 412,
+      "sput": 2,
+      "size": 188,
+      "rings": 3
+    },
+    {
+      "Name": "A3",
+      "system": "LP 920-69",
+      "type": "IcePlanet",
+      "dist": 483,
+      "sput": -1,
+      "size": 188,
+      "rings": -1
+    },
+    {
+      "Name": "A4",
+      "system": "LP 920-69",
+      "type": "IcePlanet",
+      "dist": 845,
+      "sput": -1,
+      "size": 188,
+      "rings": -1
+    },
+    {
+      "Name": "Belt b",
+      "system": "LP 920-69",
+      "type": "Asteroids",
+      "dist": 980,
+      "sput": -1,
+      "size": 400,
+      "rings": -1
+    },
+
+
+    {
+      "Name": "A1",
+      "system": "58 Ophiuchi",
+      "type": "RockPlanet",
+      "dist": 330,
+      "sput": 1,
+      "size": 188,
+      "rings": -1
+    },
+    {
+      "Name": "A2",
+      "system": "58 Ophiuchi",
+      "type": "WaterWorld",
+      "dist": 690,
+      "sput": 2,
+      "size": 188,
+      "rings": -1
+    },
+    {
+      "Name": "A3",
+      "system": "58 Ophiuchi",
+      "type": "WaterWorld",
+      "dist": 750,
+      "sput": -1,
+      "size": 188,
+      "rings": 1
+    },
+    {
+      "Name": "A4",
+      "system": "58 Ophiuchi",
+      "type": "GasGiantClassII",
+      "dist": 1009,
+      "sput": 4,
+      "size": 188,
+      "rings": 2
+    },
+    {
+      "Name": "A5",
+      "system": "58 Ophiuchi",
+      "type": "RockPlanet",
+      "dist": 1320,
+      "sput": -1,
+      "size": 188,
+      "rings": -1
+    },
+    {
+      "Name": "A6",
+      "system": "58 Ophiuchi",
+      "type": "IcePlanet",
+      "dist": 3160,
+      "sput": -1,
+      "size": 188,
+      "rings": -1
+    },
+    {
+      "Name": "B0",
+      "system": "58 Ophiuchi",
+      "type": "K-YellowOrange",
+      "dist": 2800,
+      "sput": -1,
+      "size": 214,
+      "rings": -1
+    },
+    {
+      "Name": "B1",
+      "system": "58 Ophiuchi",
+      "type": "HighMetalPlanet",
+      "dist": 80,
+      "sput": 2,
+      "size": 188,
+      "rings": -1
+    },
+    {
+      "Name": "B2",
+      "system": "58 Ophiuchi",
+      "type": "HighMetalPlanet",
+      "dist": 190,
+      "sput": 1,
+      "size": 188,
+      "rings": -1
+    },
+    {
+      "Name": "B3",
+      "system": "58 Ophiuchi",
+      "type": "RockPlanet",
+      "dist": 249,
+      "sput": -1,
+      "size": 188,
+      "rings": -1
+    },
+    {
+      "Name": "B4",
+      "system": "58 Ophiuchi",
+      "type": "HighMetalPlanet",
+      "dist": 269,
+      "sput": -1,
+      "size": 188,
+      "rings": 1
+    },
+    {
+      "Name": "B5",
+      "system": "58 Ophiuchi",
+      "type": "WaterWorld",
+      "dist": 290,
+      "sput": 3,
+      "size": 188,
+      "rings": -1
+    },
+    {
+      "Name": "B6",
+      "system": "58 Ophiuchi",
+      "type": "GasGiantClassI",
+      "dist": 1859,
+      "sput": 2,
+      "size": 188,
+      "rings": 1
+    },
+    {
+      "Name": "C0",
+      "system": "58 Ophiuchi",
+      "type": "M-RedDwarf",
+      "dist": 3500,
+      "sput": -1,
+      "size": 174,
+      "rings": -1
+    },
+    {
+      "Name": "C1",
+      "system": "58 Ophiuchi",
+      "type": "RockPlanet",
+      "dist": 150,
+      "sput": 1,
+      "size": 188,
+      "rings": -1
+    },
+    {
+      "Name": "C2",
+      "system": "58 Ophiuchi",
+      "type": "IcePlanet",
+      "dist": 390,
+      "sput": -1,
+      "size": 188,
+      "rings": -1
+    },
+    {
+      "Name": "C3",
+      "system": "58 Ophiuchi",
+      "type": "IcePlanet",
+      "dist": 2610,
+      "sput": -1,
+      "size": 188,
+      "rings": 1
+    },
+    {
+      "Name": "C4",
+      "system": "58 Ophiuchi",
+      "type": "IcePlanet",
+      "dist": 4040,
+      "sput": -1,
+      "size": 188,
+      "rings": -1
+    },
+
+
+    {
+      "Name": "A1",
+      "system": "Ross 720",
+      "type": "RockPlanet",
+      "dist": 40,
+      "sput": -1,
+      "size": 188,
+      "rings": -1
+    },
+    {
+      "Name": "A2",
+      "system": "Ross 720",
+      "type": "RockPlanet",
+      "dist": 60,
+      "sput": -1,
+      "size": 188,
+      "rings": -1
+    },
+    {
+      "Name": "A3",
+      "system": "Ross 720",
+      "type": "GasGiantClassI",
+      "dist": 350,
+      "sput": 1,
+      "size": 188,
+      "rings": 2
+    },
+    {
+      "Name": "Belt a",
+      "system": "Ross 720",
+      "type": "Asteroids",
+      "dist": 1200,
+      "sput": -1,
+      "size": 340,
+      "rings": -1
+    },
+    {
+      "Name": "Ammos",
+      "system": "Ross 720",
+      "type": "IcePlanet",
+      "dist": 2020,
+      "sput": -1,
+      "size": 188,
+      "rings": -1
+    },
+
+
+    {
+      "Name": "A1",
+      "system": "Eta Serpentis",
+      "type": "HighMetalPlanet",
+      "dist": 85,
+      "sput": 1,
+      "size": 188,
+      "rings": 1
+    },
+    {
+      "Name": "A2",
+      "system": "Eta Serpentis",
+      "type": "HighMetalPlanet",
+      "dist": 170,
+      "sput": -1,
+      "size": 188,
+      "rings": -1
+    },
+    {
+      "Name": "A3",
+      "system": "Eta Serpentis",
+      "type": "HighMetalPlanet",
+      "dist": 273,
+      "sput": -1,
+      "size": 188,
+      "rings": 1
+    },
+    {
+      "Name": "A4",
+      "system": "Eta Serpentis",
+      "type": "AmmoniaPlanet",
+      "dist": 354,
+      "sput": -1,
+      "size": 188,
+      "rings": 1
+    },
+    {
+      "Name": "A5",
+      "system": "Eta Serpentis",
+      "type": "RockPlanet",
+      "dist": 484,
+      "sput": 1,
+      "size": 188,
+      "rings": -1
+    },
+    {
+      "Name": "A6",
+      "system": "Eta Serpentis",
+      "type": "IcePlanet",
+      "dist": 613,
+      "sput": -1,
+      "size": 188,
+      "rings": -1
+    },
+    {
+      "Name": "A7",
+      "system": "Eta Serpentis",
+      "type": "IcePlanet",
+      "dist": 1473,
+      "sput": 1,
+      "size": 188,
+      "rings": -1
+    },
+    {
+      "Name": "Belt a",
+      "system": "Eta Serpentis",
+      "type": "Asteroids",
+      "dist": 1600,
+      "sput": -1,
+      "size": 450,
+      "rings": -1,
+      "mater1": "Diamonds",
+      "mater2": "MethaneClathrate",
+      "mater3": "Uraninite"
+    },
+    {
+      "Name": "B0",
+      "system": "Eta Serpentis",
+      "type": "M-RedDwarf",
+      "dist": 1500,
+      "sput": -1,
+      "size": 188,
+      "rings": -1
+    },
+    {
+      "Name": "B1",
+      "system": "Eta Serpentis",
+      "type": "HighMetalPlanet",
+      "dist": 39,
+      "sput": -1,
+      "size": 188,
+      "rings": -1
+    },
+    {
+      "Name": "B2",
+      "system": "Eta Serpentis",
+      "type": "WaterWorld",
+      "dist": 59,
+      "sput": 2,
+      "size": 188,
+      "rings": 1
+    },
+
+    {
+      "Name": "A1",
+      "system": "LTT 7448",
+      "type": "HeliumRichGasGiant",
+      "dist": 320,
+      "sput": 5,
+      "size": 188,
+      "rings": 3
+    },
+    {
+      "Name": "A2",
+      "system": "LTT 7448",
+      "type": "RockPlanet",
+      "dist": 420,
+      "sput": 0,
+      "size": 188,
+      "rings": -1
+    },
+
+
+
+    {
+      "Name": "A1",
+      "system": "V1285 Aquilae",
+      "type": "HighMetalPlanet",
+      "dist": 80,
+      "sput": -1,
+      "size": 188,
+      "rings": -1
+    },
+    {
+      "Name": "A2",
+      "system": "V1285 Aquilae",
+      "type": "HighMetalPlanet",
+      "dist": 100,
+      "sput": -1,
+      "size": 188,
+      "rings": -1
+    },
+    {
+      "Name": "A3",
+      "system": "V1285 Aquilae",
+      "type": "WaterWorld",
+      "dist": 130,
+      "sput": 1,
+      "size": 188,
+      "rings": -1
+    },
+    {
+      "Name": "A4",
+      "system": "V1285 Aquilae",
+      "type": "RockPlanet",
+      "dist": 189,
+      "sput": -1,
+      "size": 188,
+      "rings": -1
+    },
+    {
+      "Name": "A5",
+      "system": "V1285 Aquilae",
+      "type": "RockPlanet",
+      "dist": 240,
+      "sput": -1,
+      "size": 188,
+      "rings": -1
+    },
+    {
+      "Name": "A6",
+      "system": "V1285 Aquilae",
+      "type": "IcePlanet",
+      "dist": 440,
+      "sput": -1,
+      "size": 188,
+      "rings": -1
+    },
+    {
+      "Name": "A7",
+      "system": "V1285 Aquilae",
+      "type": "GasGiantClassI",
+      "dist": 1589,
+      "sput": 1,
+      "size": 188,
+      "rings": -1
+    },
+
+
+    {
+      "Name": "A1",
+      "system": "V816 Herculis",
+      "type": "HighMetalPlanet",
+      "dist": 30,
+      "sput": -1,
+      "size": 188,
+      "rings": 1
+    },
+    {
+      "Name": "A2",
+      "system": "V816 Herculis",
+      "type": "GasGiantClassII",
+      "dist": 40,
+      "sput": 2,
+      "size": 188,
+      "rings": 3
+    },
+    {
+      "Name": "A3",
+      "system": "V816 Herculis",
+      "type": "RockPlanet",
+      "dist": 59,
+      "sput": -1,
+      "size": 188,
+      "rings": -1
+    },
+    {
+      "Name": "Belt a",
+      "system": "V816 Herculis",
+      "type": "Asteroids",
+      "dist": 200,
+      "sput": -1,
+      "size": 580,
+      "rings": -1
+    }
+
+    ,{
+      "Name": "Belt a",
+      "system": "LHS 3356",
+      "type": "Asteroids",
+      "dist": 150,
+      "sput": -1,
+      "size": 340,
+      "rings": -1
+    },
+    {
+      "Name": "A1",
+      "system": "LHS 3356",
+      "type": "GasGiantClassI",
+      "dist": 690,
+      "sput": 5,
+      "size": 188,
+      "rings": 2
+    },
+    {
+      "Name": "A2",
+      "system": "LHS 3356",
+      "type": "IcePlanet",
+      "dist": 980,
+      "sput": 1,
+      "size": 188,
+      "rings": -1
+    },
+
+
+
+    {
+      "Name": "A1",
+      "system": "Zeta Aquilae",
+      "type": "HighMetalPlanet",
+      "dist": 150,
+      "sput": 1,
+      "size": 191,
+      "rings": -1
+    },
+    {
+      "Name": "A2",
+      "system": "Zeta Aquilae",
+      "type": "HighMetalPlanet",
+      "dist": 250,
+      "sput": -1,
+      "size": 191,
+      "rings": -1
+    },
+    {
+      "Name": "A3",
+      "system": "Zeta Aquilae",
+      "type": "HighMetalPlanet",
+      "dist": 280,
+      "sput": 1,
+      "size": 191,
+      "rings": 1
+    },
+    {
+      "Name": "A4",
+      "system": "Zeta Aquilae",
+      "type": "GasGiantClassIII",
+      "dist": 350,
+      "sput": 2,
+      "size": 191,
+      "rings": 2
+    },
+
+
+
+
+
+    {
+      "Name": "Belt a",
+      "system": "Wolf 851",
+      "type": "Asteroids",
+      "dist": 100,
+      "sput": -1,
+      "size": 120,
+      "rings": -1,
+      "mater1": "Coltan"
+    },
+    {
+      "Name": "A1",
+      "system": "Wolf 851",
+      "type": "HighMetalPlanet",
+      "dist": 320,
+      "sput": 1,
+      "size": 191,
+      "rings": 1
+    },
+    {
+      "Name": "A2",
+      "system": "Wolf 851",
+      "type": "RockPlanet",
+      "dist": 952,
+      "sput": 2,
+      "size": 191,
+      "rings": -1
+    },
+    {
+      "Name": "A3",
+      "system": "Wolf 851",
+      "type": "IcePlanet",
+      "dist": 4940,
+      "sput": -1,
+      "size": 191,
+      "rings": -1
+    },
+    {
+      "Name": "Belt b",
+      "system": "Wolf 851",
+      "type": "Asteroids",
+      "dist": 5000,
+      "sput": -1,
+      "size": 300,
+      "rings": -1
+    },
+
+
+
+
+
+
+
+
+
+
+
+    {
+      "Name": "A1",
+      "system": "V1581 Cygni",
+      "type": "RockPlanet",
+      "dist": 50,
+      "sput": -1,
+      "size": 191,
+      "rings": -1
+    },
+    {
+      "Name": "A2",
+      "system": "V1581 Cygni",
+      "type": "WaterWorld",
+      "dist": 90,
+      "sput": -1,
+      "size": 191,
+      "rings": -1
+    },
+    {
+      "Name": "A3",
+      "system": "V1581 Cygni",
+      "type": "RockPlanet",
+      "dist": 130,
+      "sput": -1,
+      "size": 191,
+      "rings": -1
+    },
+    {
+      "Name": "A4",
+      "system": "V1581 Cygni",
+      "type": "RockPlanet",
+      "dist": 170,
+      "sput": -1,
+      "size": 191,
+      "rings": -1
+    },
+
+
+
+
+    {
+      "Name": "A1",
+      "system": "LHS 223",
+      "type": "HighMetalPlanet",
+      "dist": 40,
+      "sput": 2,
+      "size": 191,
+      "rings": 2
+    },
+    {
+      "Name": "A2",
+      "system": "LHS 223",
+      "type": "RockPlanet",
+      "dist": 70,
+      "sput": 1,
+      "size": 191,
+      "rings": -1
+    },
+    {
+      "Name": "Belt a",
+      "system": "LHS 223",
+      "type": "Asteroids",
+      "dist": 100,
+      "sput": -1,
+      "size": 100,
+      "rings": -1
+    },
+    {
+      "Name": "A2",
+      "system": "LHS 223",
+      "type": "IcePlanet",
+      "dist": 230,
+      "sput": 1,
+      "size": 188,
+      "rings": -1
+    },
+
+
+
+
+
+    {
+      "Name": "A1",
+      "system": "Xur",
+      "type": "M-RedDwarf",
+      "dist": 1,
+      "sput": -1,
+      "size": 181,
+      "rings": -1
+    },
+    {
+      "Name": "A2",
+      "system": "Xur",
+      "type": "RockPlanet",
+      "dist": 70,
+      "sput": 1,
+      "size": 191,
+      "rings": -1
+    },
+    {
+      "Name": "Belt a",
+      "system": "Xur",
+      "type": "Asteroids",
+      "dist": 90,
+      "sput": -1,
+      "size": 90,
+      "rings": -1
+    },
+    {
+      "Name": "A3",
+      "system": "Xur",
+      "type": "IcePlanet",
+      "dist": 220,
+      "sput": -1,
+      "size": 191,
+      "rings": 3
+    },
+
+
+
+    {
+      "Name": "A1",
+      "system": "Caeda",
+      "type": "L-BrownDwarf",
+      "dist": 2,
+      "sput": -1,
+      "size": 241,
+      "rings": -1
+    }
+    ,
+    {
+      "Name": "A2",
+      "system": "Caeda",
+      "type": "EarthLikePlanet",
+      "dist": 60,
+      "sput": 1,
+      "size": 191,
+      "rings": 0
+    }
+    ,
+    {
+      "Name": "Belt a",
+      "system": "Caeda",
+      "type": "Asteroids",
+      "dist": 90,
+      "sput": -1,
+      "size": 130,
+      "rings": -1
+    },
+    {
+      "Name": "A3",
+      "system": "Caeda",
+      "type": "GasGiantClassI",
+      "dist": 520,
+      "sput": 2,
+      "size": 12700,
+      "rings": 3
+    }
+  ,
+    {
+      "Name": "Belt b",
+      "system": "Caeda",
+      "type": "Asteroids",
+      "dist": 610,
+      "sput": -1,
+      "size": 200,
+      "rings": -1
+    },
+    {
+      "Name": "A4",
+      "system": "Caeda",
+      "type": "IcePlanet",
+      "dist": 830,
+      "sput": -1,
+      "size": 191,
+      "rings": -1
+    },
+
+
+
+
+    {
+      "Name": "A1",
+      "system": "Oku",
+      "type": "GasGiantClassIII",
+      "dist": 350,
+      "sput": 2,
+      "size": 191,
+      "rings": 2
+    },
+    {
+      "Name": "Belt a",
+      "system": "Oku",
+      "type": "Asteroids",
+      "dist": 450,
+      "sput": -1,
+      "size": 130,
+      "rings": -1
+    },
+    {
+      "Name": "A2",
+      "system": "Oku",
+      "type": "RockPlanet",
+      "dist": 610,
+      "sput": -1,
+      "size": 191,
+      "rings": -1
+    },
+    {
+      "Name": "A3",
+      "system": "Oku",
+      "type": "AmmoniaPlanet",
+      "dist": 780,
+      "sput": 1,
+      "size": 191,
+      "rings": -1
+    },
+    {
+      "Name": "A4",
+      "system": "Oku",
+      "type": "RockPlanet",
+      "dist": 1410,
+      "sput": -1,
+      "size": 191,
+      "rings": -1
+    },
+    {
+      "Name": "A5",
+      "system": "Oku",
+      "type": "IcePlanet",
+      "dist": 2750,
+      "sput": 1,
+      "size": 191,
+      "rings": -1
+    },
+
+
+
+
+
+
+
+    {
+      "Name": "A1",
+      "system": "Kreil",
+      "type": "HighMetalPlanet",
+      "dist": 100,
+      "sput": -1,
+      "size": 191,
+      "rings": -1
+    },
+    {
+      "Name": "Belt a",
+      "system": "Kreil",
+      "type": "Asteroids",
+      "dist": 200,
+      "sput": -1,
+      "size": 200,
+      "rings": -1
+    },
+    {
+      "Name": "A2",
+      "system": "Kreil",
+      "type": "HighMetalPlanet",
+      "dist": 460,
+      "sput": -1,
+      "size": 191,
+      "rings": -1
+    },
+    {
+      "Name": "A3",
+      "system": "Kreil",
+      "type": "RockPlanet",
+      "dist": 779,
+      "sput": -1,
+      "size": 191,
+      "rings": -1
+    },
+    {
+      "Name": "A4",
+      "system": "Kreil",
+      "type": "RockPlanet",
+      "dist": 1080,
+      "sput": -1,
+      "size": 191,
+      "rings": -1
+    },
+    {
+      "Name": "A5",
+      "system": "Kreil",
+      "type": "IcePlanet",
+      "dist": 1360,
+      "sput": -1,
+      "size": 191,
+      "rings": -1
+    }
+    ,
+    {
+      "Name": "Belt b",
+      "system": "Kreil",
+      "type": "Asteroids",
+      "dist": 3200,
+      "sput": -1,
+      "size": 300,
+      "rings": -1
+    },
+    {
+      "Name": "A6",
+      "system": "Kreil",
+      "type": "IcePlanet",
+      "dist": 3610,
+      "sput": -1,
+      "size": 191,
+      "rings": -1
+    },
+    {
+      "Name": "A7",
+      "system": "Kreil",
+      "type": "GasGiantwithAmmoniaLife",
+      "dist": 4070,
+      "sput": 1,
+      "size": 191,
+      "rings": 2
+    },
+
+
+
+    {
+      "Name": "A1",
+      "system": "Klinliod",
+      "type": "F-White",
+      "dist": 2,
+      "sput": -1,
+      "size": 231,
+      "rings": -1
+    },
+    {
+      "Name": "A2",
+      "system": "Klinliod",
+      "type": "M-RedDwarf",
+      "dist": 2,
+      "sput": -1,
+      "size": 181,
+      "rings": -1
+    },
+    {
+      "Name": "A3",
+      "system": "Klinliod",
+      "type": "RockPlanet",
+      "dist": 733,
+      "sput": -1,
+      "size": 191,
+      "rings": -1
+    },
+    {
+      "Name": "A4",
+      "system": "Klinliod",
+      "type": "IcePlanet",
+      "dist": 3286,
+      "sput": -1,
+      "size": 191,
+      "rings": -1
+    },
+
+
+
+
+    {
+      "Name": "A1",
+      "system": "Negen",
+      "type": "M-RedDwarf",
+      "dist": 1,
+      "sput": -1,
+      "size": 171,
+      "rings": -1
+    },
+    {
+      "Name": "A2",
+      "system": "Negen",
+      "type": "HighMetalPlanet",
+      "dist": 42,
+      "sput": 1,
+      "size": 191,
+      "rings": -1
+    },
+    {
+      "Name": "A3",
+      "system": "Negen",
+      "type": "MetalRichPlanet",
+      "dist": 93,
+      "sput": -1,
+      "size": 191,
+      "rings": -1
+    },
+    {
+      "Name": "A4",
+      "system": "Negen",
+      "type": "HighMetalPlanet",
+      "dist": 183,
+      "sput": 2,
+      "size": 191,
+      "rings": 1
+    },
+    {
+      "Name": "Belt a",
+      "system": "Negen",
+      "type": "Asteroids",
+      "dist": 230,
+      "sput": -1,
+      "size": 150,
+      "rings": -1
+    },
+    {
+      "Name": "A5",
+      "system": "Negen",
+      "type": "RockPlanet",
+      "dist": 585,
+      "sput": -1,
+      "size": 191,
+      "rings": -1
+    },
+    {
+      "Name": "A6",
+      "system": "Negen",
+      "type": "RockPlanet",
+      "dist": 855,
+      "sput": 1,
+      "size": 191,
+      "rings": -1
+    },
+    {
+      "Name": "Belt b",
+      "system": "Negen",
+      "type": "Asteroids",
+      "dist": 2500,
+      "sput": -1,
+      "size": 400,
+      "rings": -1
+    },
+    {
+      "Name": "A7",
+      "system": "Negen",
+      "type": "IcePlanet",
+      "dist": 3001,
+      "sput": -1,
+      "size": 191,
+      "rings": -1
+    },
+    {
+      "Name": "A8",
+      "system": "Negen",
+      "type": "GasGiantClassI",
+      "dist": 3322,
+      "sput": 3,
+      "size": 191,
+      "rings": 3
+    },
+
+
+
+
+    {
+      "Name": "A1",
+      "system": "Ibre",
+      "type": "L-BrownDwarf",
+      "dist": 1,
+      "sput": -1,
+      "size": 171,
+      "rings": -1
+    },
+    {
+      "Name": "A2",
+      "system": "Ibre",
+      "type": "RockPlanet",
+      "dist": 63,
+      "sput": -1,
+      "size": 191,
+      "rings": -1
+    }
+  ,
+    {
+      "Name": "Belt a",
+      "system": "Ibre",
+      "type": "Asteroids",
+      "dist": 100,
+      "sput": -1,
+      "size": 300,
+      "rings": -1
+    },
+    {
+      "Name": "A2",
+      "system": "Ibre",
+      "type": "GasGiantClassI",
+      "dist": 470,
+      "sput": 1,
+      "size": 191,
+      "rings": 2
+    },
+    {
+      "Name": "B0",
+      "system": "Ibre",
+      "type": "T-BrownDwarf",
+      "dist": 1000,
+      "sput": -1,
+      "size": 151,
+      "rings": -1
+    },
+    {
+      "Name": "B1",
+      "system": "Ibre",
+      "type": "IcePlanet",
+      "dist": 220,
+      "sput": -1,
+      "size": 191,
+      "rings": -1
+    },
+
+
+    {
+      "Name": "A1",
+      "system": "J3571",
+      "type": "HighMetalPlanet",
+      "dist": 150,
+      "sput": -1,
+      "size": 211,
+      "rings": -1
+    }
+  ,
+    {
+      "Name": "Belt a",
+      "system": "J3571",
+      "type": "Asteroids",
+      "dist": 200,
+      "sput": -1,
+      "size": 100,
+      "rings": -1
+    },
+    {
+      "Name": "A2",
+      "system": "J3571",
+      "type": "WaterGiant",
+      "dist": 350,
+      "sput": 2,
+      "size": 211,
+      "rings": 0
+    },
+    {
+      "Name": "A3",
+      "system": "J3571",
+      "type": "GasGiantwithWaterLife",
+      "dist": 520,
+      "sput": 1,
+      "size": 211,
+      "rings": 2
+    },
+    {
+      "Name": "A5",
+      "system": "J3571",
+      "type": "GasGiantClassI",
+      "dist": 900,
+      "sput": 2,
+      "size": 211,
+      "rings": 3
+    }
+  ,
+    {
+      "Name": "A5",
+      "system": "J3571",
+      "type": "IcePlanet",
+      "dist": 1200,
+      "sput": -1,
+      "size": 211,
+      "rings": -1
+    },
+    {
+      "Name": "Belt b",
+      "system": "J3571",
+      "type": "Asteroids",
+      "dist": 1300,
+      "sput": -1,
+      "size": 300,
+      "rings": -1
+    },
+
+
+
+
+    {
+      "Name": "A1",
+      "system": "Huxane",
+      "type": "MetalRichPlanet",
+      "dist": 100,
+      "sput": -1,
+      "size": 191,
+      "rings": -1
+    },
+    {
+      "Name": "A2",
+      "system": "Huxane",
+      "type": "RockPlanet",
+      "dist": 400,
+      "sput": -1,
+      "size": 191,
+      "rings": -1
+    },
+    {
+      "Name": "A3",
+      "system": "Huxane",
+      "type": "GasGiantwithWaterLife",
+      "dist": 560,
+      "sput": -1,
+      "size": 191,
+      "rings": -1
+    },
+    {
+      "Name": "A4",
+      "system": "Huxane",
+      "type": "IcePlanet",
+      "dist": 650,
+      "sput": -1,
+      "size": 191,
+      "rings": -1
+    },
+    {
+      "Name": "Belt a",
+      "system": "Huxane",
+      "type": "Asteroids",
+      "dist": 800,
+      "sput": -1,
+      "size": 250,
+      "rings": -1
+    },
+    {
+      "Name": "A5",
+      "system": "Huxane",
+      "type": "GasGiantwithAmmoniaLife",
+      "dist": 1220,
+      "sput": -1,
+      "size": 191,
+      "rings": -1
+    },
+
+
+
+    {
+      "Name": "Belt a",
+      "system": "HR 1163",
+      "type": "Asteroids",
+      "dist": 100,
+      "sput": -1,
+      "size": 700,
+      "rings": -1
+    },
+    {
+      "Name": "A1",
+      "system": "HR 1163",
+      "type": "HighMetalPlanet",
+      "dist": 1420,
+      "sput": 1,
+      "size": 191,
+      "rings": -1
+    },
+    {
+      "Name": "Belt b",
+      "system": "HR 1163",
+      "type": "Asteroids",
+      "dist": 1550,
+      "sput": -1,
+      "size": 250,
+      "rings": -1
+    },
+    {
+      "Name": "A2",
+      "system": "HR 1163",
+      "type": "MetalRichPlanet",
+      "dist": 1900,
+      "sput": 1,
+      "size": 191,
+      "rings": 2
+    },
+    {
+      "Name": "Belt c",
+      "system": "HR 1163",
+      "type": "Asteroids",
+      "dist": 2000,
+      "sput": -1,
+      "size": 1400,
+      "rings": -1
+    },
+    {
+      "Name": "A3",
+      "system": "HR 1163",
+      "type": "HighMetalPlanet",
+      "dist": 4130,
+      "sput": 1,
+      "size": 191,
+      "rings": 3
+    },
+    {
+      "Name": "B0",
+      "system": "HR 1163",
+      "type": "K-YellowOrange",
+      "dist": 4500,
+      "sput": -1,
+      "size": 211,
+      "rings": -1
+    },
+    {
+      "Name": "B3",
+      "system": "HR 1163",
+      "type": "RockPlanet",
+      "dist": 100,
+      "sput": -1,
+      "size": 191,
+      "rings": -1
+    },
+    {
+      "Name": "B4",
+      "system": "HR 1163",
+      "type": "HighMetalPlanet",
+      "dist": 239,
+      "sput": -1,
+      "size": 191,
+      "rings": -1
+    },
+    {
+      "Name": "B5",
+      "system": "HR 1163",
+      "type": "GasGiantwithAmmoniaLife",
+      "dist": 1439,
+      "sput": 1,
+      "size": 191,
+      "rings": 3
+    },
+    {
+      "Name": "B6",
+      "system": "HR 1163",
+      "type": "IcePlanet",
+      "dist": 2850,
+      "sput": 1,
+      "size": 191,
+      "rings": -1
+    },
+
+
+
+    {
+      "Name": "Belt a",
+      "system": "Holu 42",
+      "type": "Asteroids",
+      "dist": 400,
+      "sput": -1,
+      "size": 1400,
+      "rings": -1
+    },
+    {
+      "Name": "A1",
+      "system": "Holu 42",
+      "type": "MetalRichPlanet",
+      "dist": 3000,
+      "sput": -1,
+      "size": 191,
+      "rings": -1
+    },
+    {
+      "Name": "A2",
+      "system": "Holu 42",
+      "type": "GasGiantClassV",
+      "dist": 4200,
+      "sput": 1,
+      "size": 191,
+      "rings": 3
+    },
+
+
+    {
+      "Name": "Belt a",
+      "system": "Rakdos",
+      "type": "Asteroids",
+      "dist": 100,
+      "sput": -1,
+      "size": 220,
+      "rings": -1
+    },
+    {
+      "Name": "A1",
+      "system": "Rakdos",
+      "type": "HighMetalPlanet",
+      "dist": 419,
+      "sput": -1,
+      "size": 191,
+      "rings": -1
+    },
+    {
+      "Name": "A2",
+      "system": "Rakdos",
+      "type": "RockPlanet",
+      "dist": 480,
+      "sput": 1,
+      "size": 191,
+      "rings": -1
+    },
+    {
+      "Name": "Belt b",
+      "system": "Rakdos",
+      "type": "Asteroids",
+      "dist": 2000,
+      "sput": -1,
+      "size": 1200,
+      "rings": -1
+    },
+    {
+      "Name": "A3",
+      "system": "Rakdos",
+      "type": "IcePlanet",
+      "dist": 3500,
+      "sput": 1,
+      "size": 191,
+      "rings": 2
+    },
+
+
+    {
+      "Name": "Belt a",
+      "system": "Isar",
+      "type": "Asteroids",
+      "dist": 300,
+      "sput": -1,
+      "size": 500,
+      "rings": -1
+    },
+    {
+      "Name": "A1",
+      "system": "Isar",
+      "type": "HighMetalPlanet",
+      "dist": 919,
+      "sput": 2,
+      "size": 191,
+      "rings": 1
+    },
+    {
+      "Name": "A2",
+      "system": "Isar",
+      "type": "RockPlanet",
+      "dist": 1699,
+      "sput": -1,
+      "size": 191,
+      "rings": -1
+    },
+    {
+      "Name": "A3",
+      "system": "Isar",
+      "type": "HighMetalPlanet",
+      "dist": 2940,
+      "sput": 1,
+      "size": 191,
+      "rings": -1
+    },
+    {
+      "Name": "A4",
+      "system": "Isar",
+      "type": "GasGiantwithWaterLife",
+      "dist": 4000,
+      "sput": 1,
+      "size": 191,
+      "rings": 2
+    },
+    {
+      "Name": "Belt b",
+      "system": "Isar",
+      "type": "Asteroids",
+      "dist": 4200,
+      "sput": -1,
+      "size": 400,
+      "rings": -1
+    },
+    {
+      "Name": "A5",
+      "system": "Isar",
+      "type": "IcePlanet",
+      "dist": 4990,
+      "sput": -1,
+      "size": 191,
+      "rings": -1
+    },
+
+
+
+
+
+
+
+
+    {
+      "Name": "Tetra",
+      "system": "Caph",
+      "type": "HighMetalPlanet",
+      "dist": 1200,
+      "sput": 3,
+      "size": 202,
+      "rings": 3
+    },
+    {
+      "Name": "A2",
+      "system": "Caph",
+      "type": "RockPlanet",
+      "dist": 2170,
+      "sput": -1,
+      "size": 202,
+      "rings": -1
+    },
+    {
+      "Name": "A3",
+      "system": "Caph",
+      "type": "IcePlanet",
+      "dist": 2330,
+      "sput": -1,
+      "size": 202,
+      "rings": -1
+    },
+
+
+
+
+
+
+
+
+
+
+
+    {
+      "Name": "A1",
+      "system": "Groombridge 34",
+      "type": "MetalRichPlanet",
+      "dist": 59,
+      "sput": 2,
+      "size": 202,
+      "rings": -1
+    },
+    {
+      "Name": "A2",
+      "system": "Groombridge 34",
+      "type": "HighMetalPlanet",
+      "dist": 79,
+      "sput": -1,
+      "size": 202,
+      "rings": 2
+    },
+    {
+      "Name": "A3",
+      "system": "Groombridge 34",
+      "type": "HighMetalPlanet",
+      "dist": 95,
+      "sput": 1,
+      "size": 202,
+      "rings": -1
+    },
+    {
+      "Name": "A4",
+      "system": "Groombridge 34",
+      "type": "IcePlanet",
+      "dist": 849,
+      "sput": -1,
+      "size": 202,
+      "rings": -1
+    },
+    {
+      "Name": "",
+      "system": "Groombridge 34",
+      "type": "Asteroids",
+      "dist": 960,
+      "sput": -1,
+      "size": 740,
+      "rings": -1
+    },
+    {
+      "Name": "",
+      "system": "Groombridge 34",
+      "type": "Asteroids",
+      "dist": 1820,
+      "sput": -1,
+      "size": 550,
+      "rings": -1
+    },
+    {
+      "Name": "B0 Groombridge 34",
+      "system": "Groombridge 34",
+      "type": "M-RedDwarf",
+      "dist": 6500,
+      "sput": -1,
+      "size": 182,
+      "rings": -1
+    },
+    {
+      "Name": "B1",
+      "system": "Groombridge 34",
+      "type": "IcePlanet",
+      "dist": 2690,
+      "sput": 1,
+      "size": 202,
+      "rings": -1
+    },
+    {
+      "Name": "B2",
+      "system": "Groombridge 34",
+      "type": "IcePlanet",
+      "dist": 4390,
+      "sput": -1,
+      "size": 202,
+      "rings": -1
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    {
+      "Name": "A1",
+      "system": "Ross 318",
+      "type": "RockPlanet",
+      "dist": 100,
+      "sput": -1,
+      "size": 202,
+      "rings": -1
+    },
+    {
+      "Name": "A2",
+      "system": "Ross 318",
+      "type": "GasGiantClassI",
+      "dist": 540,
+      "sput": 1,
+      "size": 202,
+      "rings": 3
+    },
+    {
+      "Name": "",
+      "system": "Ross 318",
+      "type": "Asteroids",
+      "dist": 1090,
+      "sput": -1,
+      "size": 200,
+      "rings": -1
+    },
+    {
+      "Name": "",
+      "system": "Ross 318",
+      "type": "Asteroids",
+      "dist": 1740,
+      "sput": -1,
+      "size": 580,
+      "rings": -1
+
+    },
+    {
+      "Name": "A6",
+      "system": "Ross 318",
+      "type": "IcePlanet",
+      "dist": 2300,
+      "sput": -1,
+      "size": 202,
+      "rings": -1
+    },
+    {
+      "Name": "A7",
+      "system": "Ross 318",
+      "type": "IcePlanet",
+      "dist": 2670,
+      "sput": -1,
+      "size": 202,
+      "rings": -1
+    },
+    {
+      "Name": "A8",
+      "system": "Ross 318",
+      "type": "IcePlanet",
+      "dist": 3650,
+      "sput": -1,
+      "size": 202,
+      "rings": -1
+    },
+    {
+      "Name": "A9",
+      "system": "Ross 318",
+      "type": "IcePlanet",
+      "dist": 3809,
+      "sput": -1,
+      "size": 202,
+      "rings": -1
+    },
+    {
+      "Name": "B0 Ross 318",
+      "system": "Ross 318",
+      "type": "M-RedDwarf",
+      "dist": 4300,
+      "sput": -1,
+      "size": 182,
+      "rings": -1
+    },
+    {
+      "Name": "B1",
+      "system": "Ross 318",
+      "type": "HighMetalPlanet",
+      "dist": 70,
+      "sput": -1,
+      "size": 202,
+      "rings": -1
+    },
+    {
+      "Name": "B2",
+      "system": "Ross 318",
+      "type": "WaterWorld",
+      "dist": 80,
+      "sput": 1,
+      "size": 202,
+      "rings": 3
+    },
+    {
+      "Name": "B3",
+      "system": "Ross 318",
+      "type": "GasGiantClassI",
+      "dist": 299,
+      "sput": 2,
+      "size": 202,
+      "rings": -1
+    },
+
+
+
+
+
+
+    {
+      "Name": "A1",
+      "system": "LHS 1827",
+      "type": "HighMetalPlanet",
+      "dist": 80,
+      "sput": -1,
+      "size": 202,
+      "rings": -1
+    },
+    {
+      "Name": "A2",
+      "system": "LHS 1827",
+      "type": "HighMetalPlanet",
+      "dist": 110,
+      "sput": 1,
+      "size": 202,
+      "rings": -1
+    },
+    {
+      "Name": "A3",
+      "system": "LHS 1827",
+      "type": "GasGiantwithWaterLife",
+      "dist": 280,
+      "sput": 1,
+      "size": 202,
+      "rings": 3
+    },
+    {
+      "Name": "A4",
+      "system": "LHS 1827",
+      "type": "GasGiantClassI",
+      "dist": 370,
+      "sput": 2,
+      "size": 202,
+      "rings": -1
+    },
+    {
+      "Name": "A5",
+      "system": "LHS 1827",
+      "type": "GasGiantClassI",
+      "dist": 1220,
+      "sput": 1,
+      "size": 202,
+      "rings": 2
+    },
+    {
+      "Name": "",
+      "system": "LHS 1827",
+      "type": "Asteroids",
+      "dist": 1720,
+      "sput": -1,
+      "size": 1260,
+      "rings": -1
+    },
+
+
+
+
+
+
+
+
+    {
+      "Name": "A1",
+      "system": "V1201 Orionis",
+      "type": "HighMetalPlanet",
+      "dist": 46,
+      "sput": 1,
+      "size": 202,
+      "rings": -1
+    },
+    {
+      "Name": "A2",
+      "system": "V1201 Orionis",
+      "type": "WaterGiant",
+      "dist": 85,
+      "sput": -1,
+      "size": 202,
+      "rings": 3
+    },
+{
+  "Name": "A3",
+  "system": "V1201 Orionis",
+  "type": "RockPlanet",
+  "dist": 150,
+  "sput": -1,
+  "size": 202,
+  "rings": -1
+},
+    {
+      "Name": "A4",
+      "system": "V1201 Orionis",
+      "type": "IcePlanet",
+      "dist": 1331,
+      "sput": 2,
+      "size": 202,
+      "rings": -1
+    },
+    {
+      "Name": "A5",
+      "system": "V1201 Orionis",
+      "type": "IcePlanet",
+      "dist": 2487,
+      "sput": 1,
+      "size": 202,
+      "rings": -1
+    },
+    {
+      "Name": "",
+      "system": "V1201 Orionis",
+      "type": "Asteroids",
+      "dist": 3235,
+      "sput": -1,
+      "size": 1830,
+      "rings": -1
+    },
+
+
+
+
+
+
+
+
+
+    {
+      "Name": "",
+      "system": "Guang",
+      "type": "Asteroids",
+      "dist": 780,
+      "sput": -1,
+      "size": 700,
+      "rings": -1
+    },
+    {
+      "Name": "",
+      "system": "Guang",
+      "type": "Asteroids",
+      "dist": 2870,
+      "sput": -1,
+      "size": 690,
+      "rings": -1
+    },
+    {
+      "Name": "",
+      "system": "Guang",
+      "type": "Asteroids",
+      "dist": 3020,
+      "sput": -1,
+      "size": 540,
+      "rings": -1
+    },
+    {
+      "Name": "",
+      "system": "Guang",
+      "type": "Asteroids",
+      "dist": 3820,
+      "sput": -1,
+      "size": 1110,
+      "rings": -1
+    },
+    {
+      "Name": "B0",
+      "system": "Guang",
+      "type": "HerbigAeStar",
+      "dist": 6800,
+      "sput": 0,
+      "size": 202,
+      "rings": -1
+    },
+    {
+      "Name": "B1 ",
+      "system": "Guang",
+      "type": "HighMetalPlanet",
+      "dist": 660,
+      "sput": 1,
+      "size": 202,
+      "rings": -1
+    },
+    {
+      "Name": "B2 ",
+      "system": "Guang",
+      "type": "HighMetalPlanet",
+      "dist": 969,
+      "sput": 2,
+      "size": 202,
+      "rings": -1
+    },
+    {
+      "Name": "B3 ",
+      "system": "Guang",
+      "type": "HighMetalPlanet",
+      "dist": 1060,
+      "sput": -1,
+      "size": 202,
+      "rings": -1
+    },
+    {
+      "Name": "B4 ",
+      "system": "Guang",
+      "type": "MetalRichPlanet",
+      "dist": 1170,
+      "sput": -1,
+      "size": 202,
+      "rings": -1
+    },
+    {
+      "Name": "B5 ",
+      "system": "Guang",
+      "type": "MetalRichPlanet",
+      "dist": 1230,
+      "sput": 3,
+      "size": 202,
+      "rings": -1
+    },
+    {
+      "Name": "B6 ",
+      "system": "Guang",
+      "type": "GasGiantClassII",
+      "dist": 1939,
+      "sput": 1,
+      "size": 202,
+      "rings": 3
+    },
+    {
+      "Name": "B7 ",
+      "system": "Guang",
+      "type": "IcePlanet",
+      "dist": 2500,
+      "sput": 1,
+      "size": 202,
+      "rings": -1
+    },
+    {
+      "Name": "B8 ",
+      "system": "Guang",
+      "type": "RockPlanet",
+      "dist": 3530,
+      "sput": -1,
+      "size": 202,
+      "rings": -1
+    },
+    {
+      "Name": "B9 ",
+      "system": "Guang",
+      "type": "GasGiantClassI",
+      "dist": 4690,
+      "sput": -1,
+      "size": 202,
+      "rings": 2
+    },
+
+
+
+
+    {
+      "Name": "A1",
+      "system": "Lone Star",
+      "type": "MetalRichPlanet",
+      "dist": 700,
+      "sput": 3,
+      "size": 191,
+      "rings": -1
+    },
+    {
+      "Name": "",
+      "system": "Lone Star",
+      "type": "Asteroids",
+      "dist": 850,
+      "sput": -1,
+      "size": 900,
+      "rings": -1
+    },
+    {
+      "Name": "A2",
+      "system": "Lone Star",
+      "type": "GasGiantClassV",
+      "dist": 2500,
+      "sput": 1,
+      "size": 202,
+      "rings": -1
+    },
+
+
+
+
+
+
+
+    {
+      "Name": "A1",
+      "system": "Pyrenanis",
+      "type": "HighMetalPlanet",
+      "dist": 180,
+      "sput": -1,
+      "size": 202,
+      "rings": -1
+    },
+    {
+      "Name": "A2",
+      "system": "Pyrenanis",
+      "type": "HighMetalPlanet",
+      "dist": 230,
+      "sput": -1,
+      "size": 202,
+      "rings": -1
+    },
+    {
+      "Name": "A3",
+      "system": "Pyrenanis",
+      "type": "RockPlanet",
+      "dist": 340,
+      "sput": -1,
+      "size": 202,
+      "rings": -1
+    },
+    {
+      "Name": "A4",
+      "system": "Pyrenanis",
+      "type": "WaterWorld",
+      "dist": 470,
+      "sput": 2,
+      "size": 202,
+      "rings": -1
+    },
+    {
+      "Name": "A5",
+      "system": "Pyrenanis",
+      "type": "RockPlanet",
+      "dist": 1190,
+      "sput": 1,
+      "size": 202,
+      "rings": -1
+    },
+    {
+      "Name": "A6",
+      "system": "Pyrenanis",
+      "type": "IcePlanet",
+      "dist": 2930,
+      "sput": -1,
+      "size": 202,
+      "rings": -1
+    },
+    {
+      "Name": "A7",
+      "system": "Pyrenanis",
+      "type": "IcePlanet",
+      "dist": 4670,
+      "sput": -1,
+      "size": 202,
+      "rings": -1
+    },
+    {
+      "Name": "A1",
+      "system": "Lethya",
+      "type": "HighMetalPlanet",
+      "dist": 120,
+      "sput": 2,
+      "size": 202,
+      "rings": -1
+    }
+  ,
+    {
+      "Name": "",
+      "system": "Lethya",
+      "type": "Asteroids",
+      "dist": 300,
+      "sput": -1,
+      "size": 600,
+      "rings": -1
+    }
+  ,
+    {
+      "Name": "A2",
+      "system": "Lethya",
+      "type": "GasGiantClassI",
+      "dist": 1400,
+      "sput": 4,
+      "size": 202,
+      "rings": 3
+    },
+    {
+      "Name": "A3",
+      "system": "Lethya",
+      "type": "IcePlanet",
+      "dist": 1600,
+      "sput": -1,
+      "size": 202,
+      "rings": -1
+    },
+    {
+      "Name": "",
+      "system": "Lethya",
+      "type": "Asteroids",
+      "dist": 1750,
+      "sput": -1,
+      "size": 500,
+      "rings": -1
+    },
+
+
+
+
+
+
+    {
+      "Name": "A1",
+      "system": "Hyota",
+      "type": "HighMetalPlanet",
+      "dist": 490,
+      "sput": -1,
+      "size": 202,
+      "rings": 2
+    },
+    {
+      "Name": "A2",
+      "system": "Hyota",
+      "type": "HighMetalPlanet",
+      "dist": 750,
+      "sput": 2,
+      "size": 202,
+      "rings": -1
+    },
+    {
+      "Name": "A3",
+      "system": "Hyota",
+      "type": "WaterWorld",
+      "dist": 810,
+      "sput": 2,
+      "size": 202,
+      "rings": -1
+    },
+    {
+      "Name": "A4",
+      "system": "Hyota",
+      "type": "IcePlanet",
+      "dist": 2760,
+      "sput": -1,
+      "size": 202,
+      "rings": -1
+    },
+    {
+      "Name": "B0",
+      "system": "Hyota",
+      "type": "K-YellowOrange",
+      "dist": 6500,
+      "sput": -1,
+      "size": 222,
+      "rings": -1
+    },
+    {
+      "Name": "B1",
+      "system": "Hyota",
+      "type": "EarthLikePlanet",
+      "dist": 250,
+      "sput": 1,
+      "size": 191,
+      "rings": -1
+    },
+    {
+      "Name": "B2",
+      "system": "Hyota",
+      "type": "GasGiantClassII",
+      "dist": 280,
+      "sput": -1,
+      "size": 202,
+      "rings": 3
+    },
+    {
+      "Name": "B3",
+      "system": "Hyota",
+      "type": "RockPlanet",
+      "dist": 420,
+      "sput": -1,
+      "size": 202,
+      "rings": -1
+    },
+    {
+      "Name": "B4",
+      "system": "Hyota",
+      "type": "IcePlanet",
+      "dist": 2020,
+      "sput": -1,
+      "size": 202,
+      "rings": -1
+    },
+    {
+      "Name": "B5",
+      "system": "Hyota",
+      "type": "GasGiantClassI",
+      "dist": 4009,
+      "sput": -1,
+      "size": 202,
+      "rings": -1
+    },
+    {
+      "Name": "Source 1",
+      "system": "Sagittarius A*",
+      "type": "K-YellowOrange",
+      "dist": 0,
+      "sput": 0,
+      "size": 4800,
+      "rings": 0
+    },
+    {
+      "Name": "",
+      "system": "Sagittarius A*",
+      "type": "Asteroids",
+      "dist": 3550,
+      "sput": -1,
+      "size": 500,
+      "rings": -1
+    },
+
+    {
+      "Name": "Source 2",
+      "system": "Sagittarius A*",
+      "type": "B-BlueWhiteSupergiant",
+      "dist": 4200,
+      "sput": 0,
+      "size": 4800,
+      "rings": 0
+    },
+
+
+
+    {
+      "Name": "",
+      "system": "HIP 9009",
+      "type": "Asteroids",
+      "dist": 500,
+      "sput": -1,
+      "size": 500,
+      "rings": -1
+    },
+    {
+      "Name": "",
+      "system": "HIP 9009",
+      "type": "Asteroids",
+      "dist": 1200,
+      "sput": -1,
+      "size": 700,
+      "rings": -1
+    },
+    {
+      "Name": "A1",
+      "system": "HIP 9009",
+      "type": "GasGiantClassV",
+      "dist": 3500,
+      "sput": 2,
+      "size": 202,
+      "rings": 3
+    },
+    {
+      "Name": "A2",
+      "system": "HIP 9009",
+      "type": "GasGiantClassIV",
+      "dist": 4700,
+      "sput": 4,
+      "size": 202,
+      "rings": 3
+    },
+    {
+      "Name": "A3",
+      "system": "HIP 9009",
+      "type": "GasGiantClassIV",
+      "dist": 5200,
+      "sput": 2,
+      "size": 202,
+      "rings": 2
+    },
+    {
+      "Name": "B0 HIP 9009",
+      "system": "HIP 9009",
+      "type": "F-White",
+      "dist": 3500,
+      "sput": -1,
+      "size": 544,
+      "rings": -1
+    },
+    {
+      "Name": "B1 HIP 9009",
+      "system": "HIP 9009",
+      "type": "K-YellowOrange",
+      "dist": 3520,
+      "sput": -1,
+      "size": 544,
+      "rings": -1
+    },
+    {
+      "Name": "B2",
+      "system": "HIP 9009",
+      "type": "HighMetalPlanet",
+      "dist": 643,
+      "sput": 2,
+      "size": 349,
+      "rings": -1
+    },
+    {
+      "Name": "B3",
+      "system": "HIP 9009",
+      "type": "RockPlanet",
+      "dist": 842,
+      "sput": -1,
+      "size": 349,
+      "rings": -1
+    },
+    {
+      "Name": "B4",
+      "system": "HIP 9009",
+      "type": "IcePlanet",
+      "dist": 2467,
+      "sput": 2,
+      "size": 376,
+      "rings": -1
+    },
+
+    {
+      "Name": "",
+      "system": "Object 42",
+      "type": "Asteroids",
+      "dist": 300,
+      "sput": -1,
+      "size": 250,
+      "rings": -1
+    },
+    {
+      "Name": "A1",
+      "system": "Object 42",
+      "type": "GasGiantClassI",
+      "dist": 600,
+      "sput": 3,
+      "size": 202,
+      "rings": 2
+    },
+    {
+      "Name": "A1",
+      "system": "Object 42",
+      "type": "IcePlanet",
+      "dist": 920,
+      "sput": 1,
+      "size": 376,
+      "rings": 0
+    },
+    {
+      "Name": "B0",
+      "system": "Object 42",
+      "type": "RadioPulsar",
+      "dist": 1500,
+      "sput": 0,
+      "size": 376,
+      "rings": 2
+    },
+
+
+
+
+
+
+
+    {
+      "Name": "A1 ",
+      "system": "Ross 302",
+      "type": "RockPlanet",
+      "dist": 70,
+      "sput": -1,
+      "size": 376,
+      "rings": -1
+    },
+    {
+      "Name": "A2 ",
+      "system": "Ross 302",
+      "type": "IcePlanet",
+      "dist": 899,
+      "sput": -1,
+      "size": 376,
+      "rings": -1
+    },
+    {
+      "Name": "A3 ",
+      "system": "Ross 302",
+      "type": "IcePlanet",
+      "dist": 1890,
+      "sput": -1,
+      "size": 349,
+      "rings": -1
+    },
+    {
+      "Name": "",
+      "system": "Ross 302",
+      "type": "Asteroids",
+      "dist": 2030,
+      "sput": -1,
+      "size": 270,
+      "rings": -1
+    },
+    {
+      "Name": "A5",
+      "system": "Ross 302",
+      "type": "IcePlanet",
+      "dist": 2400,
+      "sput": -1,
+      "size": 322,
+      "rings": -1
+    },
+
+    {
+      "Name": "B0",
+      "system": "Ross 302",
+      "type": "L-BrownDwarf",
+      "dist": 3500,
+      "sput": -1,
+      "size": 222,
+      "rings": -1
+    },
+
+    {
+      "Name": "B1",
+      "system": "Ross 302",
+      "type": "IcePlanet",
+      "dist": 900,
+      "sput": 1,
+      "size": 322,
+      "rings": -1
+    },
+
+
+
+
+    {
+      "Name": "A1",
+      "system": "GD 69",
+      "type": "HighMetalPlanet",
+      "dist": 70,
+      "sput": -1,
+      "size": 269,
+      "rings": -1
+    },
+    {
+      "Name": "A2",
+      "system": "GD 69",
+      "type": "HighMetalPlanet",
+      "dist": 100,
+      "sput": 1,
+      "size": 376,
+      "rings": 2
+    },
+    {
+      "Name": "",
+      "system": "GD 69",
+      "type": "Asteroids",
+      "dist": 500,
+      "sput": -1,
+      "size": 870,
+      "rings": -1
+    },
+
+
+
+
+
+    {
+      "Name": "A1",
+      "system": "71 Orionis",
+      "type": "HighMetalPlanet",
+      "dist": 140,
+      "sput": -1,
+      "size": 322,
+      "rings": -1
+    },
+    {
+      "Name": "A2",
+      "system": "71 Orionis",
+      "type": "HighMetalPlanet",
+      "dist": 710,
+      "sput": -1,
+      "size": 296,
+      "rings": -1
+    },
+    {
+      "Name": "A3",
+      "system": "71 Orionis",
+      "type": "IcePlanet",
+      "dist": 1600,
+      "sput": 2,
+      "size": 269,
+      "rings": 1
+    },
+    {
+      "Name": "",
+      "system": "71 Orionis",
+      "type": "Asteroids",
+      "dist": 1760,
+      "sput": -1,
+      "size": 570,
+      "rings": -1
+    },
+    {
+      "Name": "B0 71 Orionis",
+      "system": "71 Orionis",
+      "type": "M-RedDwarf",
+      "dist": 2696,
+      "sput": -1,
+      "size": 437,
+      "rings": -1
+    },
+
+    {
+      "Name": "A1",
+      "system": "Voxx",
+      "type": "HighMetalPlanet",
+      "dist": 150,
+      "sput": -1,
+      "size": 322,
+      "rings": -1
+    },
+    {
+      "Name": "A2",
+      "system": "Voxx",
+      "type": "HighMetalPlanet",
+      "dist": 560,
+      "sput": 1,
+      "size": 296,
+      "rings": 1
+    },
+    {
+      "Name": "",
+      "system": "Voxx",
+      "type": "Asteroids",
+      "dist": 900,
+      "sput": -1,
+      "size": 570,
+      "rings": -1
+    },
+
+
+
+
+    {
+      "Name": "A1 31 ABY",
+      "system": "31 ABY",
+      "type": "L-BrownDwarf",
+      "dist": 4,
+      "sput": -1,
+      "size": 437,
+      "rings": -1
+    },
+    {
+      "Name": "A2 ",
+      "system": "31 ABY",
+      "type": "HighMetalPlanet",
+      "dist": 183,
+      "sput": -1,
+      "size": 269,
+      "rings": -1
+    },
+    {
+      "Name": "A3 ",
+      "system": "31 ABY",
+      "type": "RockPlanet",
+      "dist": 357,
+      "sput": 2,
+      "size": 322,
+      "rings": -1
+    },
+    {
+      "Name": "A4 ",
+      "system": "31 ABY",
+      "type": "WaterWorld",
+      "dist": 959,
+      "sput": 1,
+      "size": 349,
+      "rings": -1
+    },
+    {
+      "Name": "",
+      "system": "31 ABY",
+      "type": "Asteroids",
+      "dist": 1087,
+      "sput": -1,
+      "size": 290,
+      "rings": -1
+    },
+    {
+      "Name": "",
+      "system": "31 ABY",
+      "type": "Asteroids",
+      "dist": 2285,
+      "sput": -1,
+      "size": 390,
+      "rings": -1
+    },
+    {
+      "Name": "A7",
+      "system": "31 ABY",
+      "type": "IcePlanet",
+      "dist": 2704,
+      "sput": -1,
+      "size": 296,
+      "rings": -1
+    },
+    {
+      "Name": "A8",
+      "system": "31 ABY",
+      "type": "RockPlanet",
+      "dist": 2815,
+      "sput": -1,
+      "size": 322,
+      "rings": -1
+    },
+    {
+      "Name": "A9",
+      "system": "31 ABY",
+      "type": "IcePlanet",
+      "dist": 3777,
+      "sput": -1,
+      "size": 349,
+      "rings": -1
+    },
+    {
+      "Name": "B0 31 ABY",
+      "system": "31 ABY",
+      "type": "G-WhiteYellow",
+      "dist": 2500,
+      "sput": -1,
+      "size": 544,
+      "rings": -1
+    },
+    {
+      "Name": "B1",
+      "system": "31 ABY",
+      "type": "HighMetalPlanet",
+      "dist": 170,
+      "sput": -1,
+      "size": 349,
+      "rings": -1
+    },
+    {
+      "Name": "B2",
+      "system": "31 ABY",
+      "type": "HighMetalPlanet",
+      "dist": 359,
+      "sput": -1,
+      "size": 349,
+      "rings": -1
+    },
+    {
+      "Name": "B3",
+      "system": "31 ABY",
+      "type": "RockPlanet",
+      "dist": 560,
+      "sput": -1,
+      "size": 349,
+      "rings": -1
+    },
+
+
+
+
+    {
+      "Name": "A1 27 ABY",
+      "system": "27 ABY",
+      "type": "M-RedDwarf",
+      "dist": 5,
+      "sput": -1,
+      "size": 437,
+      "rings": -1
+    },
+    {
+      "Name": "A2",
+      "system": "27 ABY",
+      "type": "HighMetalPlanet",
+      "dist": 200,
+      "sput": -1,
+      "size": 349,
+      "rings": 1
+    },
+    {
+      "Name": "",
+      "system": "27 ABY",
+      "type": "Asteroids",
+      "dist": 400,
+      "sput": -1,
+      "size": 350,
+      "rings": -1
+    },
+    {
+      "Name": "A3",
+      "system": "27 ABY",
+      "type": "IcePlanet",
+      "dist": 1200,
+      "sput": 1,
+      "size": 349,
+      "rings": -1
+    }
+  ,
+    {
+      "Name": "",
+      "system": "93 Ceti",
+      "type": "Asteroids",
+      "dist": 400,
+      "sput": -1,
+      "size": 350,
+      "rings": -1
+    }
+  ,
+    {
+      "Name": "Kafti",
+      "system": "93 Ceti",
+      "type": "HighMetalPlanet",
+      "dist": 1200,
+      "sput": 2,
+      "size": 349,
+      "rings": 1
+    }
+  ,
+    {
+      "Name": "",
+      "system": "93 Ceti",
+      "type": "Asteroids",
+      "dist": 1320,
+      "sput": -1,
+      "size": 3550,
+      "rings": -1
+    }
+  ,
+
+
+
+
+
+
+    {
+      "Name": "",
+      "system": "Breya",
+      "type": "Asteroids",
+      "dist": 1340,
+      "sput": -1,
+      "size": 260,
+      "rings": -1
+    },
+    {
+      "Name": "PI-9",
+      "system": "Breya",
+      "type": "MetalRichPlanet",
+      "dist": 1700,
+      "sput": 1,
+      "size": 349,
+      "rings": 1
+    },
+    {
+      "Name": "PI-X",
+      "system": "Breya",
+      "type": "HighMetalPlanet",
+      "dist": 1900,
+      "sput": 3,
+      "size": 349,
+      "rings": 2
+    },
+
+
+
+
+
+
+    {
+      "Name": "Terminus",
+      "system": "Terminus",
+      "type": "EarthLikePlanet",
+      "dist": 120,
+      "sput": -1,
+      "size": 350,
+      "rings": -1
+    },
+    {
+      "Name": "",
+      "system": "Terminus",
+      "type": "Asteroids",
+      "dist": 250,
+      "sput": -1,
+      "size": 400,
+      "rings": -1
+    },
+
+
+
+
+
+
+
+
+
+
+    {
+      "Name": "A1 Alpha Circini",
+      "system": "Alpha Circini",
+      "type": "M-RedDwarf",
+      "dist": 4,
+      "sput": -1,
+      "size": 448,
+      "rings": -1
+    },
+    {
+      "Name": "Viva",
+      "system": "Alpha Circini",
+      "type": "HighMetalPlanet",
+      "dist": 1199,
+      "sput": 1,
+      "size": 378,
+      "rings": 1
+    },
+    {
+      "Name": "Termus",
+      "system": "Alpha Circini",
+      "type": "RockPlanet",
+      "dist": 1450,
+      "sput": 2,
+      "size": 378,
+      "rings": 2
+    },
+    {
+      "Name": "Klou",
+      "system": "Alpha Circini",
+      "type": "RockPlanet",
+      "dist": 1520,
+      "sput": 3,
+      "size": 325,
+      "rings": 3
+    },
+    {
+      "Name": "",
+      "system": "Alpha Circini",
+      "type": "Asteroids",
+      "dist": 1811,
+      "sput": -1,
+      "size": 450,
+      "rings": -1
+    },
+    {
+      "Name": "A6 ",
+      "system": "Alpha Circini",
+      "type": "RockPlanet",
+      "dist": 2866,
+      "sput": -1,
+      "size": 272,
+      "rings": -1
+    },
+    {
+      "Name": "",
+      "system": "Alpha Circini",
+      "type": "Asteroids",
+      "dist": 3646,
+      "sput": -1,
+      "size": 1090,
+      "rings": -1
+    },
+    {
+      "Name": "A8 ",
+      "system": "Alpha Circini",
+      "type": "IcePlanet",
+      "dist": 4840,
+      "sput": -1,
+      "size": 325,
+      "rings": -1
+    },
+
+
+
+
+
+
+
+
+
+
+    {
+      "Name": "",
+      "system": "Electra",
+      "type": "Asteroids",
+      "dist": 300,
+      "sput": -1,
+      "size": 600,
+      "rings": -1
+    },
+    {
+      "Name": "Hellhound",
+      "system": "Electra",
+      "type": "MetalRichPlanet",
+      "dist": 1000,
+      "sput": 1,
+      "size": 378,
+      "rings": 0
+    },
+    {
+      "Name": "",
+      "system": "Electra",
+      "type": "Asteroids",
+      "dist": 1200,
+      "sput": -1,
+      "size": 200,
+      "rings": -1
+    },
+    {
+      "Name": "",
+      "system": "Electra",
+      "type": "Asteroids",
+      "dist": 1900,
+      "sput": -1,
+      "size": 4530,
+      "rings": -1
+    },
+
+
+
+    {
+      "Name": "",
+      "system": "HIP 17892",
+      "type": "Asteroids",
+      "dist": 200,
+      "sput": -1,
+      "size": 300,
+      "rings": -1
+    },
+    {
+      "Name": "A2",
+      "system": "HIP 17892",
+      "type": "MetalRichPlanet",
+      "dist": 600,
+      "sput": -1,
+      "size": 325,
+      "rings": -1
+    },
+    {
+      "Name": "A3",
+      "system": "HIP 17892",
+      "type": "HighMetalPlanet",
+      "dist": 4540,
+      "sput": -1,
+      "size": 325,
+      "rings": -1
+    },
+
+    {
+      "Name": "",
+      "system": "HD 25508",
+      "type": "Asteroids",
+      "dist": 400,
+      "sput": -1,
+      "size": 2000,
+      "rings": -1,
+      "mater1": "Coltan",
+      "mater2": "Bromellite",
+      "mater3": "MethaneClathrate"
+    },
+    {
+      "Name": "A1",
+      "system": "HD 25508",
+      "type": "IcePlanet",
+      "dist": 2600,
+      "sput": -1,
+      "size": 376,
+      "rings": -1
+    },
+    {
+      "Name": "",
+      "system": "HD 25508",
+      "type": "Asteroids",
+      "dist": 2800,
+      "sput": -1,
+      "size": 500,
+      "rings": -1,
+      "mater1": "Diamonds",
+      "mater2": "Alexandrite",
+      "mater3": "Lepidolite"
+    },
+    {
+      "Name": "A2",
+      "system": "HD 25508",
+      "type": "IcePlanet",
+      "dist": 3590,
+      "sput": -1,
+      "size": 322,
+      "rings": -1
+    },
+    {
+      "Name": "B0 HD 25508",
+      "system": "HD 25508",
+      "type": "G-WhiteYellow",
+      "dist": 5501,
+      "sput": -1,
+      "size": 544,
+      "rings": -1
+    },
+    {
+      "Name": "B2",
+      "system": "HD 25508",
+      "type": "RockPlanet",
+      "dist": 276,
+      "sput": -1,
+      "size": 376,
+      "rings": -1
+    },
+    {
+      "Name": "B4",
+      "system": "HD 25508",
+      "type": "HighMetalPlanet",
+      "dist": 456,
+      "sput": -1,
+      "size": 269,
+      "rings": -1
+    },
+    {
+      "Name": "B6",
+      "system": "HD 25508",
+      "type": "WaterWorld",
+      "dist": 516,
+      "sput": -1,
+      "size": 296,
+      "rings": -1
+    },
+    {
+      "Name": "B7",
+      "system": "HD 25508",
+      "type": "IcePlanet",
+      "dist": 2260,
+      "sput": -1,
+      "size": 349,
+      "rings": -1
+    },
+
+
+
+
+
+
+
+
+    {
+      "Name": "A1 LHS 3384",
+      "system": "LHS 3384",
+      "type": "K-YellowOrange",
+      "dist": 4,
+      "sput": -1,
+      "size": 544,
+      "rings": -1
+    },
+    {
+      "Name": "A2",
+      "system": "LHS 3384",
+      "type": "GasGiantClassIII",
+      "dist": 250,
+      "sput": 2,
+      "size": 322,
+      "rings": 3
+    },
+    {
+      "Name": "",
+      "system": "LHS 3384",
+      "type": "Asteroids",
+      "dist": 350,
+      "sput": -1,
+      "size": 680,
+      "rings": -1
+    },
+    {
+      "Name": "A3",
+      "system": "LHS 3384",
+      "type": "IcePlanet",
+      "dist": 1100,
+      "sput": 1,
+      "size": 349,
+      "rings": -1
+    },
+    {
+      "Name": "",
+      "system": "LHS 3384",
+      "type": "Asteroids",
+      "dist": 1208,
+      "sput": -1,
+      "size": 130,
+      "rings": -1
+    }
+,
+
+    {
+      "Name": "A1",
+      "system": "HR 2251",
+      "type": "HighMetalPlanet",
+      "dist": 400,
+      "sput": -1,
+      "size": 375,
+      "rings": -1
+    },
+    {
+      "Name": "A2",
+      "system": "HR 2251",
+      "type": "IcePlanet",
+      "dist": 1480,
+      "sput": -1,
+      "size": 286,
+      "rings": -1
+    },
+    {
+      "Name": "A3",
+      "system": "HR 2251",
+      "type": "GasGiantClassI",
+      "dist": 1940,
+      "sput": -1,
+      "size": 499,
+      "rings": -1
+    },
+    {
+      "Name": "B1",
+      "system": "HR 2251",
+      "type": "K-YellowOrange",
+      "dist": 2000,
+      "sput": -1,
+      "size": 544,
+      "rings": -1
+    },
+    {
+      "Name": "B2",
+      "system": "HR 2251",
+      "type": "HighMetalPlanet",
+      "dist": 450,
+      "sput": 1,
+      "size": 375,
+      "rings": 2
+    },
+    {
+      "Name": "",
+      "system": "HR 2251",
+      "type": "Asteroids",
+      "dist": 650,
+      "sput": -1,
+      "size": 400,
+      "rings": -1
+    },
+
+
+
+    {
+      "Name": "A1 LHS 1857",
+      "system": "LHS 1857",
+      "type": "T-BrownDwarf",
+      "dist": 3,
+      "sput": -1,
+      "size": 362,
+      "rings": -1
+    },
+    {
+      "Name": "A2",
+      "system": "LHS 1857",
+      "type": "RockPlanet",
+      "dist": 155,
+      "sput": -1,
+      "size": 339,
+      "rings": -1
+    },
+    {
+      "Name": "A3",
+      "system": "LHS 1857",
+      "type": "IcePlanet",
+      "dist": 3040,
+      "sput": -1,
+      "size": 357,
+      "rings": -1
+    },
+    {
+      "Name": "",
+      "system": "LHS 1857",
+      "type": "Asteroids",
+      "dist": 3852,
+      "sput": -1,
+      "size": 1140,
+      "rings": -1
+    },
+
+
+
+
+    {
+      "Name": "",
+      "system": "Ross 79",
+      "type": "Asteroids",
+      "dist": 720,
+      "sput": -1,
+      "size": 250,
+      "rings": -1
+    },
+    {
+      "Name": "",
+      "system": "Ross 79",
+      "type": "Asteroids",
+      "dist": 1370,
+      "sput": -1,
+      "size": 560,
+      "rings": -1
+    },
+    {
+      "Name": "A3",
+      "system": "Ross 79",
+      "type": "IcePlanet",
+      "dist": 3450,
+      "sput": -1,
+      "size": 286,
+      "rings": -1
+    },
+
+
+
+
+
+    {
+      "Name": "A1",
+      "system": "V546 Persei",
+      "type": "GasGiantwithWaterLife",
+      "dist": 140,
+      "sput": -1,
+      "size": 481,
+      "rings": -1
+    },
+    {
+      "Name": "",
+      "system": "V546 Persei",
+      "type": "Asteroids",
+      "dist": 250,
+      "sput": -1,
+      "size": 1730,
+      "rings": -1
+    },
+    {
+      "Name": "A2",
+      "system": "V546 Persei",
+      "type": "IcePlanet",
+      "dist": 2260,
+      "sput": -1,
+      "size": 268,
+      "rings": -1
+    },
+    {
+      "Name": "A3",
+      "system": "V546 Persei",
+      "type": "IcePlanet",
+      "dist": 4310,
+      "sput": -1,
+      "size": 357,
+      "rings": -1
+    },
+    {
+      "Name": "",
+      "system": "V546 Persei",
+      "type": "Asteroids",
+      "dist": 4650,
+      "sput": -1,
+      "size": 320,
+      "rings": -1
+    },
+    {
+      "Name": "A4",
+      "system": "V546 Persei",
+      "type": "IcePlanet",
+      "dist": 5000,
+      "sput": -1,
+      "size": 321,
+      "rings": -1
+    },
+    {
+      "Name": "A5",
+      "system": "V546 Persei",
+      "type": "IcePlanet",
+      "dist": 5100,
+      "sput": -1,
+      "size": 339,
+      "rings": -1
+    },
+    {
+      "Name": "B0 V546 Persei",
+      "system": "V546 Persei",
+      "type": "M-RedDwarf",
+      "dist": 2503,
+      "sput": -1,
+      "size": 433,
+      "rings": -1
+    },
+    {
+      "Name": "B1 V546 Persei",
+      "system": "V546 Persei",
+      "type": "L-BrownDwarf",
+      "dist": 2496,
+      "sput": -1,
+      "size": 362,
+      "rings": -1
+    },
+    {
+      "Name": "B2",
+      "system": "V546 Persei",
+      "type": "IcePlanet",
+      "dist": 4043,
+      "sput": -1,
+      "size": 268,
+      "rings": -1
+    },
+    {
+      "Name": "C0 V546 Persei",
+      "system": "V546 Persei",
+      "type": "T-BrownDwarf",
+      "dist": 5000,
+      "sput": -1,
+      "size": 362,
+      "rings": -1
+    },
+    {
+      "Name": "C1",
+      "system": "V546 Persei",
+      "type": "IcePlanet",
+      "dist": 4570,
+      "sput": -1,
+      "size": 268,
+      "rings": -1
+    },
+
+
+
+
+
+
+    {
+      "Name": "A1",
+      "system": "LHS 6031",
+      "type": "IcePlanet",
+      "dist": 360,
+      "sput": -1,
+      "size": 268,
+      "rings": -1
+    },
+    {
+      "Name": "A2",
+      "system": "LHS 6031",
+      "type": "IcePlanet",
+      "dist": 470,
+      "sput": -1,
+      "size": 375,
+      "rings": -1
+    },
+    {
+      "Name": "",
+      "system": "LHS 6031",
+      "type": "Asteroids",
+      "dist": 1620,
+      "sput": -1,
+      "size": 1880,
+      "rings": -1
+    },
+    {
+      "Name": "",
+      "system": "LHS 6031",
+      "type": "Asteroids",
+      "dist": 3600,
+      "sput": -1,
+      "size": 1370,
+      "rings": -1
+    },
+    {
+      "Name": "B0 LHS 6031",
+      "system": "LHS 6031",
+      "type": "M-RedDwarf",
+      "dist": 3800,
+      "sput": -1,
+      "size": 433,
+      "rings": -1
+    },
+    {
+      "Name": "B1",
+      "system": "LHS 6031",
+      "type": "HighMetalPlanet",
+      "dist": 139,
+      "sput": -1,
+      "size": 304,
+      "rings": -1
+    },
+    {
+      "Name": "B2",
+      "system": "LHS 6031",
+      "type": "RockPlanet",
+      "dist": 149,
+      "sput": -1,
+      "size": 286,
+      "rings": -1
+    },
+    {
+      "Name": "B3",
+      "system": "LHS 6031",
+      "type": "RockPlanet",
+      "dist": 230,
+      "sput": -1,
+      "size": 357,
+      "rings": -1
+    },
+    {
+      "Name": "B4",
+      "system": "LHS 6031",
+      "type": "GasGiantClassI",
+      "dist": 1700,
+      "sput": -1,
+      "size": 499,
+      "rings": -1
+    },
+
+
+
+    {
+      "Name": "",
+      "system": "SPOCS 253",
+      "type": "Asteroids",
+      "dist": 300,
+      "sput": -1,
+      "size": 300,
+      "rings": -1,
+      "mater1": "Uraninite"
+    },
+    {
+      "Name": "A1",
+      "system": "SPOCS 253",
+      "type": "MetalRichPlanet",
+      "dist": 730,
+      "sput": -1,
+      "size": 321,
+      "rings": -1
+    },
+    {
+      "Name": "A2",
+      "system": "SPOCS 253",
+      "type": "RockPlanet",
+      "dist": 1100,
+      "sput": -1,
+      "size": 375,
+      "rings": -1
+    },
+    {
+      "Name": "A3",
+      "system": "SPOCS 253",
+      "type": "IcePlanet",
+      "dist": 1920,
+      "sput": -1,
+      "size": 286,
+      "rings": -1
+    },
+    {
+      "Name": "A4",
+      "system": "SPOCS 253",
+      "type": "GasGiantClassI",
+      "dist": 2110,
+      "sput": -1,
+      "size": 499,
+      "rings": -1
+    },
+
+
+
+
+    {
+      "Name": "",
+      "system": "BD+08 1303",
+      "type": "Asteroids",
+      "dist": 1700,
+      "sput": -1,
+      "size": 550,
+      "rings": -1
+    },
+    {
+      "Name": "A2",
+      "system": "BD+08 1303",
+      "type": "HighMetalPlanet",
+      "dist": 3420,
+      "sput": -1,
+      "size": 321,
+      "rings": -1
+    },
+    {
+      "Name": "A3",
+      "system": "BD+08 1303",
+      "type": "HighMetalPlanet",
+      "dist": 3580,
+      "sput": -1,
+      "size": 375,
+      "rings": -1
+    },
+    {
+      "Name": "",
+      "system": "BD+08 1303",
+      "type": "Asteroids",
+      "dist": 4775,
+      "sput": -1,
+      "size": 870,
+      "rings": -1
+    },
+
+
+    {
+      "Name": "",
+      "system": "R CrA",
+      "type": "Asteroids",
+      "dist": 400,
+      "sput": -1,
+      "size": 550,
+      "rings": -1
+    },
+    {
+      "Name": "R CrA A2",
+      "system": "R CrA",
+      "type": "HighMetalPlanet",
+      "dist": 1220,
+      "sput": 1,
+      "size": 321,
+      "rings": 2
+    },
+    {
+      "Name": "R CrA A3",
+      "system": "R CrA",
+      "type": "HighMetalPlanet",
+      "dist": 1980,
+      "sput": 5,
+      "size": 375,
+      "rings": -1
+    },
+
+
+
+
+    {
+      "Name": "A1",
+      "system": "70 Ophiuchi",
+      "type": "HighMetalPlanet",
+      "dist": 130,
+      "sput": -1,
+      "size": 269,
+      "rings": -1
+    },
+    {
+      "Name": "A2",
+      "system": "70 Ophiuchi",
+      "type": "HighMetalPlanet",
+      "dist": 310,
+      "sput": -1,
+      "size": 349,
+      "rings": -1
+    },
+    {
+      "Name": "A3",
+      "system": "70 Ophiuchi",
+      "type": "RockPlanet",
+      "dist": 480,
+      "sput": -1,
+      "size": 349,
+      "rings": -1
+    },
+    {
+      "Name": "A4",
+      "system": "70 Ophiuchi",
+      "type": "RockPlanet",
+      "dist": 560,
+      "sput": 2,
+      "size": 376,
+      "rings": 2
+    },
+    {
+      "Name": "",
+      "system": "70 Ophiuchi",
+      "type": "Asteroids",
+      "dist": 1000,
+      "sput": -1,
+      "size": 450,
+      "rings": -1
+    },
+    {
+      "Name": "A5",
+      "system": "70 Ophiuchi",
+      "type": "IcePlanet",
+      "dist": 1900,
+      "sput": -1,
+      "size": 296,
+      "rings": -1
+    },
+    {
+      "Name": "B0 70 Ophiuchi",
+      "system": "70 Ophiuchi",
+      "type": "M-RedDwarf",
+      "dist": 4000,
+      "sput": -1,
+      "size": 437,
+      "rings": -1
+    },
+    {
+      "Name": "B1",
+      "system": "70 Ophiuchi",
+      "type": "IcePlanet",
+      "dist": 799,
+      "sput": 1,
+      "size": 322,
+      "rings": -1
+    },
+
+
+
+    {
+      "Name": "A1",
+      "system": "LHS 253",
+      "type": "RockPlanet",
+      "dist": 70,
+      "sput": -1,
+      "size": 322,
+      "rings": -1
+    },
+    {
+      "Name": "A2",
+      "system": "LHS 253",
+      "type": "MetalRichPlanet",
+      "dist": 80,
+      "sput": -1,
+      "size": 402,
+      "rings": -1
+    },
+    {
+      "Name": "A3",
+      "system": "LHS 253",
+      "type": "HighMetalPlanet",
+      "dist": 90,
+      "sput": 1,
+      "size": 349,
+      "rings": -1
+    },
+    {
+      "Name": "A4",
+      "system": "LHS 253",
+      "type": "GasGiantClassII",
+      "dist": 100,
+      "sput": 2,
+      "size": 296,
+      "rings": 3
+    },
+    {
+      "Name": "A5",
+      "system": "LHS 253",
+      "type": "RockPlanet",
+      "dist": 110,
+      "sput": -1,
+      "size": 376,
+      "rings": -1
+    },
+    {
+      "Name": "A6",
+      "system": "LHS 253",
+      "type": "RockPlanet",
+      "dist": 150,
+      "sput": -1,
+      "size": 376,
+      "rings": -1
+    },
+    {
+      "Name": "Scion A",
+      "system": "LHS 253",
+      "type": "IcePlanet",
+      "dist": 1370,
+      "sput": 1,
+      "size": 296,
+      "rings": -1
+    },
+    {
+      "Name": "Scion B",
+      "system": "LHS 253",
+      "type": "IcePlanet",
+      "dist": 1449,
+      "sput": -1,
+      "size": 349,
+      "rings": -1
+    },
+    {
+      "Name": "",
+      "system": "LHS 253",
+      "type": "Asteroids",
+      "dist": 4205,
+      "sput": -1,
+      "size": 1630,
+      "rings": -1
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    {
+      "Name": "A1",
+      "system": "Rho 667",
+      "type": "RockPlanet",
+      "dist": 175,
+      "sput": 1,
+      "size": 252,
+      "rings": -1
+    },
+    {
+      "Name": "A2",
+      "system": "Rho 667",
+      "type": "HighMetalPlanet",
+      "dist": 225,
+      "sput": 3,
+      "size": 327,
+      "rings": 2
+    },
+    {
+      "Name": "A3",
+      "system": "Rho 667",
+      "type": "MetalRichPlanet",
+      "dist": 315,
+      "sput": 1,
+      "size": 277,
+      "rings": 0
+    },
+    {
+      "Name": "A4",
+      "system": "Rho 667",
+      "type": "RockPlanet",
+      "dist": 444,
+      "sput": -1,
+      "size": 352,
+      "rings": -1
+    },
+    {
+      "Name": "A5",
+      "system": "Rho 667",
+      "type": "RockPlanet",
+      "dist": 895,
+      "sput": 1,
+      "size": 277,
+      "rings": -1
+    },
+    {
+      "Name": "A6",
+      "system": "Rho 667",
+      "type": "GasGiantwithAmmoniaLife",
+      "dist": 1285,
+      "sput": 2,
+      "size": 477,
+      "rings": 3
+    },
+    {
+      "Name": "A7",
+      "system": "Rho 667",
+      "type": "IcePlanet",
+      "dist": 1885,
+      "sput": 1,
+      "size": 302,
+      "rings": -1
+    },
+    {
+      "Name": "",
+      "system": "Rho 667",
+      "type": "Asteroids",
+      "dist": 2809,
+      "sput": -1,
+      "size": 1230,
+      "rings": -1
+    },
+    {
+      "Name": "B0 Rho 667",
+      "system": "Rho 667",
+      "type": "M-RedDwarf",
+      "dist": 2500,
+      "sput": -1,
+      "size": 410,
+      "rings": -1
+    },
+    {
+      "Name": "B1",
+      "system": "Rho 667",
+      "type": "HighMetalPlanet",
+      "dist": 115,
+      "sput": 2,
+      "size": 377,
+      "rings": -1
+    },
+    {
+      "Name": "B2",
+      "system": "Rho 667",
+      "type": "RockPlanet",
+      "dist": 154,
+      "sput": 1,
+      "size": 377,
+      "rings": -1
+    },
+
+
+
+
+
+
+    {
+      "Name": "",
+      "system": "Galar",
+      "type": "Asteroids",
+      "dist": 1865,
+      "sput": -1,
+      "size": 1000,
+      "rings": -1
+    },
+    {
+      "Name": "",
+      "system": "Galar",
+      "type": "Asteroids",
+      "dist": 3455,
+      "sput": -1,
+      "size": 1040,
+      "rings": -1
+    },
+    {
+      "Name": "A1",
+      "system": "Galar",
+      "type": "IcePlanet",
+      "dist": 5005,
+      "sput": 2,
+      "size": 302,
+      "rings": -1
+    },
+
+
+
+
+
+
+
+    {
+      "Name": "A1",
+      "system": "Rho Ax-8b",
+      "type": "HighMetalPlanet",
+      "dist": 105,
+      "sput": 1,
+      "size": 352,
+      "rings": -1
+    },
+    {
+      "Name": "A2",
+      "system": "Rho Ax-8b",
+      "type": "HighMetalPlanet",
+      "dist": 145,
+      "sput": -1,
+      "size": 377,
+      "rings": 2
+    },
+    {
+      "Name": "A3",
+      "system": "Rho Ax-8b",
+      "type": "RockPlanet",
+      "dist": 385,
+      "sput": 2,
+      "size": 277,
+      "rings": -1
+    },
+    {
+      "Name": "A4",
+      "system": "Rho Ax-8b",
+      "type": "IcePlanet",
+      "dist": 1205,
+      "sput": -1,
+      "size": 327,
+      "rings": -1
+    },
+    {
+      "Name": "",
+      "system": "Rho Ax-8b",
+      "type": "Asteroids",
+      "dist": 1915,
+      "sput": -1,
+      "size": 340,
+      "rings": -1
+    },
+    {
+      "Name": "",
+      "system": "Rho Ax-8b",
+      "type": "Asteroids",
+      "dist": 3495,
+      "sput": -1,
+      "size": 1620,
+      "rings": -1
+    },
+    {
+      "Name": "A5",
+      "system": "Rho Ax-8b",
+      "type": "IcePlanet",
+      "dist": 5200,
+      "sput": 1,
+      "size": 277,
+      "rings": -1
+    },
+
+
+
+
+    {
+      "Name": "A1",
+      "system": "Vega 6",
+      "type": "AmmoniaPlanet",
+      "dist": 434,
+      "sput": 2,
+      "size": 302,
+      "rings": -1
+    },
+    {
+      "Name": "A2",
+      "system": "Vega 6",
+      "type": "GasGiantwithWaterLife",
+      "dist": 515,
+      "sput": 5,
+      "size": 352,
+      "rings": 3
+    },
+    {
+      "Name": "A3",
+      "system": "Vega 6",
+      "type": "RockPlanet",
+      "dist": 1475,
+      "sput": -1,
+      "size": 327,
+      "rings": -1
+    },
+    {
+      "Name": "A4",
+      "system": "Vega 6",
+      "type": "IcePlanet",
+      "dist": 1675,
+      "sput": -1,
+      "size": 277,
+      "rings": -1
+    },
+    {
+      "Name": "A5",
+      "system": "Vega 6",
+      "type": "IcePlanet",
+      "dist": 3035,
+      "sput": 1,
+      "size": 327,
+      "rings": -1
+    },
+    {
+      "Name": "A6",
+      "system": "Vega 6",
+      "type": "IcePlanet",
+      "dist": 3184,
+      "sput": -1,
+      "size": 352,
+      "rings": -1
+    },
+    {
+      "Name": "A7",
+      "system": "Vega 6",
+      "type": "GasGiantClassI",
+      "dist": 3895,
+      "sput": 2,
+      "size": 452,
+      "rings": 2
+    },
+    {
+      "Name": "",
+      "system": "Vega 6",
+      "type": "Asteroids",
+      "dist": 4725,
+      "sput": -1,
+      "size": 600,
+      "rings": -1
+    },
+
+
+
+    {
+      "Name": "A1",
+      "system": "Merida",
+      "type": "GasGiantClassI",
+      "dist": 135,
+      "sput": 1,
+      "size": 477,
+      "rings": 2
+    },
+    {
+      "Name": "A2",
+      "system": "Merida",
+      "type": "GasGiantClassI",
+      "dist": 205,
+      "sput": 4,
+      "size": 477,
+      "rings": 3
+    },
+    {
+      "Name": "A3",
+      "system": "Merida",
+      "type": "IcePlanet",
+      "dist": 1095,
+      "sput": 2,
+      "size": 352,
+      "rings": -1
+    },
+    {
+      "Name": "A4",
+      "system": "Merida",
+      "type": "IcePlanet",
+      "dist": 4415,
+      "sput": -1,
+      "size": 277,
+      "rings": -1
+    },
+    {
+      "Name": "",
+      "system": "Merida",
+      "type": "Asteroids",
+      "dist": 4940,
+      "sput": -1,
+      "size": 590,
+      "rings": -1
+    },
+
+
+    {
+      "Name": "",
+      "system": "Octanur",
+      "type": "Asteroids",
+      "dist": 1910,
+      "sput": -1,
+      "size": 2150,
+      "rings": -1
+    },
+    {
+      "Name": "A1",
+      "system": "Octanur",
+      "type": "IcePlanet",
+      "dist": 4300,
+      "sput": 3,
+      "size": 352,
+      "rings": -1
+    },
+    {
+      "Name": "",
+      "system": "Octanur",
+      "type": "Asteroids",
+      "dist": 5130,
+      "sput": -1,
+      "size": 770,
+      "rings": -1
+    },
+
+
+
+
+    {
+      "Name": "A1",
+      "system": "Effa",
+      "type": "GasGiantClassII",
+      "dist": 325,
+      "sput": 3,
+      "size": 327,
+      "rings": 3
+    },
+    {
+      "Name": "A2",
+      "system": "Effa",
+      "type": "GasGiantClassI",
+      "dist": 505,
+      "sput": 2,
+      "size": 377,
+      "rings": 2
+    },
+    {
+      "Name": "A3",
+      "system": "Effa",
+      "type": "RockPlanet",
+      "dist": 615,
+      "sput": -1,
+      "size": 377,
+      "rings": -1
+    },
+    {
+      "Name": "A8",
+      "system": "Effa",
+      "type": "IcePlanet",
+      "dist": 3155,
+      "sput": -1,
+      "size": 277,
+      "rings": -1
+    },
+    {
+      "Name": "",
+      "system": "Effa",
+      "type": "Asteroids",
+      "dist": 3350,
+      "sput": -1,
+      "size": 1710,
+      "rings": -1
+    },
+
+
+
+
+
+
+    {
+      "Name": "A1 Hauron",
+      "system": "Hauron",
+      "type": "M-RedDwarf",
+      "dist": 3,
+      "sput": -1,
+      "size": 410,
+      "rings": -1
+    },
+    {
+      "Name": "A2 Hauron",
+      "system": "Hauron",
+      "type": "T-BrownDwarf",
+      "dist": 3,
+      "sput": -1,
+      "size": 410,
+      "rings": -1
+    },
+    {
+      "Name": "",
+      "system": "Hauron",
+      "type": "Asteroids",
+      "dist": 1670,
+      "sput": -1,
+      "size": 2430,
+      "rings": -1
+    },
+    {
+      "Name": "A3",
+      "system": "Hauron",
+      "type": "IcePlanet",
+      "dist": 4300,
+      "sput": 2,
+      "size": 277,
+      "rings": -1
+    },
+    {
+      "Name": "B0 Hauron",
+      "system": "Hauron",
+      "type": "L-BrownDwarf",
+      "dist": 7000,
+      "sput": -1,
+      "size": 410,
+      "rings": -1
+    },
+    {
+      "Name": "B1",
+      "system": "Hauron",
+      "type": "IcePlanet",
+      "dist": 1020,
+      "sput": 1,
+      "size": 252,
+      "rings": -1
+    },
+
+
+
+
+    {
+      "Name": "A1",
+      "system": "Z-635",
+      "type": "HighMetalPlanet",
+      "dist": 85,
+      "sput": 2,
+      "size": 277,
+      "rings": -1
+    },
+    {
+      "Name": "A3",
+      "system": "Z-635",
+      "type": "RockPlanet",
+      "dist": 135,
+      "sput": 1,
+      "size": 377,
+      "rings": -1
+    },
+    {
+      "Name": "A4",
+      "system": "Z-635",
+      "type": "IcePlanet",
+      "dist": 4400,
+      "sput": 1,
+      "size": 352,
+      "rings": -1
+    },
+    {
+      "Name": "",
+      "system": "Z-635",
+      "type": "Asteroids",
+      "dist": 4650,
+      "sput": -1,
+      "size": 730,
+      "rings": -1
+    },
+    {
+      "Name": "B1 Z-635",
+      "system": "Z-635",
+      "type": "L-BrownDwarf",
+      "dist": 7496,
+      "sput": -1,
+      "size": 410,
+      "rings": -1
+    },
+    {
+      "Name": "B2",
+      "system": "Z-635",
+      "type": "IcePlanet",
+      "dist": 2264,
+      "sput": 2,
+      "size": 327,
+      "rings": -1
+    },
+
+
+
+
+
+
+
+    {
+      "Name": "A1 LHS 463",
+      "system": "LHS 463",
+      "type": "M-RedDwarf",
+      "dist": 3,
+      "sput": -1,
+      "size": 410,
+      "rings": -1
+    },
+    {
+      "Name": "A2",
+      "system": "LHS 463",
+      "type": "HighMetalPlanet",
+      "dist": 192,
+      "sput": -1,
+      "size": 352,
+      "rings": -1
+    },
+    {
+      "Name": "A3",
+      "system": "LHS 463",
+      "type": "RockPlanet",
+      "dist": 349,
+      "sput": -1,
+      "size": 277,
+      "rings": -1
+    },
+    {
+      "Name": "A4",
+      "system": "LHS 463",
+      "type": "IcePlanet",
+      "dist": 1274,
+      "sput": -1,
+      "size": 352,
+      "rings": -1
+    },
+    {
+      "Name": "",
+      "system": "LHS 463",
+      "type": "Asteroids",
+      "dist": 2825,
+      "sput": -1,
+      "size": 580,
+      "rings": -1
+    },
+    {
+      "Name": "A6",
+      "system": "LHS 463",
+      "type": "IcePlanet",
+      "dist": 4889,
+      "sput": -1,
+      "size": 352,
+      "rings": -1
+    },
+
+
+
+    {
+      "Name": "A1",
+      "system": "LTT 7421",
+      "type": "HighMetalPlanet",
+      "dist": 95,
+      "sput": -1,
+      "size": 352,
+      "rings": -1
+    },
+    {
+      "Name": "A2",
+      "system": "LTT 7421",
+      "type": "IcePlanet",
+      "dist": 525,
+      "sput": -1,
+      "size": 302,
+      "rings": -1
+    },
+    {
+      "Name": "",
+      "system": "LTT 7421",
+      "type": "Asteroids",
+      "dist": 2575,
+      "sput": -1,
+      "size": 920,
+      "rings": -1
+    }
+
+    ,
+
+
+    {
+      "Name": "A1",
+      "system": "LPM 616",
+      "type": "IcePlanet",
+      "dist": 1875,
+      "sput": -1,
+      "size": 377,
+      "rings": -1
+    },
+    {
+      "Name": "A2",
+      "system": "LPM 616",
+      "type": "IcePlanet",
+      "dist": 2225,
+      "sput": -1,
+      "size": 352,
+      "rings": 2
+    },
+    {
+      "Name": "",
+      "system": "LPM 616",
+      "type": "Asteroids",
+      "dist": 2880,
+      "sput": -1,
+      "size": 1290,
+      "rings": -1
+    },
+    {
+      "Name": "A3",
+      "system": "LPM 616",
+      "type": "IcePlanet",
+      "dist": 4235,
+      "sput": 3,
+      "size": 352,
+      "rings": -1
+    },
+    {
+      "Name": "A4",
+      "system": "LPM 616",
+      "type": "IcePlanet",
+      "dist": 4415,
+      "sput": 2,
+      "size": 377,
+      "rings": -1
+    },
+
+
+
+    {
+      "Name": "A1",
+      "system": "Lalande 10797",
+      "type": "HighMetalPlanet",
+      "dist": 415,
+      "sput": -1,
+      "size": 352,
+      "rings": 1
+    },
+    {
+      "Name": "A2",
+      "system": "Lalande 10797",
+      "type": "RockPlanet",
+      "dist": 745,
+      "sput": 2,
+      "size": 327,
+      "rings": -1
+    },
+    {
+      "Name": "",
+      "system": "Lalande 10797",
+      "type": "Asteroids",
+      "dist": 2360,
+      "sput": -1,
+      "size": 1570,
+      "rings": -1
+    },
+    {
+      "Name": "A3",
+      "system": "Lalande 10797",
+      "type": "GasGiantClassI",
+      "dist": 4715,
+      "sput": 3,
+      "size": 477,
+      "rings": 3
+    },
+
+
+
+
+
+
+    {
+      "Name": "A1",
+      "system": "GD 219",
+      "type": "HighMetalPlanet",
+      "dist": 95,
+      "sput": 1,
+      "size": 302,
+      "rings": 2
+    },
+    {
+      "Name": "",
+      "system": "GD 219",
+      "type": "Asteroids",
+      "dist": 970,
+      "sput": -1,
+      "size": 410,
+      "rings": -1
+    },
+    {
+      "Name": "A3",
+      "system": "GD 219",
+      "type": "IcePlanet",
+      "dist": 1635,
+      "sput": 2,
+      "size": 352,
+      "rings": -1
+    },
+    {
+      "Name": "A4",
+      "system": "GD 219",
+      "type": "IcePlanet",
+      "dist": 2465,
+      "sput": -1,
+      "size": 352,
+      "rings": -1
+    },
+    {
+      "Name": "A5",
+      "system": "GD 219",
+      "type": "GasGiantClassI",
+      "dist": 3515,
+      "sput": 4,
+      "size": 502,
+      "rings": 2
+    },
+    {
+      "Name": "A6",
+      "system": "GD 219",
+      "type": "IcePlanet",
+      "dist": 3865,
+      "sput": 1,
+      "size": 327,
+      "rings": -1
+    }
+  ]
+}
