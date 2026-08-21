@@ -55,6 +55,12 @@ const allStarTypes=engine.matches({source:"test",globalId:1,name:"Mixed",xLy:0,y
   {kind:"star",type:"G-WhiteYellow",group:0},{kind:"star",type:"M-RedDwarf",group:0}
 ],{...base,targetType:""});
 if(allStarTypes.length!==1||JSON.stringify(allStarTypes[0].matchedObjects.map(result=>result.type))!==JSON.stringify(["G-WhiteYellow","M-RedDwarf"]))throw new Error("all matching stars in one system must be grouped into one result");
+const groupedPlanets=engine.matches({source:"test",globalId:3,name:"Grouped",xLy:0,yLy:0,mapX:1025,mapY:1591,starType:"G-WhiteYellow"},[
+  {kind:"star",type:"G-WhiteYellow",group:0},{kind:"star",type:"M-RedDwarf",group:0},{kind:"planet",type:"IcePlanet",group:0},{kind:"planet",type:"IcePlanet",group:0},
+  {kind:"star",type:"M-RedDwarf",group:1},{kind:"planet",type:"IcePlanet",group:1},
+  {kind:"star",type:"M-RedDwarf",group:2},{kind:"planet",type:"IcePlanet",group:2},{kind:"planet",type:"IcePlanet",group:2},{kind:"planet",type:"IcePlanet",group:2}
+],{...base,targetMode:"planet",targetType:""})[0].systemPlanets;
+if(JSON.stringify(groupedPlanets.map(planet=>[planet.group,planet.groupIndex,planet.objectIndex]))!==JSON.stringify([[0,2,1],[0,3,2],[1,1,3],[2,1,4],[2,2,5],[2,3,6]]))throw new Error("planet display numbering must count preceding stars and reset within each stellar group");
 const diamondResults=engine.processCell(1025,1591,{...base,targetMode:"mineral",targetType:"Diamonds",excludeFixed:false,excludeNamed:false}).filter(result=>result.systemName==="Fixed");
 if(diamondResults.length!==1||diamondResults[0].kind!=="mineral"||diamondResults[0].abundance<=0||diamondResults[0].matchedObjects[0].objectIndex!==2)throw new Error("ordinary mineral searches must return the containing asteroid belt and its abundance");
 const deepResults=engine.matches({source:"test",globalId:2,name:"Deep",secX:1023,secY:1588,xLy:0,yLy:0,mapX:1023,mapY:1588,starType:"G-WhiteYellow"},[

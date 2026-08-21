@@ -115,9 +115,10 @@
       const distance=Math.hypot(system.xLy-query.centerLy.x,system.yLy-query.centerLy.y);
       if(distance>query.radius)return[];
       let planetIndex=0;
-      const systemPlanets=bodies.filter(body=>body.kind==="planet").map(body=>{
+      const systemPlanets=bodies.map((body,bodyIndex)=>({body,bodyIndex})).filter(item=>item.body.kind==="planet").map(({body,bodyIndex})=>{
         const group=body.group??0,groupStar=bodies.find(item=>item.kind==="star"&&(item.group??0)===group);
-        return{objectIndex:++planetIndex,name:body.Name||"",type:body.type,temperature:body.temperature??null,orbit:body.orbit??null,orbitTo:body.orbitTo??body.orbit??null,group,starType:groupStar?.type||system.starType,resources:body.resources||[],surfaceSeed:body.seed};
+        const groupIndex=bodies.slice(0,bodyIndex).filter(item=>(item.group??0)===group).length;
+        return{objectIndex:++planetIndex,groupIndex,name:body.Name||"",type:body.type,temperature:body.temperature??null,orbit:body.orbit??null,orbitTo:body.orbitTo??body.orbit??null,group,starType:groupStar?.type||system.starType,resources:body.resources||[],surfaceSeed:body.seed};
       });
       if(query.targetMode==="mineral"){
         const mineralMatches=[],remainder=((system.secX+system.secY)%10+10)%10;
@@ -126,9 +127,9 @@
           if(planet.type!=="Asteroids")continue;
           for(const resource of planet.resources){
             if(query.targetType&&resource.name!==query.targetType)continue;
-            mineralMatches.push({kind:"mineral",type:resource.name,abundance:resource.chance,resourceKind:"belt",objectIndex:planet.objectIndex,starType:planet.starType});
+            mineralMatches.push({kind:"mineral",type:resource.name,abundance:resource.chance,resourceKind:"belt",objectIndex:planet.objectIndex,group:planet.group,groupIndex:planet.groupIndex,starType:planet.starType});
           }
-          if(deepMineral&&(!query.targetType||query.targetType===deepMineral))mineralMatches.push({kind:"mineral",type:deepMineral,abundance:5,resourceKind:"deep",objectIndex:planet.objectIndex,starType:planet.starType,expectedYieldFrom:3,expectedYieldTo:6});
+          if(deepMineral&&(!query.targetType||query.targetType===deepMineral))mineralMatches.push({kind:"mineral",type:deepMineral,abundance:5,resourceKind:"deep",objectIndex:planet.objectIndex,group:planet.group,groupIndex:planet.groupIndex,starType:planet.starType,expectedYieldFrom:3,expectedYieldTo:6});
         }
         if(!mineralMatches.length)return[];
         const first=mineralMatches[0],abundance=Math.max(...mineralMatches.map(match=>match.abundance));
@@ -139,7 +140,8 @@
         if(body.kind!==query.targetMode||(query.targetType&&body.type!==query.targetType))return;
         const sameKindBefore=bodies.slice(0,index).filter(item=>item.kind===body.kind).length;
         const group=body.group??0,groupStar=bodies.find(item=>item.kind==="star"&&(item.group??0)===group);
-        matches.push({kind:body.kind,type:body.type,subtype:body.subtype||"",temperature:body.temperature??null,orbit:body.orbit??null,group,objectIndex:sameKindBefore+1,starType:groupStar?.type||system.starType});
+        const groupIndex=bodies.slice(0,index).filter(item=>(item.group??0)===group).length;
+        matches.push({kind:body.kind,type:body.type,subtype:body.subtype||"",temperature:body.temperature??null,orbit:body.orbit??null,group,groupIndex,objectIndex:sameKindBefore+1,starType:groupStar?.type||system.starType});
       });
       if(!matches.length)return[];
       const first=matches[0];
