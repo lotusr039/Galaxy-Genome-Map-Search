@@ -81,6 +81,19 @@ if (!system.verified || star.temperature !== 7050 || JSON.stringify(orderedTypes
 if (star.subtype !== "F2" || planets.some(body => body.temperature == null || body.orbit == null)) {
   throw new Error("Actox must use generated star/planet details rather than verified-data placeholders");
 }
+const actoxResources = asteroidBelts[0].resources.map(resource => [resource.name, Math.floor(resource.chance)]);
+const expectedResources = [["Painite",13],["LithiumHydroxide",67],["Diamonds",19]];
+if (JSON.stringify(actoxResources) !== JSON.stringify(expectedResources)) {
+  throw new Error(`Actox asteroid resources mismatch: ${JSON.stringify(actoxResources)}`);
+}
+
+const fixedResources = generator.fixedAsteroidResources(123456, "G-WhiteYellow", [{
+  type: "Asteroids", mater1: "Diamonds", mater2: "MethaneClathrate", mater3: "Uraninite"
+}], starConfigs).get(0);
+if (JSON.stringify(fixedResources.map(resource => resource.name)) !== JSON.stringify(["Diamonds","MethaneClathrate","Uraninite"]) ||
+    Math.floor(fixedResources.reduce((sum, resource) => sum + resource.chance, 0)) !== 100) {
+  throw new Error("Fixed asteroid material overrides must replace the random selection and retain drop chances");
+}
 
 generator.setVerifiedSystems({});
 const unverifiedSystem = generator.generateSystem({

@@ -98,6 +98,11 @@ input:focus, select:focus { border-color: var(--cyan); box-shadow: 0 0 0 2px #52
 .planet-table td { padding: 10px; border-bottom: 1px solid #222a31; }
 .planet-table th, .planet-table td { white-space: nowrap; }
 .type-tag { color: var(--cyan); }
+.resource-cell { min-width: 260px; white-space: normal !important; }
+.resource-item { display: inline-flex; align-items: baseline; gap: 5px; margin: 2px 12px 2px 0; }
+.resource-item b { color: #dce5e9; font-weight: 500; }
+.resource-item small { color: var(--amber); font: 11px Consolas, monospace; }
+.resource-empty { color: #59656d; }
 .notice { padding: 14px; color: #cbd3d8; background: #121a20; border-left: 3px solid var(--amber); font-size: 13px; line-height: 1.6; }
 
 @media (max-width: 820px) {

@@ -64,7 +64,7 @@
         const reserved=new Set(),accepted=[];
         items.forEach(real=>{
           const qx=Math.min(99,Math.round((real.mapX-real.secX)*100)),qy=Math.min(99,Math.round((real.mapY-real.secY)*100)),q=`${qx},${qy}`;
-          if(reserved.has(q))return;reserved.add(q);real.starId=accepted.length;accepted.push(real);
+          if(reserved.has(q))return;reserved.add(q);real.starId=accepted.length;real.globalId=GalaxyGenerator.globalId(real.secX,real.secY,real.starId);accepted.push(real);
         });
         let anonymous=0;
         for(const real of accepted)if(!real.name){anonymous++;real.anonymousIndex=anonymous;}
@@ -91,10 +91,12 @@
             continue;
           }
           if(pendingStars.length)bodies.push(...pendingStars.splice(0));
-          bodies.push({kind:"planet",type:item.type,temperature:null,orbit:Number(item.dist||0),orbitTo:Number(item.dist||0)+Number(item.size||0),group,Name:item.Name});
+          bodies.push({kind:"planet",type:item.type,temperature:null,orbit:Number(item.dist||0),orbitTo:Number(item.dist||0)+Number(item.size||0),group,Name:item.Name,presetIndex:preset.indexOf(item)});
           seenPlanet=true;
         }
         bodies.push(...pendingStars);
+        const beltResources=GalaxyGenerator.fixedAsteroidResources(real.globalId,real.starType,preset,this.starConfigs);
+        for(const body of bodies)if(body.type==="Asteroids")body.resources=beltResources.get(body.presetIndex)||[];
         return bodies;
       }
       return GalaxyGenerator.generateRealSystem({secX:real.secX,secY:real.secY,starId:real.starId,starType:real.starType,companions:real.companions,starConfigs:this.starConfigs}).bodies;
@@ -108,7 +110,7 @@
       let planetIndex=0;
       const systemPlanets=bodies.filter(body=>body.kind==="planet").map(body=>{
         const group=body.group??0,groupStar=bodies.find(item=>item.kind==="star"&&(item.group??0)===group);
-        return{objectIndex:++planetIndex,name:body.Name||"",type:body.type,temperature:body.temperature??null,orbit:body.orbit??null,orbitTo:body.orbitTo??body.orbit??null,group,starType:groupStar?.type||system.starType};
+        return{objectIndex:++planetIndex,name:body.Name||"",type:body.type,temperature:body.temperature??null,orbit:body.orbit??null,orbitTo:body.orbitTo??body.orbit??null,group,starType:groupStar?.type||system.starType,resources:body.resources||[]};
       });
       const matches=[];
       bodies.forEach((body,index)=>{

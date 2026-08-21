@@ -7,7 +7,7 @@
 在仓库根目录执行：
 
 ```powershell
-python -m http.server 8080 -d web
+python -m http.server 8080
 ```
 
 然后访问 `http://localhost:8080/`。

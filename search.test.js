@@ -17,7 +17,10 @@ function real(name,x,type="G"){
   return{name,mainCategory:"Star",coords:{x:String(x),y:"0",z:"0"},references:{simbad:{SpectralType:type,typeMain:"*",typeAll:"*"}}};
 }
 const stars=[real("Fixed",0),real("Dynamic",20)];
-const planets=[{system:"Fixed",Name:"Fixed A1",type:"RockPlanet",dist:10,size:1,rings:0}];
+const planets=[
+  {system:"Fixed",Name:"Fixed A1",type:"RockPlanet",dist:10,size:1,rings:0},
+  {system:"Fixed",Name:"Fixed Belt",type:"Asteroids",dist:20,size:5,rings:0,mater1:"Diamonds",mater2:"MethaneClathrate",mater3:"Uraninite"}
+];
 const engine=new GalaxySearch.SearchEngine({stars,planets,sectors,starConfigs,rgbPixels,densityPixels});
 const base={centerLy:{x:0,y:0},radius:100,targetMode:"star",targetType:"G-WhiteYellow"};
 
@@ -42,6 +45,8 @@ if(JSON.stringify(sources({excludeFixed:false,excludeNamed:false}))!==JSON.strin
 if(JSON.stringify(sources({excludeFixed:true,excludeNamed:false}))!==JSON.stringify(["Dynamic"]))throw new Error("default exclusion case failed");
 if(sources({excludeFixed:false,excludeNamed:true}).length)throw new Error("named exclusion case failed");
 if(sources({excludeFixed:true,excludeNamed:true}).length)throw new Error("combined exclusion case failed");
+const fixedBelt=engine.realBodies(engine.cellReal(1025,1591)[0]).find(body=>body.type==="Asteroids");
+if(JSON.stringify(fixedBelt.resources.map(resource=>resource.name))!==JSON.stringify(["Diamonds","MethaneClathrate","Uraninite"]))throw new Error("fixed asteroid resources must flow from the planet database into search bodies");
 
 (async()=>{
   const query={centerLy:{x:0,y:0},radius:300,targetMode:"star",targetType:"M-RedDwarf",excludeFixed:true,excludeNamed:true};

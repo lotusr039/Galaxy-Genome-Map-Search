@@ -76,6 +76,38 @@
     ["WaterWorld",118000,250,333],["Y-BrownDwarf",75000,80,90],["Asteroids",1240000,0,5000]
   ].map(([name,chance,tempFrom,tempTo]) => ({name,chance,tempFrom,tempTo}));
 
+  // GoodsType.enumMinerals order and _basicCost values from the AIR game.
+  // The last two entries are uncommon minerals and are excluded from belts.
+  const mineralDefs = [
+    ["Diamonds",1],["Alexandrite",2.1],["Bouxite",.05],["Gallite",.2],["Coltan",.09],
+    ["Bromellite",.8],["Rutile",.08],["Uraninite",.21],["Monazite",1.3],["Painite",1.1],
+    ["Lepidolite",.15],["LithiumHydroxide",.22],["MethaneClathrate",.25],["VoidOpal",15],["Musgravite",10]
+  ].map(([name,cost])=>({name,cost}));
+  const commonMineralCount=mineralDefs.length-2;
+
+  function mineralDropChances(materials){
+    const costs=materials.map(material=>material.cost),max=Math.max(...costs),min=Math.min(...costs);
+    const weights=materials.map(material=>max-material.cost+min),total=weights.reduce((sum,value)=>sum+value,0);
+    return materials.map((material,index)=>({name:material.name,chance:100*weights[index]/total}));
+  }
+
+  function randomMinerals(rng,preferred=null){
+    const available=Array.from({length:commonMineralCount},(_,index)=>index),picked=[];
+    if(preferred){
+      const preferredIndex=mineralDefs.findIndex(material=>material.name===preferred);
+      const availableIndex=available.indexOf(preferredIndex);
+      if(preferredIndex>=0){
+        if(availableIndex>=0)available.splice(availableIndex,1);
+        picked.push(mineralDefs[preferredIndex]);
+      }
+    }
+    while(picked.length<3){
+      const availableIndex=rng.integer(0,available.length);
+      picked.push(mineralDefs[available.splice(availableIndex,1)[0]]);
+    }
+    return mineralDropChances(picked);
+  }
+
   function weighted(rng, list) {
     const total = list.reduce((sum, item) => sum + item.chance, 0);
     const value = rng.float(0, total);
@@ -163,8 +195,8 @@
       }else span=0;
       const slot=eligible[pick];used[slot]=true;remaining--;
       rng.float(0,Math.PI*2);rng.uinteger();
-      if(type.name==="Asteroids"){rng.integer(0,13);rng.integer(0,12);rng.integer(0,11);}
-      bodies.push({type:type.name,kind:"planet",temperature:Math.round(temps[slot]),orbit:(slot+(type.name==="Asteroids"?1:0))*10+25,orbitTo:type.name==="Asteroids"?(slot+span-1)*10+25:slot*10+25,group});
+      const resources=type.name==="Asteroids"?randomMinerals(rng):[];
+      bodies.push({type:type.name,kind:"planet",temperature:Math.round(temps[slot]),orbit:(slot+(type.name==="Asteroids"?1:0))*10+25,orbitTo:type.name==="Asteroids"?(slot+span-1)*10+25:slot*10+25,group,resources});
     }
     bodies.sort((a,b)=>a.orbit-b.orbit);output.push(...bodies);
     if(group<3){
@@ -193,6 +225,39 @@
     rng.float(0,Math.PI*2);
     const primary=randomStarConfig(rng,type,starConfigs);
     return generatePlanets(rng,primary,starConfigs,0,-1,companions);
+  }
+
+  function fixedAsteroidResources(seed,starType,preset,starConfigs){
+    const rng=createSystemRng(seed),primaryType=starByName.get(starType);
+    if(!primaryType)return new Map();
+    const primary=randomStarConfig(rng,primaryType,starConfigs);
+    rng.float(0,Math.PI*2);
+    const resources=new Map(),pendingStars=[primaryType];
+    const compactTypes=new Set(["SoftGammaRepeaterMagnetar","RadioPulsar","MillisecondPulsar","BursterPulsar","AnomalousX-rayMagnetar"]);
+    let generatedBodyCount=0;
+    preset.forEach((item,index)=>{
+      const itemStarType=starByName.get(item.type);
+      if(itemStarType){
+        if(generatedBodyCount)rng.float(0,Math.PI*2);
+        pendingStars.push(itemStarType);
+      }
+      if(pendingStars.length&&(index===preset.length-1||!itemStarType)){
+        for(const type of pendingStars){randomStarConfig(rng,type,starConfigs);rng.uinteger();generatedBodyCount++;}
+        pendingStars.length=0;
+      }
+      if(itemStarType)return;
+      rng.float(0,Math.PI*2);
+      if(compactTypes.has(primary.type.name))randomStarConfig(rng,starByName.get("G-WhiteYellow"),starConfigs);
+      rng.uinteger();
+      if(item.type==="Asteroids"){
+        const specified=[item.mater1,item.mater2,item.mater3].filter(Boolean);
+        let beltResources=randomMinerals(rng,specified[0]||null);
+        if(specified.length===3)beltResources=mineralDropChances(specified.map(name=>mineralDefs.find(material=>material.name===name)).filter(Boolean));
+        resources.set(index,beltResources);
+      }
+      generatedBodyCount++;
+    });
+    return resources;
   }
 
   function adjustedDensity(secX,secY,density){
@@ -236,6 +301,8 @@
     },
     getStarTypes(){return starDefs.map(type=>type.name);},
     getPlanetTypes(){return planetDefs.map(type=>type.name);},
+    getMineralTypes(){return mineralDefs.map(material=>material.name);},
+    fixedAsteroidResources,
     globalId,
     enumerateCell({secX,secY,rgb,density,realBlockers=[],starIdOffset=0}){
       return enumerateCell(secX,secY,rgb,density,realBlockers,starIdOffset);

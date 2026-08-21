@@ -29,6 +29,7 @@ const TYPE_NAMES={
   "CarbonC-HdStar":"碳星","CarbonC-HStar":"碳星","CarbonC-JStar":"碳星","CarbonC-NStar":"C-N 碳星",
   "CarbonC-SStar":"C-S 碳星","CarbonM-SStar":"M-S 碳星","S-Star":"S级恒星"
 };
+const MINERAL_NAMES={Diamonds:"钻石",Alexandrite:"亚历山大石",Bouxite:"铝土矿",Gallite:"镓石",Coltan:"钶钽铁矿",Bromellite:"溴锂石",Rutile:"金红石",Uraninite:"铀矿",Monazite:"独居石",Painite:"铝硼锆钙石",Lepidolite:"锂云母",LithiumHydroxide:"氢氧化锂",MethaneClathrate:"甲烷水合物",VoidOpal:"虚空蛋白石",Musgravite:"镁塔菲石"};
 
 function number(value,digits=2){return Number(value).toLocaleString("zh-CN",{maximumFractionDigits:digits});}
 function escapeHtml(value){return String(value??"").replace(/[&<>'"]/g,char=>({"&":"&amp;","<":"&lt;",">":"&gt;","'":"&#39;",'"':"&quot;"})[char]);}
@@ -88,9 +89,10 @@ function renderDetails(result){
   const rows=planets.map(planet=>{
     const label=`A${planet.objectIndex}${planet.name?` · ${planet.name}`:""}`;
     const orbit=planet.orbit==null?"-":planet.orbitTo!=null&&planet.orbitTo!==planet.orbit?`${number(planet.orbit,0)}-${number(planet.orbitTo,0)}`:number(planet.orbit,0);
-    return`<tr><td>${escapeHtml(label)}</td><td class="type-tag">${escapeHtml(typeName(planet.type))}</td><td>${escapeHtml(planet.starType)}</td><td>${orbit}</td></tr>`;
+    const resources=planet.resources?.length?planet.resources.map(resource=>`<span class="resource-item"><b>${escapeHtml(resource.name)}(${escapeHtml(MINERAL_NAMES[resource.name]||resource.name)})</b><small>${Math.floor(resource.chance)}%</small></span>`).join(""):"<span class=\"resource-empty\">-</span>";
+    return`<tr><td>${escapeHtml(label)}</td><td class="type-tag">${escapeHtml(typeName(planet.type))}</td><td>${escapeHtml(planet.starType)}</td><td>${orbit}</td><td class="resource-cell">${resources}</td></tr>`;
   }).join("");
-  const planetSection=planets.length?`<h3 class="table-title">星系内天体（${planets.length}）</h3><div class="table-scroll"><table class="planet-table"><thead><tr><th>序号 / 名称</th><th>行星类型</th><th>所属恒星</th><th>轨道距离</th></tr></thead><tbody>${rows}</tbody></table></div>`:`<div class="notice">该星系没有生成行星。</div>`;
+  const planetSection=planets.length?`<h3 class="table-title">星系内天体（${planets.length}）</h3><div class="table-scroll"><table class="planet-table"><thead><tr><th>序号 / 名称</th><th>行星类型</th><th>所属恒星</th><th>轨道距离</th><th>矿物资源</th></tr></thead><tbody>${rows}</tbody></table></div>`:`<div class="notice">该星系没有生成行星。</div>`;
   elements.details.classList.remove("empty");
   elements.details.innerHTML=`<div class="detail-head"><div><h2>${escapeHtml(result.systemName)}</h2><p>${escapeHtml(match)} · ${source} · 距中心 ${number(result.distance)} ly</p></div><div class="coord-pills"><span>LY ${number(result.xLy)}, ${number(result.yLy)}</span></div></div>${planetSection}`;
 }
