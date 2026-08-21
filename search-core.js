@@ -114,12 +114,14 @@
       });
       const matches=[];
       bodies.forEach((body,index)=>{
-        if(body.kind!==query.targetMode||body.type!==query.targetType)return;
+        if(body.kind!==query.targetMode||(query.targetType&&body.type!==query.targetType))return;
         const sameKindBefore=bodies.slice(0,index).filter(item=>item.kind===body.kind).length;
         const group=body.group??0,groupStar=bodies.find(item=>item.kind==="star"&&(item.group??0)===group);
-        matches.push({id:`${system.source}-${system.globalId??system.databaseIndex}-${body.kind}-${index}`,systemName:system.name,source:system.source,fixed:Boolean(system.fixed),kind:body.kind,type:body.type,subtype:body.subtype||"",temperature:body.temperature??null,orbit:body.orbit??null,group,objectIndex:sameKindBefore+1,xLy:system.xLy,yLy:system.yLy,mapX:system.mapX,mapY:system.mapY,distance,starType:groupStar?.type||system.starType,systemPlanets});
+        matches.push({kind:body.kind,type:body.type,subtype:body.subtype||"",temperature:body.temperature??null,orbit:body.orbit??null,group,objectIndex:sameKindBefore+1,starType:groupStar?.type||system.starType});
       });
-      return matches;
+      if(!matches.length)return[];
+      const first=matches[0];
+      return[{id:`${system.source}-${system.globalId??system.databaseIndex}-${query.targetMode}`,systemName:system.name,source:system.source,fixed:Boolean(system.fixed),...first,xLy:system.xLy,yLy:system.yLy,mapX:system.mapX,mapY:system.mapY,distance,systemPlanets,matchedObjects:matches}];
     }
 
     processCell(secX,secY,query){
@@ -171,7 +173,7 @@
         if(cancelled())throw new Error("SEARCH_CANCELLED");
         const cellResults=this.processCell(cell.x,cell.y,query);
         results.push(...cellResults);candidates+=cellResults.length;checked++;
-        results.sort((a,b)=>a.distance-b.distance||a.systemName.localeCompare(b.systemName)||a.objectIndex-b.objectIndex);
+        results.sort((a,b)=>a.distance-b.distance||a.systemName.localeCompare(b.systemName));
         if(results.length>MAX_RESULTS)results.length=MAX_RESULTS;
         const tenth=results[9];if(tenth&&cells[checked]?.minDistance>tenth.distance)break;
         if(checked%yieldEvery===0){progress({checked,total:cells.length,distance:cell.minDistance,candidates});await new Promise(resolve=>setTimeout(resolve,0));}

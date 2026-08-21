@@ -47,6 +47,12 @@ if(sources({excludeFixed:false,excludeNamed:true}).length)throw new Error("named
 if(sources({excludeFixed:true,excludeNamed:true}).length)throw new Error("combined exclusion case failed");
 const fixedBelt=engine.realBodies(engine.cellReal(1025,1591)[0]).find(body=>body.type==="Asteroids");
 if(JSON.stringify(fixedBelt.resources.map(resource=>resource.name))!==JSON.stringify(["Diamonds","MethaneClathrate","Uraninite"]))throw new Error("fixed asteroid resources must flow from the planet database into search bodies");
+const allFixedPlanets=engine.processCell(1025,1591,{...base,targetMode:"planet",targetType:"",excludeFixed:false,excludeNamed:false}).filter(result=>result.systemName==="Fixed");
+if(allFixedPlanets.length!==1||JSON.stringify(allFixedPlanets[0].matchedObjects.map(result=>result.type))!==JSON.stringify(["RockPlanet","Asteroids"]))throw new Error("all matching planets in one system must be grouped into one result");
+const allStarTypes=engine.matches({source:"test",globalId:1,name:"Mixed",xLy:0,yLy:0,mapX:1025,mapY:1591,starType:"G-WhiteYellow"},[
+  {kind:"star",type:"G-WhiteYellow",group:0},{kind:"star",type:"M-RedDwarf",group:0}
+],{...base,targetType:""});
+if(allStarTypes.length!==1||JSON.stringify(allStarTypes[0].matchedObjects.map(result=>result.type))!==JSON.stringify(["G-WhiteYellow","M-RedDwarf"]))throw new Error("all matching stars in one system must be grouped into one result");
 
 (async()=>{
   const query={centerLy:{x:0,y:0},radius:300,targetMode:"star",targetType:"M-RedDwarf",excludeFixed:true,excludeNamed:true};
