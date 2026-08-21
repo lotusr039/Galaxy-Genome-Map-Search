@@ -3,6 +3,33 @@ const state={centerMode:"name",targetMode:"planet",center:null,centerChoices:[],
 const $=selector=>document.querySelector(selector);
 const elements={form:$("#searchForm"),centerName:$("#centerNameInput"),namePanel:$("#nameCenterPanel"),coordPanel:$("#coordCenterPanel"),choices:$("#centerChoices"),x:$("#xInput"),y:$("#yInput"),targetType:$("#targetTypeSelect"),targetLabel:$("#targetTypeLabel"),radius:$("#radiusInput"),excludeFixed:$("#excludeFixed"),excludeNamed:$("#excludeNamed"),search:$("#searchButton"),cancel:$("#cancelButton"),results:$("#results"),count:$("#resultCount"),progress:$("#searchProgress"),details:$("#details"),status:$("#dataStatus"),canvas:$("#mapCanvas"),template:$("#resultTemplate")};
 
+const TYPE_NAMES={
+  EarthLikePlanet:"类地行星",AmmoniaPlanet:"氨行星",GasGiantwithAmmoniaLife:"具有氨寿命的气体巨行星",
+  HeliumRichGasGiant:"富氦气体巨行星",GasGiantClassI:"气体行星 I 级别",GasGiantClassII:"气体行星 II 级别",
+  GasGiantClassIII:"气体行星 III 级别",GasGiantClassIV:"气体行星 IV 级别",GasGiantClassV:"气体行星 V 级别",
+  GasGiantwithWaterLife:"具有水生命的气体巨行星",HighMetalPlanet:"高金属行星",IcePlanet:"冰行星",
+  MetalRichPlanet:"富金属行星",RockPlanet:"岩石行星",WaterGiant:"水体巨行星",WaterWorld:"水世界",
+  "Y-BrownDwarf":"Y - 褐矮星",Asteroids:"小行星带",
+  "M-RedDwarf":"M - 红矮星","K-YellowOrange":"K - 黄橙主序","G-WhiteYellow":"G - 白黄主序",
+  "F-White":"F - 白色主序","A-BlueWhite":"A - 蓝白主序","B-BlueWhite":"B - 蓝白主序","O-BlueWhite":"O - 蓝白主序",
+  WolfRayetStar:"沃尔夫-雷耶特类恒星","WC-WolfRayetStar":"WC - 沃尔夫-雷耶特类恒星",
+  "WN-WolfRayetStar":"WN - 沃尔夫-雷耶特类恒星","WNC-WolfRayetStar":"WNC - 沃尔夫-雷耶特类恒星",
+  "WO-WolfRayetStar":"WO - 沃尔夫-雷耶特类恒星","DA-WhiteDwarf":"DA - 白矮星",
+  "DAV-WhiteDwarf":"DAV - 白矮星","DAZ-WhiteDwarf":"DAZ - 白矮星","DB-WhiteDwarf":"DB - 白矮星",
+  "DBV-WhiteDwarf":"DBV - 白矮星","DC-WhiteDwarf":"DC - 白矮星","DCV-WhiteDwarf":"DCV - 白矮星",
+  "DO-WhiteDwarf":"DO -白矮星","DOV-WhiteDwarf":"DOV - 白矮星","DQ-WhiteDwarf":"DQ - 白矮星","DX-WhiteDwarf":"DX - 白矮星",
+  HerbigAeStar:"赫比格Ae恒星",HerbigBeStar:"赫比格Be恒星","L-BrownDwarf":"L - 褐矮星","T-BrownDwarf":"T - 褐矮星",
+  TauriG:"金牛座 G",TauriK:"金牛座 K",TauriF:"金牛座 F",TauriM:"金牛座 M",BursterPulsar:"中子星",
+  RadioPulsar:"脉冲行星",MillisecondPulsar:"毫秒脉冲星",SoftGammaRepeaterMagnetar:"软伽马中继行星",
+  "AnomalousX-rayMagnetar":"高能X射线脉冲星",Quarkstar:"夸克行星",Preonstar:"前子星",BlackHole:"黑洞",
+  "K-RedGiant":"K -橙色巨星","M-RedGiant":"M - 红色巨星","G-YellowGiant":"G - 黄色巨星","F-YellowGiant":"F - 黄色巨星",
+  "M-RedSupergiant":"M - 红色超巨星","F-YellowSupergiant":"F - 黄色超巨星",
+  "A-BlueWhiteSupergiant":"A - 蓝白色超巨星","B-BlueWhiteSupergiant":"B - 蓝白超巨星",
+  "O-BlueSupergiant":"O - 蓝色超巨星","O-Hypergiant":"O - 蓝色超巨星","CarbonC-RStar":"碳星",
+  "CarbonC-HdStar":"碳星","CarbonC-HStar":"碳星","CarbonC-JStar":"碳星","CarbonC-NStar":"C-N 碳星",
+  "CarbonC-SStar":"C-S 碳星","CarbonM-SStar":"M-S 碳星","S-Star":"S级恒星"
+};
+
 function number(value,digits=2){return Number(value).toLocaleString("zh-CN",{maximumFractionDigits:digits});}
 function escapeHtml(value){return String(value??"").replace(/[&<>'"]/g,char=>({"&":"&amp;","<":"&lt;",">":"&gt;","'":"&#39;",'"':"&quot;"})[char]);}
 function mapToLy(x,y){return{x:(x-SOL_MAP_X)*YEARS_PER_PIXEL,y:(SOL_MAP_Y-y)*YEARS_PER_PIXEL};}
@@ -21,7 +48,8 @@ async function loadData(){
   elements.status.textContent=`${number(stars.length,0)} 个真实恒星 · ${number(planetPayload.planets?.length||0,0)} 个固定天体`;elements.status.classList.add("ready");
 }
 
-function fillTargetTypes(){const values=state.targetMode==="planet"?GalaxyGenerator.getPlanetTypes():GalaxyGenerator.getStarTypes();elements.targetType.replaceChildren(...[...new Set(values)].sort().map(value=>{const option=document.createElement("option");option.value=value;option.textContent=value;return option;}));elements.targetLabel.textContent=state.targetMode==="planet"?"行星类型":"恒星类型";}
+function typeName(value){return `${value}(${TYPE_NAMES[value]||value})`;}
+function fillTargetTypes(){const values=state.targetMode==="planet"?GalaxyGenerator.getPlanetTypes():GalaxyGenerator.getStarTypes();elements.targetType.replaceChildren(...[...new Set(values)].sort().map(value=>{const option=document.createElement("option");option.value=value;option.textContent=typeName(value);return option;}));elements.targetLabel.textContent=state.targetMode==="planet"?"行星类型":"恒星类型";}
 function handleWorkerMessage(event){
   const message=event.data;if(message.type==="ready"){state.workerReady=true;elements.search.disabled=false;elements.progress.textContent="等待搜索";return;}
   if(message.type==="resolved"){const pending=state.pendingResolve.get(message.requestId);if(pending){state.pendingResolve.delete(message.requestId);pending.resolve(message.choices);}return;}
@@ -54,16 +82,15 @@ function finishSearch(results){state.results=results;state.activeSearch=null;set
 function renderResults(){elements.results.replaceChildren();elements.count.textContent=`${state.results.length} 个结果`;for(const result of state.results){const node=elements.template.content.firstElementChild.cloneNode(true);node.dataset.id=result.id;node.querySelector("strong").textContent=result.kind==="planet"?`${result.systemName} A${result.objectIndex}`:`${result.systemName} · 恒星 ${result.objectIndex}`;node.querySelector("small").textContent=result.kind==="planet"?`${result.type} · 主恒星 ${result.starType}`:`${result.type}${result.subtype?` · ${result.subtype}`:""}`;node.querySelector(".distance").textContent=`${number(result.distance)} ly`;node.addEventListener("click",()=>selectResult(result));elements.results.append(node);}}
 function selectResult(result){state.selected=result;elements.results.querySelectorAll(".result-item").forEach(node=>node.classList.toggle("active",node.dataset.id===result.id));renderDetails(result);drawMap();}
 function renderDetails(result){
-  const match=result.kind==="planet"?`当前匹配 A${result.objectIndex} · ${result.type} · 所属恒星 ${result.starType}`:`当前匹配 恒星 ${result.objectIndex} · ${result.type}${result.subtype?` · ${result.subtype}`:""}`;
+  const match=result.kind==="planet"?`当前匹配 A${result.objectIndex} · ${typeName(result.type)} · 所属恒星 ${result.starType}`:`当前匹配 恒星 ${result.objectIndex} · ${result.type}${result.subtype?` · ${result.subtype}`:""}`;
   const source=result.source==="generated"?"程序星系":result.fixed?"固定行星系统":"具名真实星系";
   const planets=result.systemPlanets||[];
   const rows=planets.map(planet=>{
     const label=`A${planet.objectIndex}${planet.name?` · ${planet.name}`:""}`;
-    const temperature=planet.temperature==null?"-":`${number(planet.temperature,0)} K`;
     const orbit=planet.orbit==null?"-":planet.orbitTo!=null&&planet.orbitTo!==planet.orbit?`${number(planet.orbit,0)}-${number(planet.orbitTo,0)}`:number(planet.orbit,0);
-    return`<tr><td>${escapeHtml(label)}</td><td class="type-tag">${escapeHtml(planet.type)}</td><td>${escapeHtml(planet.starType)}</td><td>${temperature}</td><td>${orbit}</td></tr>`;
+    return`<tr><td>${escapeHtml(label)}</td><td class="type-tag">${escapeHtml(typeName(planet.type))}</td><td>${escapeHtml(planet.starType)}</td><td>${orbit}</td></tr>`;
   }).join("");
-  const planetSection=planets.length?`<h3 class="table-title">星系内天体（${planets.length}）</h3><div class="table-scroll"><table class="planet-table"><thead><tr><th>序号 / 名称</th><th>行星类型</th><th>所属恒星</th><th>温度</th><th>轨道距离</th></tr></thead><tbody>${rows}</tbody></table></div>`:`<div class="notice">该星系没有生成行星。</div>`;
+  const planetSection=planets.length?`<h3 class="table-title">星系内天体（${planets.length}）</h3><div class="table-scroll"><table class="planet-table"><thead><tr><th>序号 / 名称</th><th>行星类型</th><th>所属恒星</th><th>轨道距离</th></tr></thead><tbody>${rows}</tbody></table></div>`:`<div class="notice">该星系没有生成行星。</div>`;
   elements.details.classList.remove("empty");
   elements.details.innerHTML=`<div class="detail-head"><div><h2>${escapeHtml(result.systemName)}</h2><p>${escapeHtml(match)} · ${source} · 距中心 ${number(result.distance)} ly</p></div><div class="coord-pills"><span>LY ${number(result.xLy)}, ${number(result.yLy)}</span></div></div>${planetSection}`;
 }
