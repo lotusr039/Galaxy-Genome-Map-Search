@@ -53,6 +53,14 @@ const allStarTypes=engine.matches({source:"test",globalId:1,name:"Mixed",xLy:0,y
   {kind:"star",type:"G-WhiteYellow",group:0},{kind:"star",type:"M-RedDwarf",group:0}
 ],{...base,targetType:""});
 if(allStarTypes.length!==1||JSON.stringify(allStarTypes[0].matchedObjects.map(result=>result.type))!==JSON.stringify(["G-WhiteYellow","M-RedDwarf"]))throw new Error("all matching stars in one system must be grouped into one result");
+const diamondResults=engine.processCell(1025,1591,{...base,targetMode:"mineral",targetType:"Diamonds",excludeFixed:false,excludeNamed:false}).filter(result=>result.systemName==="Fixed");
+if(diamondResults.length!==1||diamondResults[0].kind!=="mineral"||diamondResults[0].abundance<=0||diamondResults[0].matchedObjects[0].objectIndex!==2)throw new Error("ordinary mineral searches must return the containing asteroid belt and its abundance");
+const deepResults=engine.matches({source:"test",globalId:2,name:"Deep",secX:1023,secY:1588,xLy:0,yLy:0,mapX:1023,mapY:1588,starType:"G-WhiteYellow"},[
+  {kind:"star",type:"G-WhiteYellow",group:0},{kind:"planet",type:"Asteroids",group:0,resources:[]}
+],{...base,targetMode:"mineral",targetType:"VoidOpal"});
+if(deepResults.length!==1||deepResults[0].abundance!==5||deepResults[0].matchedObjects[0].resourceKind!=="deep")throw new Error("Void Opal searches must match remainder-1 sectors at the 5% deep-asteroid rate");
+const mineralOrder=[{systemName:"NearLow",distance:1,abundance:10},{systemName:"FarHigh",distance:90,abundance:60}].sort((a,b)=>GalaxySearch.compareResults(a,b,{targetMode:"mineral"}));
+if(mineralOrder[0].systemName!=="FarHigh")throw new Error("mineral results must sort by abundance before distance");
 
 (async()=>{
   const query={centerLy:{x:0,y:0},radius:300,targetMode:"star",targetType:"M-RedDwarf",excludeFixed:true,excludeNamed:true};

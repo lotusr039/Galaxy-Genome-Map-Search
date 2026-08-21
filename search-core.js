@@ -7,6 +7,10 @@
 
   function mapToLy(x,y){return{x:(x-SOL_X)*YEARS_PER_PIXEL,y:(SOL_Y-y)*YEARS_PER_PIXEL};}
   function lyToMap(x,y){return{x:x/YEARS_PER_PIXEL+SOL_X,y:-y/YEARS_PER_PIXEL+SOL_Y};}
+  function compareResults(a,b,query){
+    if(query.targetMode==="mineral")return(b.abundance??0)-(a.abundance??0)||a.distance-b.distance||a.systemName.localeCompare(b.systemName);
+    return a.distance-b.distance||a.systemName.localeCompare(b.systemName);
+  }
   function classifyRealStar(star){
     const simbad=star.references?.simbad||{};
     const spectral=String(simbad.SpectralType||"");
@@ -112,6 +116,21 @@
         const group=body.group??0,groupStar=bodies.find(item=>item.kind==="star"&&(item.group??0)===group);
         return{objectIndex:++planetIndex,name:body.Name||"",type:body.type,temperature:body.temperature??null,orbit:body.orbit??null,orbitTo:body.orbitTo??body.orbit??null,group,starType:groupStar?.type||system.starType,resources:body.resources||[]};
       });
+      if(query.targetMode==="mineral"){
+        const mineralMatches=[],remainder=((system.secX+system.secY)%10+10)%10;
+        const deepMineral=remainder===1?"VoidOpal":remainder===2?"Musgravite":"";
+        for(const planet of systemPlanets){
+          if(planet.type!=="Asteroids")continue;
+          for(const resource of planet.resources){
+            if(query.targetType&&resource.name!==query.targetType)continue;
+            mineralMatches.push({kind:"mineral",type:resource.name,abundance:resource.chance,resourceKind:"belt",objectIndex:planet.objectIndex,starType:planet.starType});
+          }
+          if(deepMineral&&(!query.targetType||query.targetType===deepMineral))mineralMatches.push({kind:"mineral",type:deepMineral,abundance:5,resourceKind:"deep",objectIndex:planet.objectIndex,starType:planet.starType,expectedYieldFrom:3,expectedYieldTo:6});
+        }
+        if(!mineralMatches.length)return[];
+        const first=mineralMatches[0],abundance=Math.max(...mineralMatches.map(match=>match.abundance));
+        return[{id:`${system.source}-${system.globalId??system.databaseIndex}-mineral`,systemName:system.name,source:system.source,fixed:Boolean(system.fixed),...first,abundance,xLy:system.xLy,yLy:system.yLy,mapX:system.mapX,mapY:system.mapY,distance,systemPlanets,matchedObjects:mineralMatches}];
+      }
       const matches=[];
       bodies.forEach((body,index)=>{
         if(body.kind!==query.targetMode||(query.targetType&&body.type!==query.targetType))return;
@@ -173,16 +192,16 @@
         if(cancelled())throw new Error("SEARCH_CANCELLED");
         const cellResults=this.processCell(cell.x,cell.y,query);
         results.push(...cellResults);candidates+=cellResults.length;checked++;
-        results.sort((a,b)=>a.distance-b.distance||a.systemName.localeCompare(b.systemName));
+        results.sort((a,b)=>compareResults(a,b,query));
         if(results.length>MAX_RESULTS)results.length=MAX_RESULTS;
-        const tenth=results[9];if(tenth&&cells[checked]?.minDistance>tenth.distance)break;
+        const tenth=results[9];if(query.targetMode!=="mineral"&&tenth&&cells[checked]?.minDistance>tenth.distance)break;
         if(checked%yieldEvery===0){progress({checked,total:cells.length,distance:cell.minDistance,candidates});await new Promise(resolve=>setTimeout(resolve,0));}
       }
       progress({checked,total:cells.length,distance:results[9]?.distance??query.radius,candidates,done:true});return results;
     }
   }
 
-  const api={SearchEngine,classifyRealStar,mapToLy,lyToMap,minCellDistanceLy};
+  const api={SearchEngine,classifyRealStar,mapToLy,lyToMap,minCellDistanceLy,compareResults};
   globalThis.GalaxySearch=api;
   if(typeof window!=="undefined")window.GalaxySearch=api;
 })();

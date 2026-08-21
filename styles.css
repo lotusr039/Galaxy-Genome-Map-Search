@@ -50,6 +50,7 @@ input:focus, select:focus { border-color: var(--cyan); box-shadow: 0 0 0 2px #52
 .segmented button { height: 34px; color: var(--muted); background: #0b1014; border: 0; }
 .segmented button + button { border-left: 1px solid #34404a; }
 .segmented button.active { color: #071411; background: var(--cyan); font-weight: 650; }
+#targetMode { grid-template-columns: repeat(3, 1fr); }
 .check-field { min-height: 32px; display: flex; align-items: center; gap: 9px; font-size: 12px; color: #c8d0d6; }
 .check-field input { width: 16px; height: 16px; margin: 0; accent-color: var(--cyan); }
 .form-actions { display: grid; grid-template-columns: 1fr auto; gap: 8px; margin-top: 12px; }
