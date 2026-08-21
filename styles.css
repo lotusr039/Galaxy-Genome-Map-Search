@@ -46,6 +46,7 @@ input, select {
 }
 input:focus, select:focus { border-color: var(--cyan); box-shadow: 0 0 0 2px #52d3c722; }
 .coord-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 12px 0 16px; }
+.search-options-grid { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 1fr); gap: 10px; margin-bottom: 16px; }
 .segmented { display: grid; grid-template-columns: 1fr 1fr; margin-top: 7px; border: 1px solid #34404a; border-radius: 4px; overflow: hidden; }
 .segmented button { height: 34px; color: var(--muted); background: #0b1014; border: 0; }
 .segmented button + button { border-left: 1px solid #34404a; }

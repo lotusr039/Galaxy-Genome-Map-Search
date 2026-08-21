@@ -52,10 +52,16 @@
           <select id="targetTypeSelect"></select>
         </label>
 
-        <label class="field full">
-          <span>搜索半径（光年）</span>
-          <input id="radiusInput" type="number" min="1" max="2000" step="1" value="500" required>
-        </label>
+        <div class="search-options-grid">
+          <label class="field">
+            <span>搜索半径（光年）</span>
+            <input id="radiusInput" type="number" min="1" max="40000" step="1" value="500" required>
+          </label>
+          <label class="field">
+            <span>结果数量</span>
+            <input id="resultLimitInput" type="number" min="1" max="1000" step="1" value="10" required>
+          </label>
+        </div>
 
         <label class="check-field"><input id="excludeFixed" type="checkbox" checked><span>排除固定行星系统</span></label>
         <label class="check-field"><input id="excludeNamed" type="checkbox"><span>排除具名真实星系</span></label>

@@ -65,11 +65,13 @@ if(mineralOrder[0].systemName!=="FarHigh")throw new Error("mineral results must 
 (async()=>{
   const query={centerLy:{x:0,y:0},radius:300,targetMode:"star",targetType:"M-RedDwarf",excludeFixed:true,excludeNamed:true};
   const optimized=await engine.search(query,{yieldEvery:100000});
+  const limited=await engine.search({...query,resultLimit:3},{yieldEvery:100000});
   const centerMap=GalaxySearch.lyToMap(0,0),complete=[];
   for(const cell of engine.buildCells(centerMap,query.radius))complete.push(...engine.processCell(cell.x,cell.y,query));
   complete.sort((a,b)=>a.distance-b.distance||a.systemName.localeCompare(b.systemName)||a.objectIndex-b.objectIndex);complete.length=Math.min(10,complete.length);
   const signature=items=>items.map(item=>[item.systemName,item.objectIndex,item.distance]);
   if(JSON.stringify(signature(optimized))!==JSON.stringify(signature(complete)))throw new Error("nearest-10 early stop differs from exhaustive scan");
+  if(limited.length!==Math.min(3,complete.length)||JSON.stringify(signature(limited))!==JSON.stringify(signature(complete.slice(0,3))))throw new Error("custom result limit differs from exhaustive scan");
   const namedCenter=engine.resolveName("fIxEd");
   if(namedCenter.length!==1||namedCenter[0].label!=="Fixed")throw new Error("real center lookup must be exact and case-insensitive");
   const edgeCells=engine.buildCells({x:-10,y:-10},2000);

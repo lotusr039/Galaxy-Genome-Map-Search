@@ -1,5 +1,5 @@
 (function () {
-  const YEARS_PER_PIXEL=43.74,SOL_X=1025,SOL_Y=1591,MAP_SIZE=2048,MAX_RESULTS=10;
+  const YEARS_PER_PIXEL=43.74,SOL_X=1025,SOL_Y=1591,MAP_SIZE=2048,DEFAULT_RESULT_LIMIT=10;
 
   const companionCodes={A:"A-BlueWhite",B:"B-BlueWhite",O:"O-BlueWhite",WD:"DA-WhiteDwarf",BH:"BlackHole",K:"K-YellowOrange",G:"G-WhiteYellow",M:"M-RedDwarf",L:"L-BrownDwarf",S:"S-Star",C:"CarbonC-NStar",W:"WO-WolfRayetStar",N:"RadioPulsar"};
   const mainTypes={"s*b":"B-BlueWhiteSupergiant",BH:"BlackHole","s*r":"M-RedSupergiant","g*K":"K-RedGiant","g*M":"M-RedGiant","WD*":"DC-WhiteDwarf","DN*":"DX-WhiteDwarf","ZZ*":"DAZ-WhiteDwarf","WD?":"DAV-WhiteDwarf","BD*":"L-BrownDwarf","C*":"CarbonC-NStar","S*":"S-Star","CH*":"CarbonC-HStar","N*":"RadioPulsar","Ae*":"HerbigAeStar","WR*":"WO-WolfRayetStar","Be*":"HerbigBeStar",Psr:"MillisecondPulsar"};
@@ -186,6 +186,7 @@
     }
 
     async search(query,{cancelled=()=>false,progress=()=>{},yieldEvery=8}={}){
+      const resultLimit=Number.isInteger(query.resultLimit)&&query.resultLimit>0?Math.min(query.resultLimit,1000):DEFAULT_RESULT_LIMIT;
       const centerMap=lyToMap(query.centerLy.x,query.centerLy.y),cells=this.buildCells(centerMap,query.radius),results=[];
       let checked=0,candidates=0;
       for(const cell of cells){
@@ -193,11 +194,11 @@
         const cellResults=this.processCell(cell.x,cell.y,query);
         results.push(...cellResults);candidates+=cellResults.length;checked++;
         results.sort((a,b)=>compareResults(a,b,query));
-        if(results.length>MAX_RESULTS)results.length=MAX_RESULTS;
-        const tenth=results[9];if(query.targetMode!=="mineral"&&tenth&&cells[checked]?.minDistance>tenth.distance)break;
+        if(results.length>resultLimit)results.length=resultLimit;
+        const last=results[resultLimit-1];if(query.targetMode!=="mineral"&&last&&cells[checked]?.minDistance>last.distance)break;
         if(checked%yieldEvery===0){progress({checked,total:cells.length,distance:cell.minDistance,candidates});await new Promise(resolve=>setTimeout(resolve,0));}
       }
-      progress({checked,total:cells.length,distance:results[9]?.distance??query.radius,candidates,done:true});return results;
+      progress({checked,total:cells.length,distance:results[resultLimit-1]?.distance??query.radius,candidates,done:true});return results;
     }
   }
 
