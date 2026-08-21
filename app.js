@@ -30,7 +30,7 @@ const TYPE_NAMES={
   "CarbonC-SStar":"C-S 碳星","CarbonM-SStar":"M-S 碳星","S-Star":"S级恒星"
 };
 const MINERAL_NAMES={Diamonds:"钻石",Alexandrite:"亚历山大石",Bouxite:"铝土矿",Gallite:"镓石",Coltan:"钶钽铁矿",Bromellite:"溴锂石",Rutile:"金红石",Uraninite:"铀矿",Monazite:"独居石",Painite:"铝硼锆钙石",Lepidolite:"锂云母",LithiumHydroxide:"氢氧化锂",MethaneClathrate:"甲烷水合物",VoidOpal:"虚空蛋白石",Musgravite:"镁塔菲石"};
-const SURFACE_MATERIAL_NAMES={Sulphur:"硫",Selenium:"硒",Manganese:"锰",Nickel:"镍",Vanadium:"钒",Chromium:"铬",Iron:"铁",Polonium:"钋",Tellurium:"碲",Cadmium:"镉",Germanium:"锗",Phosphorus:"磷",Carbon:"碳"};
+const SURFACE_MATERIAL_NAMES={Sulphur:"硫磺",Selenium:"硒",Manganese:"锰",Nickel:"镍",Vanadium:"钒",Chromium:"铬",Iron:"铁",Polonium:"钋",Tellurium:"碲",Cadmium:"镉",Germanium:"锗",Phosphorus:"磷",Carbon:"碳"};
 
 function number(value,digits=2){return Number(value).toLocaleString("zh-CN",{maximumFractionDigits:digits});}
 function escapeHtml(value){return String(value??"").replace(/[&<>'"]/g,char=>({"&":"&amp;","<":"&lt;",">":"&gt;","'":"&#39;",'"':"&quot;"})[char]);}
@@ -94,7 +94,7 @@ function renderDetails(result){
     const label=`A${planet.objectIndex}${planet.name?` · ${planet.name}`:""}`;
     const orbit=planet.orbit==null?"-":planet.orbitTo!=null&&planet.orbitTo!==planet.orbit?`${number(planet.orbit,0)}-${number(planet.orbitTo,0)}`:number(planet.orbit,0);
     const normalResources=planet.resources?.map(resource=>`<span class="resource-item"><b>${escapeHtml(mineralName(resource.name))}</b><small>${Math.floor(resource.chance)}%</small></span>`).join("")||"";
-    const surfaceResources=planet.surfaceMaterials?.map(material=>`<span class="resource-item"><b>${escapeHtml(surfaceMaterialName(material.name))}</b><small>${number(material.chance,0)}%</small></span>`).join("")||"";
+    const surfaceResources=planet.surfaceMaterials?.map(material=>`<span class="resource-item"><b>${escapeHtml(surfaceMaterialName(material.name))}</b><small>${number(Math.floor(material.chance*10)/10,1)}%</small></span>`).join("")||"";
     const deepResources=matched.filter(item=>item.kind==="mineral"&&item.resourceKind==="deep"&&item.objectIndex===planet.objectIndex).map(resource=>`<span class="resource-item"><b>${escapeHtml(mineralName(resource.type))}</b><small>深层 ${number(resource.abundance,0)}%</small></span>`).join("");
     const resources=normalResources+surfaceResources+deepResources||"<span class=\"resource-empty\">-</span>";
     return`<tr><td>${escapeHtml(label)}</td><td class="type-tag">${escapeHtml(typeName(planet.type))}</td><td>${escapeHtml(planet.starType)}</td><td>${orbit}</td><td class="resource-cell">${resources}</td></tr>`;

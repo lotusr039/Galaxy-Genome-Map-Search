@@ -12,6 +12,8 @@ const sectors=JSON.parse(fs.readFileSync(path.join(__dirname,"data","Sectors.jso
 const starConfigs=JSON.parse(fs.readFileSync(path.join(__dirname,"data","StarTypes.json"),"utf8")).starTypes;
 const mapBytes=2048*2048*4,rgbPixels=new Uint8Array(mapBytes),densityPixels=new Uint8Array(mapBytes);
 for(let x=1018;x<=1032;x++)for(let y=1584;y<=1598;y++)densityPixels[(y*2048+x)*4]=1;
+const actoxOffset=(1324*2048+991)*4;
+rgbPixels[actoxOffset]=181;rgbPixels[actoxOffset+1]=83;rgbPixels[actoxOffset+2]=4;densityPixels[actoxOffset]=155;
 
 function real(name,x,type="G"){
   return{name,mainCategory:"Star",coords:{x:String(x),y:"0",z:"0"},references:{simbad:{SpectralType:type,typeMain:"*",typeAll:"*"}}};
@@ -74,6 +76,8 @@ if(mineralOrder[0].systemName!=="FarHigh")throw new Error("mineral results must 
   if(limited.length!==Math.min(3,complete.length)||JSON.stringify(signature(limited))!==JSON.stringify(signature(complete.slice(0,3))))throw new Error("custom result limit differs from exhaustive scan");
   const namedCenter=engine.resolveName("fIxEd");
   if(namedCenter.length!==1||namedCenter[0].label!=="Fixed")throw new Error("real center lookup must be exact and case-insensitive");
+  const actoxCenter=engine.resolveName("Actox Cc-Cl D95");
+  if(actoxCenter.length!==1||Math.abs(actoxCenter[0].xLy+1462)>1||Math.abs(actoxCenter[0].yLy-11637)>1)throw new Error(`Actox Cc-Cl D95 center lookup failed: ${JSON.stringify(actoxCenter)}`);
   const edgeCells=engine.buildCells({x:-10,y:-10},2000);
   if(edgeCells.some(cell=>cell.x<0||cell.y<0||cell.x>=2048||cell.y>=2048))throw new Error("map boundary clipping failed");
   const none=await engine.search({...query,radius:1,targetType:"BlackHole"},{yieldEvery:100000});

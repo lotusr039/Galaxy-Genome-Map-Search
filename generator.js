@@ -106,6 +106,13 @@
   };
   const surfaceMaterialRarity={Sulphur:1,Nickel:1,Iron:1,Manganese:1,Chromium:.8,Phosphorus:.7,Carbon:1,Vanadium:.4,Selenium:.2,Cadmium:.3,Polonium:.2,Germanium:.2,Tellurium:.3};
 
+  // BitmapData.noise() receives an int seed. A uint above INT_MAX is first
+  // sign-converted, then AIR's noise implementation reflects negative seeds.
+  function airNoiseSeed(seed){
+    const value=seed>>>0;
+    return value>0x7fffffff?0x100000001-value:value;
+  }
+
   function modularPower(base,exponent,modulus){
     let result=1n,value=BigInt(base)%modulus,power=BigInt(exponent);
     while(power>0n){if(power&1n)result=result*value%modulus;value=value*value%modulus;power>>=1n;}
@@ -114,7 +121,7 @@
 
   function seededPixel(seed,index){
     const modulus=2147483647n,multiplier=16807n;
-    let state=BigInt(seed>>>0)%modulus;if(state<=0n)state=1n;
+    let state=BigInt(airNoiseSeed(seed))%modulus;if(state<=0n)state=1n;
     state=state*modularPower(multiplier,index*4,modulus)%modulus;
     const channels=[];
     for(let i=0;i<4;i++){state=state*multiplier%modulus;channels.push(Number(state&255n));}
@@ -132,7 +139,9 @@
     let names=sets[0];
     if(type!=="MetalRichPlanet"){
       const callIndex=type==="HighMetalPlanet"?9:type==="RockPlanet"?5:6;
-      names=sets[Math.floor(planetRandom(seed,callIndex)*sets.length)]||[];
+      // PlanetNew uses integer(0, 7) here, leaving the eighth high-metal set unreachable.
+      const setCount=type==="HighMetalPlanet"?7:sets.length;
+      names=sets[Math.floor(planetRandom(seed,callIndex)*setCount)]||[];
     }
     const total=names.reduce((sum,name)=>sum+surfaceMaterialRarity[name],0);
     return names.map(name=>({name,chance:100*surfaceMaterialRarity[name]/total}));

@@ -88,9 +88,9 @@ if (JSON.stringify(actoxResources) !== JSON.stringify(expectedResources)) {
 }
 const actoxSurfaceResources=ordinary.map(body=>generator.surfaceMaterials(body.type,body.seed).map(material=>material.name));
 const expectedSurfaceResources=[
-  ["Sulphur","Manganese","Vanadium"],["Vanadium","Manganese","Cadmium"],["Sulphur","Iron","Tellurium"],
+  ["Sulphur","Manganese","Vanadium"],["Nickel","Vanadium","Sulphur"],["Sulphur","Iron","Tellurium"],
   [],["Iron","Sulphur","Chromium"],["Iron","Phosphorus","Cadmium"],
-  ["Iron","Selenium","Manganese"],["Iron","Selenium","Polonium"],[]
+  ["Iron","Sulphur","Nickel"],["Iron","Selenium","Polonium"],[]
 ];
 if(JSON.stringify(actoxSurfaceResources)!==JSON.stringify(expectedSurfaceResources)){
   throw new Error(`Actox surface materials mismatch: ${JSON.stringify(actoxSurfaceResources)}`);
@@ -100,6 +100,28 @@ for(const body of ordinary){
   if(materials.length&&Math.abs(materials.reduce((sum,material)=>sum+material.chance,0)-100)>1e-9)throw new Error("Surface material chances must total 100%");
 }
 if(JSON.stringify(generator.surfaceMaterials("MetalRichPlanet",1).map(material=>material.name))!==JSON.stringify(["Carbon","Iron","Vanadium"]))throw new Error("Metal-rich planets must use the fixed AIR surface material set");
+
+// Actox Cc-Cl D95: game coordinates approximately (-1462, 11637).
+const d95Density=generator.distributionDensity(155,991,1324);
+const d95=generator.generateSystem({secX:991,secY:1324,starId:95,rgb:{r:181,g:83,b:4},starConfigs,density:d95Density});
+if(!d95)throw new Error("Actox Cc-Cl D95 was not generated");
+const d95Planets=d95.bodies.filter(body=>body.kind==="planet");
+if(d95.starType!=="G-WhiteYellow"||JSON.stringify(d95Planets.map(body=>body.type))!==JSON.stringify(["HighMetalPlanet","HighMetalPlanet","Asteroids"])){
+  throw new Error(`Actox Cc-Cl D95 body mismatch: ${d95.starType}, ${d95Planets.map(body=>body.type).join(",")}`);
+}
+const displayedSurfaceProfile=body=>generator.surfaceMaterials(body.type,body.seed).map(material=>[material.name,Math.floor(material.chance*10)/10]);
+const d95Profiles=d95Planets.slice(0,2).map(displayedSurfaceProfile);
+const expectedD95Profiles=[[["Chromium",40],["Iron",50],["Polonium",10]],[["Sulphur",45.4],["Selenium",9],["Iron",45.4]]];
+if(JSON.stringify(d95Profiles)!==JSON.stringify(expectedD95Profiles))throw new Error(`Actox Cc-Cl D95 surface profile mismatch: ${JSON.stringify(d95Profiles)}`);
+
+// Actox Cd-Ct D9 A4 is an IcePlanet with a uint seed above INT_MAX.
+const d9Density=generator.distributionDensity(145,992,1332);
+const d9=generator.generateSystem({secX:992,secY:1332,starId:9,rgb:{r:205,g:78,b:4},starConfigs,density:d9Density});
+if(!d9)throw new Error("Actox Cd-Ct D9 was not generated");
+const d9A4=d9.bodies.filter(body=>body.kind==="planet")[3];
+const d9A4Profile=generator.surfaceMaterials(d9A4.type,d9A4.seed).map(material=>[material.name,Math.floor(material.chance*10)/10]);
+const expectedD9A4Profile=[["Iron",47.6],["Phosphorus",33.3],["Vanadium",19]];
+if(JSON.stringify(d9A4Profile)!==JSON.stringify(expectedD9A4Profile))throw new Error(`Actox Cd-Ct D9 A4 surface profile mismatch: ${JSON.stringify(d9A4Profile)}`);
 
 const fixedResourceMap = generator.fixedAsteroidResources(123456, "G-WhiteYellow", [{
   type: "Asteroids", mater1: "Diamonds", mater2: "MethaneClathrate", mater3: "Uraninite"
