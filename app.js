@@ -30,6 +30,7 @@ const TYPE_NAMES={
   "CarbonC-SStar":"C-S 碳星","CarbonM-SStar":"M-S 碳星","S-Star":"S级恒星"
 };
 const MINERAL_NAMES={Diamonds:"钻石",Alexandrite:"亚历山大石",Bouxite:"铝土矿",Gallite:"镓石",Coltan:"钶钽铁矿",Bromellite:"溴锂石",Rutile:"金红石",Uraninite:"铀矿",Monazite:"独居石",Painite:"铝硼锆钙石",Lepidolite:"锂云母",LithiumHydroxide:"氢氧化锂",MethaneClathrate:"甲烷水合物",VoidOpal:"虚空蛋白石",Musgravite:"镁塔菲石"};
+const SURFACE_MATERIAL_NAMES={Sulphur:"硫",Selenium:"硒",Manganese:"锰",Nickel:"镍",Vanadium:"钒",Chromium:"铬",Iron:"铁",Polonium:"钋",Tellurium:"碲",Cadmium:"镉",Germanium:"锗",Phosphorus:"磷",Carbon:"碳"};
 
 function number(value,digits=2){return Number(value).toLocaleString("zh-CN",{maximumFractionDigits:digits});}
 function escapeHtml(value){return String(value??"").replace(/[&<>'"]/g,char=>({"&":"&amp;","<":"&lt;",">":"&gt;","'":"&#39;",'"':"&quot;"})[char]);}
@@ -51,6 +52,7 @@ async function loadData(){
 
 function typeName(value){return `${value}(${TYPE_NAMES[value]||value})`;}
 function mineralName(value){return `${value}(${MINERAL_NAMES[value]||value})`;}
+function surfaceMaterialName(value){return `${value}(${SURFACE_MATERIAL_NAMES[value]||value})`;}
 function fillTargetTypes(){const values=state.targetMode==="planet"?GalaxyGenerator.getPlanetTypes():state.targetMode==="star"?GalaxyGenerator.getStarTypes():GalaxyGenerator.getMineralTypes();const all=document.createElement("option");all.value="";all.textContent="全部";elements.targetType.replaceChildren(all,...[...new Set(values)].sort().map(value=>{const option=document.createElement("option");option.value=value;option.textContent=state.targetMode==="mineral"?mineralName(value):typeName(value);return option;}));elements.targetLabel.textContent=state.targetMode==="planet"?"行星类型":state.targetMode==="star"?"恒星类型":"矿石类型";}
 function handleWorkerMessage(event){
   const message=event.data;if(message.type==="ready"){state.workerReady=true;elements.search.disabled=false;elements.progress.textContent="等待搜索";return;}
@@ -92,11 +94,12 @@ function renderDetails(result){
     const label=`A${planet.objectIndex}${planet.name?` · ${planet.name}`:""}`;
     const orbit=planet.orbit==null?"-":planet.orbitTo!=null&&planet.orbitTo!==planet.orbit?`${number(planet.orbit,0)}-${number(planet.orbitTo,0)}`:number(planet.orbit,0);
     const normalResources=planet.resources?.map(resource=>`<span class="resource-item"><b>${escapeHtml(mineralName(resource.name))}</b><small>${Math.floor(resource.chance)}%</small></span>`).join("")||"";
+    const surfaceResources=planet.surfaceMaterials?.map(material=>`<span class="resource-item"><b>${escapeHtml(surfaceMaterialName(material.name))}</b><small>${number(material.chance,0)}%</small></span>`).join("")||"";
     const deepResources=matched.filter(item=>item.kind==="mineral"&&item.resourceKind==="deep"&&item.objectIndex===planet.objectIndex).map(resource=>`<span class="resource-item"><b>${escapeHtml(mineralName(resource.type))}</b><small>深层 ${number(resource.abundance,0)}%</small></span>`).join("");
-    const resources=normalResources+deepResources||"<span class=\"resource-empty\">-</span>";
+    const resources=normalResources+surfaceResources+deepResources||"<span class=\"resource-empty\">-</span>";
     return`<tr><td>${escapeHtml(label)}</td><td class="type-tag">${escapeHtml(typeName(planet.type))}</td><td>${escapeHtml(planet.starType)}</td><td>${orbit}</td><td class="resource-cell">${resources}</td></tr>`;
   }).join("");
-  const planetSection=planets.length?`<h3 class="table-title">星系内天体（${planets.length}）</h3><div class="table-scroll"><table class="planet-table"><thead><tr><th>序号 / 名称</th><th>行星类型</th><th>所属恒星</th><th>轨道距离</th><th>矿物资源</th></tr></thead><tbody>${rows}</tbody></table></div>`:`<div class="notice">该星系没有生成行星。</div>`;
+  const planetSection=planets.length?`<h3 class="table-title">星系内天体（${planets.length}）</h3><div class="table-scroll"><table class="planet-table"><thead><tr><th>序号 / 名称</th><th>行星类型</th><th>所属恒星</th><th>轨道距离</th><th>资源</th></tr></thead><tbody>${rows}</tbody></table></div>`:`<div class="notice">该星系没有生成行星。</div>`;
   elements.details.classList.remove("empty");
   elements.details.innerHTML=`<div class="detail-head"><div><h2>${escapeHtml(result.systemName)}</h2><p>${escapeHtml(match)} · ${source} · 距中心 ${number(result.distance)} ly</p></div><div class="coord-pills"><span>LY ${number(result.xLy)}, ${number(result.yLy)}</span></div></div>${planetSection}`;
 }

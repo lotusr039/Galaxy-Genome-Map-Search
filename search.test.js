@@ -84,5 +84,6 @@ if(mineralOrder[0].systemName!=="FarHigh")throw new Error("mineral results must 
   const repeated=await engine.search(query,{yieldEvery:100000});
   if(JSON.stringify(signature(repeated))!==JSON.stringify(signature(optimized)))throw new Error("repeated search changed results");
   if(repeated.some(result=>!Array.isArray(result.systemPlanets)))throw new Error("search results must include the complete system planet list");
+  if(repeated.some(result=>result.systemPlanets.some(planet=>!Array.isArray(planet.surfaceMaterials))))throw new Error("search planets must include surface material data");
   console.log(`Range search PASS: exclusions, centers, bounds, cancellation + nearest ${optimized.length} of ${complete.length}`);
 })().catch(error=>{console.error(error);process.exitCode=1;});

@@ -86,14 +86,30 @@ const expectedResources = [["Painite",13],["LithiumHydroxide",67],["Diamonds",19
 if (JSON.stringify(actoxResources) !== JSON.stringify(expectedResources)) {
   throw new Error(`Actox asteroid resources mismatch: ${JSON.stringify(actoxResources)}`);
 }
+const actoxSurfaceResources=ordinary.map(body=>generator.surfaceMaterials(body.type,body.seed).map(material=>material.name));
+const expectedSurfaceResources=[
+  ["Sulphur","Manganese","Vanadium"],["Vanadium","Manganese","Cadmium"],["Sulphur","Iron","Tellurium"],
+  [],["Iron","Sulphur","Chromium"],["Iron","Phosphorus","Cadmium"],
+  ["Iron","Selenium","Manganese"],["Iron","Selenium","Polonium"],[]
+];
+if(JSON.stringify(actoxSurfaceResources)!==JSON.stringify(expectedSurfaceResources)){
+  throw new Error(`Actox surface materials mismatch: ${JSON.stringify(actoxSurfaceResources)}`);
+}
+for(const body of ordinary){
+  const materials=generator.surfaceMaterials(body.type,body.seed);
+  if(materials.length&&Math.abs(materials.reduce((sum,material)=>sum+material.chance,0)-100)>1e-9)throw new Error("Surface material chances must total 100%");
+}
+if(JSON.stringify(generator.surfaceMaterials("MetalRichPlanet",1).map(material=>material.name))!==JSON.stringify(["Carbon","Iron","Vanadium"]))throw new Error("Metal-rich planets must use the fixed AIR surface material set");
 
-const fixedResources = generator.fixedAsteroidResources(123456, "G-WhiteYellow", [{
+const fixedResourceMap = generator.fixedAsteroidResources(123456, "G-WhiteYellow", [{
   type: "Asteroids", mater1: "Diamonds", mater2: "MethaneClathrate", mater3: "Uraninite"
-}], starConfigs).get(0);
+}], starConfigs);
+const fixedResources=fixedResourceMap.get(0);
 if (JSON.stringify(fixedResources.map(resource => resource.name)) !== JSON.stringify(["Diamonds","MethaneClathrate","Uraninite"]) ||
     Math.floor(fixedResources.reduce((sum, resource) => sum + resource.chance, 0)) !== 100) {
   throw new Error("Fixed asteroid material overrides must replace the random selection and retain drop chances");
 }
+if(!Number.isInteger(fixedResourceMap.bodySeeds.get(0)))throw new Error("Fixed-system body seeds must be retained for surface material generation");
 
 generator.setVerifiedSystems({});
 const unverifiedSystem = generator.generateSystem({

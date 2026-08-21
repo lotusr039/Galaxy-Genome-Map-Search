@@ -100,7 +100,10 @@
         }
         bodies.push(...pendingStars);
         const beltResources=GalaxyGenerator.fixedAsteroidResources(real.globalId,real.starType,preset,this.starConfigs);
-        for(const body of bodies)if(body.type==="Asteroids")body.resources=beltResources.get(body.presetIndex)||[];
+        for(const body of bodies){
+          if(body.type==="Asteroids")body.resources=beltResources.get(body.presetIndex)||[];
+          if(body.presetIndex!=null)body.seed=beltResources.bodySeeds?.get(body.presetIndex);
+        }
         return bodies;
       }
       return GalaxyGenerator.generateRealSystem({secX:real.secX,secY:real.secY,starId:real.starId,starType:real.starType,companions:real.companions,starConfigs:this.starConfigs}).bodies;
@@ -114,7 +117,7 @@
       let planetIndex=0;
       const systemPlanets=bodies.filter(body=>body.kind==="planet").map(body=>{
         const group=body.group??0,groupStar=bodies.find(item=>item.kind==="star"&&(item.group??0)===group);
-        return{objectIndex:++planetIndex,name:body.Name||"",type:body.type,temperature:body.temperature??null,orbit:body.orbit??null,orbitTo:body.orbitTo??body.orbit??null,group,starType:groupStar?.type||system.starType,resources:body.resources||[]};
+        return{objectIndex:++planetIndex,name:body.Name||"",type:body.type,temperature:body.temperature??null,orbit:body.orbit??null,orbitTo:body.orbitTo??body.orbit??null,group,starType:groupStar?.type||system.starType,resources:body.resources||[],surfaceSeed:body.seed};
       });
       if(query.targetMode==="mineral"){
         const mineralMatches=[],remainder=((system.secX+system.secY)%10+10)%10;
@@ -197,6 +200,10 @@
         if(results.length>resultLimit)results.length=resultLimit;
         const last=results[resultLimit-1];if(query.targetMode!=="mineral"&&last&&cells[checked]?.minDistance>last.distance)break;
         if(checked%yieldEvery===0){progress({checked,total:cells.length,distance:cell.minDistance,candidates});await new Promise(resolve=>setTimeout(resolve,0));}
+      }
+      for(const result of results)for(const planet of result.systemPlanets){
+        planet.surfaceMaterials=GalaxyGenerator.surfaceMaterials(planet.type,planet.surfaceSeed);
+        delete planet.surfaceSeed;
       }
       progress({checked,total:cells.length,distance:results[resultLimit-1]?.distance??query.radius,candidates,done:true});return results;
     }
